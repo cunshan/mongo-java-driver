@@ -58,7 +58,7 @@
       <p>
         
         
-      <a href="./3.2" class="btn btn-success btn-dark btn-mongo">Latest documentation</a>
+      <a href="./3.3" class="btn btn-success btn-dark btn-mongo">Latest documentation</a>
       </p>
 
     </div>
@@ -120,19 +120,19 @@
         <select class="driverPicker">
           
           
-          <option value="0" data-versions="3.2.2,3.1.1,3.0.4">mongodb-driver</option>
+          <option value="0" data-versions="3.3.0,3.2.2,3.1.1,3.0.4">mongodb-driver</option>
           
           
           
-          <option value="1" data-versions="3.2.2,3.1.1,3.0.4,2.14.2,2.13.3">mongo-java-driver</option>
+          <option value="1" data-versions="3.3.0,3.2.2,3.1.1,3.0.4,2.14.2,2.13.3">mongo-java-driver</option>
           
           
           
-          <option value="2" data-versions="3.2.2,3.1.1,3.0.4">mongodb-driver-async</option>
+          <option value="2" data-versions="3.3.0,3.2.2,3.1.1,3.0.4">mongodb-driver-async</option>
           
           
           
-          <option value="3" data-versions="3.2.2,3.1.1,3.0.4">mongodb-driver-core</option>
+          <option value="3" data-versions="3.3.0,3.2.2,3.1.1,3.0.4">mongodb-driver-core</option>
           
           
         </select>
@@ -144,19 +144,22 @@
     
       <select class="releasePicker">
         
-        <option value="0" selected>3.2.2</option>
+        <option value="0" selected>3.3.0</option>
         
         
-        <option value="1" >3.1.1</option>
+        <option value="1" >3.2.2</option>
         
         
-        <option value="2" >3.0.4</option>
+        <option value="2" >3.1.1</option>
         
         
-        <option value="3" disabled="disabled">2.14.2</option>
+        <option value="3" >3.0.4</option>
         
         
-        <option value="4" disabled="disabled">2.13.3</option>
+        <option value="4" disabled="disabled">2.14.2</option>
+        
+        
+        <option value="5" disabled="disabled">2.13.3</option>
         
         
       </select>
@@ -167,7 +170,7 @@
     </div>
   </form>
   <div class="hidden-md hidden-sm hidden-xs col-lg-2 col-lg-pull-10 downloadLink">
-  <a href="https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongodb-driver/3.2.2/"
+  <a href="https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongodb-driver/3.3.0/"
      id="downloadLink" class="btn btn-dark btn-download" target="_blank">Download</a>
   </div>
   </div>
@@ -198,7 +201,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver&lt;/artifactId&gt;
-        &lt;version&gt;3.2.2&lt;/version&gt;
+        &lt;version&gt;3.3.0&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -207,7 +210,7 @@
 <div id="gradle-0-0" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongodb-driver:3.2.2'
+    compile 'org.mongodb:mongodb-driver:3.3.0'
   }
 
 
@@ -232,7 +235,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver&lt;/artifactId&gt;
-        &lt;version&gt;3.1.1&lt;/version&gt;
+        &lt;version&gt;3.2.2&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -241,7 +244,7 @@
 <div id="gradle-1-0" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongodb-driver:3.1.1'
+    compile 'org.mongodb:mongodb-driver:3.2.2'
   }
 
 
@@ -264,13 +267,45 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver&lt;/artifactId&gt;
-        &lt;version&gt;3.0.4&lt;/version&gt;
+        &lt;version&gt;3.1.1&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
 </code></pre>
 </div>
 <div id="gradle-2-0" class="download hidden">
+<pre><code>
+  dependencies {
+    compile 'org.mongodb:mongodb-driver:3.1.1'
+  }
+
+
+</code></pre>
+</div>
+
+         
+          
+          
+          
+          
+          
+          
+          
+          
+
+<div id="maven-3-0" class="download  hidden">
+<pre><code>
+&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
+        &lt;artifactId&gt;mongodb-driver&lt;/artifactId&gt;
+        &lt;version&gt;3.0.4&lt;/version&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+
+</code></pre>
+</div>
+<div id="gradle-3-0" class="download hidden">
 <pre><code>
   dependencies {
     compile 'org.mongodb:mongodb-driver:3.0.4'
@@ -320,7 +355,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
-        &lt;version&gt;3.2.2&lt;/version&gt;
+        &lt;version&gt;3.3.0&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -329,7 +364,7 @@
 <div id="gradle-0-1" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongo-java-driver:3.2.2'
+    compile 'org.mongodb:mongo-java-driver:3.3.0'
   }
 
 
@@ -354,7 +389,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
-        &lt;version&gt;3.1.1&lt;/version&gt;
+        &lt;version&gt;3.2.2&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -363,7 +398,7 @@
 <div id="gradle-1-1" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongo-java-driver:3.1.1'
+    compile 'org.mongodb:mongo-java-driver:3.2.2'
   }
 
 
@@ -386,7 +421,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
-        &lt;version&gt;3.0.4&lt;/version&gt;
+        &lt;version&gt;3.1.1&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -395,7 +430,7 @@
 <div id="gradle-2-1" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongo-java-driver:3.0.4'
+    compile 'org.mongodb:mongo-java-driver:3.1.1'
   }
 
 
@@ -418,7 +453,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.14.2&lt;/version&gt;
+        &lt;version&gt;3.0.4&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -427,7 +462,7 @@
 <div id="gradle-3-1" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongo-java-driver:2.14.2'
+    compile 'org.mongodb:mongo-java-driver:3.0.4'
   }
 
 
@@ -450,13 +485,45 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.13.3&lt;/version&gt;
+        &lt;version&gt;2.14.2&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
 </code></pre>
 </div>
 <div id="gradle-4-1" class="download hidden">
+<pre><code>
+  dependencies {
+    compile 'org.mongodb:mongo-java-driver:2.14.2'
+  }
+
+
+</code></pre>
+</div>
+
+         
+          
+          
+          
+          
+          
+          
+          
+          
+
+<div id="maven-5-1" class="download  hidden">
+<pre><code>
+&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
+        &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
+        &lt;version&gt;2.13.3&lt;/version&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+
+</code></pre>
+</div>
+<div id="gradle-5-1" class="download hidden">
 <pre><code>
   dependencies {
     compile 'org.mongodb:mongo-java-driver:2.13.3'
@@ -494,7 +561,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver-async&lt;/artifactId&gt;
-        &lt;version&gt;3.2.2&lt;/version&gt;
+        &lt;version&gt;3.3.0&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -503,7 +570,7 @@
 <div id="gradle-0-2" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongodb-driver-async:3.2.2'
+    compile 'org.mongodb:mongodb-driver-async:3.3.0'
   }
 
 
@@ -528,7 +595,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver-async&lt;/artifactId&gt;
-        &lt;version&gt;3.1.1&lt;/version&gt;
+        &lt;version&gt;3.2.2&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -537,7 +604,7 @@
 <div id="gradle-1-2" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongodb-driver-async:3.1.1'
+    compile 'org.mongodb:mongodb-driver-async:3.2.2'
   }
 
 
@@ -560,13 +627,45 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver-async&lt;/artifactId&gt;
-        &lt;version&gt;3.0.4&lt;/version&gt;
+        &lt;version&gt;3.1.1&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
 </code></pre>
 </div>
 <div id="gradle-2-2" class="download hidden">
+<pre><code>
+  dependencies {
+    compile 'org.mongodb:mongodb-driver-async:3.1.1'
+  }
+
+
+</code></pre>
+</div>
+
+         
+          
+          
+          
+          
+          
+          
+          
+          
+
+<div id="maven-3-2" class="download  hidden">
+<pre><code>
+&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
+        &lt;artifactId&gt;mongodb-driver-async&lt;/artifactId&gt;
+        &lt;version&gt;3.0.4&lt;/version&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+
+</code></pre>
+</div>
+<div id="gradle-3-2" class="download hidden">
 <pre><code>
   dependencies {
     compile 'org.mongodb:mongodb-driver-async:3.0.4'
@@ -616,7 +715,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver-core&lt;/artifactId&gt;
-        &lt;version&gt;3.2.2&lt;/version&gt;
+        &lt;version&gt;3.3.0&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -625,7 +724,7 @@
 <div id="gradle-0-3" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongodb-driver-core:3.2.2'
+    compile 'org.mongodb:mongodb-driver-core:3.3.0'
   }
 
 
@@ -650,7 +749,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver-core&lt;/artifactId&gt;
-        &lt;version&gt;3.1.1&lt;/version&gt;
+        &lt;version&gt;3.2.2&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
@@ -659,7 +758,7 @@
 <div id="gradle-1-3" class="download hidden">
 <pre><code>
   dependencies {
-    compile 'org.mongodb:mongodb-driver-core:3.1.1'
+    compile 'org.mongodb:mongodb-driver-core:3.2.2'
   }
 
 
@@ -682,13 +781,45 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
         &lt;artifactId&gt;mongodb-driver-core&lt;/artifactId&gt;
-        &lt;version&gt;3.0.4&lt;/version&gt;
+        &lt;version&gt;3.1.1&lt;/version&gt;
     &lt;/dependency&gt;
 &lt;/dependencies&gt;
 
 </code></pre>
 </div>
 <div id="gradle-2-3" class="download hidden">
+<pre><code>
+  dependencies {
+    compile 'org.mongodb:mongodb-driver-core:3.1.1'
+  }
+
+
+</code></pre>
+</div>
+
+         
+          
+          
+          
+          
+          
+          
+          
+          
+
+<div id="maven-3-3" class="download  hidden">
+<pre><code>
+&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
+        &lt;artifactId&gt;mongodb-driver-core&lt;/artifactId&gt;
+        &lt;version&gt;3.0.4&lt;/version&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+
+</code></pre>
+</div>
+<div id="gradle-3-3" class="download hidden">
 <pre><code>
   dependencies {
     compile 'org.mongodb:mongodb-driver-core:3.0.4'
@@ -737,28 +868,33 @@
     <tbody>
     
       <tr>
-        <th class="current">3.2.2</th>
-        <td><a href="./3.2" class="reference">Reference</a> &#124; <a href="http://api.mongodb.org/java/3.2">API</a></td>
+        <th class="current">3.3.0</th>
+        <td><a href="./3.3" class="reference">Reference</a> &#124; <a href="http://api.mongodb.com/java/3.3">API</a></td>
+      </tr>
+    
+      <tr>
+        <th class="">3.2.2</th>
+        <td><a href="./3.2" class="reference">Reference</a> &#124; <a href="http://api.mongodb.com/java/3.2">API</a></td>
       </tr>
     
       <tr>
         <th class="">3.1.1</th>
-        <td><a href="./3.1" class="reference">Reference</a> &#124; <a href="http://api.mongodb.org/java/3.1">API</a></td>
+        <td><a href="./3.1" class="reference">Reference</a> &#124; <a href="http://api.mongodb.com/java/3.1">API</a></td>
       </tr>
     
       <tr>
         <th class="">3.0.4</th>
-        <td><a href="./3.0" class="reference">Reference</a> &#124; <a href="http://api.mongodb.org/java/3.0">API</a></td>
+        <td><a href="./3.0" class="reference">Reference</a> &#124; <a href="http://api.mongodb.com/java/3.0">API</a></td>
       </tr>
     
       <tr>
         <th class="">2.14.2</th>
-        <td><a href="./2.14" class="reference">Reference</a> &#124; <a href="http://api.mongodb.org/java/2.14">API</a></td>
+        <td><a href="./2.14" class="reference">Reference</a> &#124; <a href="http://api.mongodb.com/java/2.14">API</a></td>
       </tr>
     
       <tr>
         <th class="">2.13.3</th>
-        <td><a href="./2.13" class="reference">Reference</a> &#124; <a href="http://api.mongodb.org/java/2.13">API</a></td>
+        <td><a href="./2.13" class="reference">Reference</a> &#124; <a href="http://api.mongodb.com/java/2.13">API</a></td>
       </tr>
     
   </tbody>
