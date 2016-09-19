@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Driver-Asyncs on MongoDB Java Driver</title>
-    <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/</link>
+    <link>/mongo-java-driver/3.4/driver-async/</link>
     <description>Recent content in Driver-Asyncs on MongoDB Java Driver</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Aug 2016 14:13:59 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/mongo-java-driver/3.4/driver-async/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/mongo-java-driver/3.4/driver-async/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Create Indexes</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/indexes/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/indexes/</link>
       <pubDate>Mon, 01 Aug 2016 14:13:59 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/indexes/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/indexes/</guid>
       <description>
 
 &lt;h2 id=&#34;create-indexes&#34;&gt;Create Indexes&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/indexes
 &#34;&gt;Indexes&lt;/a&gt; support the efficient execution of queries in MongoDB. To create an &lt;a href=&#34;http://docs.mongodb.org/manual/indexes
-&#34;&gt;index&lt;/a&gt; on a field or fields, pass an index specification document to the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&#34;&gt;index&lt;/a&gt; on a field or fields, pass an index specification document to the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;MongoCollection.createIndex&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
-&lt;p&gt;The MongoDB Java Async Driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/indexes/&#34;&gt;&lt;code&gt;Indexes&lt;/code&gt;&lt;/a&gt; helper class that
+&lt;p&gt;The MongoDB Java Async Driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/indexes/&#34;&gt;&lt;code&gt;Indexes&lt;/code&gt;&lt;/a&gt; helper class that
 provides static factory methods to create index specification
 documents for the various MongoDB Index key types.&lt;/p&gt;
 
@@ -39,7 +39,7 @@ documents for the various MongoDB Index key types.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition important&#34;&gt;
 &lt;h5 class=&#34;admonition-title&#34;&gt;important&lt;/h5&gt;
-&lt;p&gt;Always check for errors in any &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/SingleResultCallback.html&#34;&gt;&lt;code&gt;SingleResultCallback&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/a&gt; implementation
+&lt;p&gt;Always check for errors in any &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/SingleResultCallback.html&#34;&gt;&lt;code&gt;SingleResultCallback&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/a&gt; implementation
 and handle them appropriately.&lt;/p&gt;
 
 &lt;p&gt;For sake of brevity, this tutorial omits the error check logic in the code examples.&lt;/p&gt;
@@ -84,11 +84,11 @@ MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;);
 MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;ascending-index&#34;&gt;Ascending Index&lt;/h2&gt;
 
-&lt;p&gt;To create a specification for an ascending index, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
+&lt;p&gt;To create a specification for an ascending index, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
 &#34;&gt;&lt;code&gt;Indexes.ascending&lt;/code&gt;&lt;/a&gt; static helper methods.&lt;/p&gt;
 
 &lt;h3 id=&#34;single-ascending-index&#34;&gt;Single Ascending Index&lt;/h3&gt;
@@ -112,7 +112,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 
 &lt;h2 id=&#34;descending-index&#34;&gt;Descending Index&lt;/h2&gt;
 
-&lt;p&gt;To create a specification of a descending index, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
+&lt;p&gt;To create a specification of a descending index, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
 &#34;&gt;&lt;code&gt;Indexes.descending&lt;/code&gt;&lt;/a&gt; static helper methods.&lt;/p&gt;
 
 &lt;h3 id=&#34;single-descending-key-index&#34;&gt;Single Descending Key Index&lt;/h3&gt;
@@ -135,7 +135,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 &lt;h2 id=&#34;compound-indexes&#34;&gt;Compound Indexes&lt;/h2&gt;
 
 &lt;p&gt;To create a specification for a &lt;a href=&#34;http://docs.mongodb.org/manual/core/index-compound
-&#34;&gt;compound index&lt;/a&gt;, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
+&#34;&gt;compound index&lt;/a&gt;, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
 &#34;&gt;&lt;code&gt;Indexes.compoundIndex&lt;/code&gt;&lt;/a&gt; static helper methods.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition note&#34;&gt;
@@ -155,7 +155,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 
 &lt;p&gt;MongoDB provides &lt;a href=&#34;http://docs.mongodb.org/manual/core/index-text
 &#34;&gt;text indexes&lt;/a&gt; to support text search of string content. Text indexes can include any field whose value is a string or an array of string elements. To create a specification for a text index, use the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#text-java.lang.String-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#text-java.lang.String-
 &#34;&gt;&lt;code&gt;Indexes.text&lt;/code&gt;&lt;/a&gt; static helper method.&lt;/p&gt;
 
 &lt;p&gt;The following example creates a text index on the &lt;code&gt;name&lt;/code&gt; field:&lt;/p&gt;
@@ -166,7 +166,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 &lt;h2 id=&#34;hashed-index&#34;&gt;Hashed Index&lt;/h2&gt;
 
 &lt;p&gt;To create a specification for a &lt;a href=&#34;http://docs.mongodb.org/manual/core/index-hashed
-&#34;&gt;hashed index&lt;/a&gt; index, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#hashed-java.lang.String-
+&#34;&gt;hashed index&lt;/a&gt; index, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#hashed-java.lang.String-
 &#34;&gt;&lt;code&gt;Indexes.hashed&lt;/code&gt;&lt;/a&gt; static helper method.&lt;/p&gt;
 
 &lt;p&gt;The following example creates a hashed index on the &lt;code&gt;_id&lt;/code&gt; field:&lt;/p&gt;
@@ -183,7 +183,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 &lt;h3 id=&#34;2dsphere&#34;&gt;&lt;code&gt;2dsphere&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;To create a specification for a &lt;a href=&#34;http://docs.mongodb.org/manual/core/2dsphere
-&#34;&gt;&lt;code&gt;2dsphere&lt;/code&gt; index&lt;/a&gt;, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
+&#34;&gt;&lt;code&gt;2dsphere&lt;/code&gt; index&lt;/a&gt;, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
 &#34;&gt;&lt;code&gt;Indexes.geo2dsphere&lt;/code&gt;&lt;/a&gt; static helper methods.&lt;/p&gt;
 
 &lt;p&gt;The following example creates a &lt;code&gt;2dsphere&lt;/code&gt; index on the &lt;code&gt;&amp;quot;contact.location&amp;quot;&lt;/code&gt; field:&lt;/p&gt;
@@ -194,7 +194,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 &lt;h3 id=&#34;2d&#34;&gt;&lt;code&gt;2d&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;To create a specification for a &lt;a href=&#34;http://docs.mongodb.org/manual/core/2d/
-&#34;&gt;&lt;code&gt;2d&lt;/code&gt; index&lt;/a&gt; index, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geo2d-java.lang.String-
+&#34;&gt;&lt;code&gt;2d&lt;/code&gt; index&lt;/a&gt; index, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geo2d-java.lang.String-
 &#34;&gt;&lt;code&gt;Indexes.geo2d&lt;/code&gt;&lt;/a&gt;
 static helper method.&lt;/p&gt;
 
@@ -215,7 +215,7 @@ earlier.&lt;/p&gt;
 &lt;h3 id=&#34;geohaystack&#34;&gt;geoHaystack&lt;/h3&gt;
 
 &lt;p&gt;To create a specification for a &lt;a href=&#34;http://docs.mongodb.org/manual/core/geohaystack/
-&#34;&gt;&lt;code&gt;geoHaystack&lt;/code&gt; index&lt;/a&gt;, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geoHaystack-java.lang.String-org.bson.conversions.Bson-
+&#34;&gt;&lt;code&gt;geoHaystack&lt;/code&gt; index&lt;/a&gt;, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geoHaystack-java.lang.String-org.bson.conversions.Bson-
 &#34;&gt;&lt;code&gt;Indexes.geoHaystack&lt;/code&gt;&lt;/a&gt; method. &lt;code&gt;geoHaystack&lt;/code&gt; indexes can improve performance on queries that use flat geometries.&lt;/p&gt;
 
 &lt;p&gt;The following example creates a &lt;code&gt;geoHaystack&lt;/code&gt; index on the &lt;code&gt;contact.location&lt;/code&gt; field and an ascending index on the &lt;code&gt;stars&lt;/code&gt; field:&lt;/p&gt;
@@ -235,15 +235,15 @@ collection.createIndex(
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;In addition to the index specification document, the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.client.model.IndexOptions-com.mongodb.async.SingleResultCallback-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.client.model.IndexOptions-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;createIndex()&lt;/code&gt;&lt;/a&gt; method can take an index options document, such as to create unique indexes or partial indexes.&lt;/p&gt;
 
-&lt;p&gt;The Java Driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/IndexOptions.html
+&lt;p&gt;The Java Driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/IndexOptions.html
 &#34;&gt;IndexOptions&lt;/a&gt; class to specify various index options.&lt;/p&gt;
 
 &lt;h3 id=&#34;unique-index&#34;&gt;Unique Index&lt;/h3&gt;
 
-&lt;p&gt;The following specifies a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/IndexOptions.html#unique-boolean-
+&lt;p&gt;The following specifies a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/IndexOptions.html#unique-boolean-
 &#34;&gt;&lt;code&gt;unique(true)&lt;/code&gt;&lt;/a&gt; option to create a &lt;a href=&#34;http://docs.mongodb.org/manual/core/index-unique
 &#34;&gt;unique index&lt;/a&gt; on the &lt;code&gt;name&lt;/code&gt; and &lt;code&gt;stars&lt;/code&gt; fields:&lt;/p&gt;
 
@@ -259,7 +259,7 @@ collection.createIndex(Indexes.ascending(&amp;quot;name&amp;quot;, &amp;quot;sta
 &lt;h3 id=&#34;partial-index&#34;&gt;Partial Index&lt;/h3&gt;
 
 &lt;p&gt;To create a &lt;a href=&#34;http://docs.mongodb.org/manual/core/index-partial/
-&#34;&gt;partial index&lt;/a&gt;, include a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/IndexOptions.html#partialFilterExpression-org.bson.conversions.Bson-
+&#34;&gt;partial index&lt;/a&gt;, include a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/IndexOptions.html#partialFilterExpression-org.bson.conversions.Bson-
 &#34;&gt;partialFilterExpression&lt;/a&gt; as an index option.&lt;/p&gt;
 
 &lt;p&gt;The following example creates a partial index on documents that have &lt;code&gt;status&lt;/code&gt; field equal to &lt;code&gt;&amp;quot;A&amp;quot;&lt;/code&gt;.&lt;/p&gt;
@@ -297,10 +297,10 @@ collection.listIndexes().forEach(printBlock, new SingleResultCallback&amp;lt;Voi
     
     <item>
       <title>Aggregation</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/aggregation/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/aggregation/</link>
       <pubDate>Mon, 01 Aug 2016 11:35:05 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/aggregation/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/aggregation/</guid>
       <description>
 
 &lt;h2 id=&#34;aggregation-framework&#34;&gt;Aggregation Framework&lt;/h2&gt;
@@ -362,28 +362,28 @@ MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;);
 MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;perform-aggregation&#34;&gt;Perform Aggregation&lt;/h2&gt;
 
 &lt;p&gt;To perform aggregation, pass a list of &lt;a href=&#34;http://docs.mongodb.org/manual/meta/aggregation-quick-reference
-&#34;&gt;aggregation stages&lt;/a&gt; to the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#aggregate-java.util.List-
+&#34;&gt;aggregation stages&lt;/a&gt; to the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#aggregate-java.util.List-
 &#34;&gt;&lt;code&gt;MongoCollection.aggregate()&lt;/code&gt;&lt;/a&gt; method.
-The Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Aggregates.html
+The Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Aggregates.html
 &#34;&gt;&lt;code&gt;Aggregates&lt;/code&gt;&lt;/a&gt; helper class that contains builders for aggregation stages.&lt;/p&gt;
 
 &lt;p&gt;In the following example, the aggregation pipeline&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;First uses a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/match/
-&#34;&gt;&lt;code&gt;$match&lt;/code&gt;&lt;/a&gt; stage to filter for documents whose &lt;code&gt;categories&lt;/code&gt; array field contains the element &lt;code&gt;Bakery&lt;/code&gt;. The example uses &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/aggregation/#match&#34;&gt;&lt;code&gt;Aggregates.match&lt;/code&gt;&lt;/a&gt; to build the &lt;code&gt;$match&lt;/code&gt; stage.&lt;/p&gt;&lt;/li&gt;
+&#34;&gt;&lt;code&gt;$match&lt;/code&gt;&lt;/a&gt; stage to filter for documents whose &lt;code&gt;categories&lt;/code&gt; array field contains the element &lt;code&gt;Bakery&lt;/code&gt;. The example uses &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/aggregation/#match&#34;&gt;&lt;code&gt;Aggregates.match&lt;/code&gt;&lt;/a&gt; to build the &lt;code&gt;$match&lt;/code&gt; stage.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Then, uses  a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/group/
-&#34;&gt;&lt;code&gt;$group&lt;/code&gt;&lt;/a&gt; stage to group the matching documents by the &lt;code&gt;stars&lt;/code&gt; field, accumulating a count of documents for each distinct value of &lt;code&gt;stars&lt;/code&gt;. The example uses &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/aggregation/#group&#34;&gt;&lt;code&gt;Aggregates.group&lt;/code&gt;&lt;/a&gt; to build the &lt;code&gt;$group&lt;/code&gt; stage and &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators#sum-java.lang.String-TExpression-.html
+&#34;&gt;&lt;code&gt;$group&lt;/code&gt;&lt;/a&gt; stage to group the matching documents by the &lt;code&gt;stars&lt;/code&gt; field, accumulating a count of documents for each distinct value of &lt;code&gt;stars&lt;/code&gt;. The example uses &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/aggregation/#group&#34;&gt;&lt;code&gt;Aggregates.group&lt;/code&gt;&lt;/a&gt; to build the &lt;code&gt;$group&lt;/code&gt; stage and &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators#sum-java.lang.String-TExpression-.html
 &#34;&gt;&lt;code&gt;Accumulators.sum&lt;/code&gt;&lt;/a&gt; to build the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/group/#accumulator-operator
 &#34;&gt;accumulator expression&lt;/a&gt;.  For the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation-group/
 &#34;&gt;accumulator expressions&lt;/a&gt; for use within the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/group/
-&#34;&gt;&lt;code&gt;$group&lt;/code&gt;&lt;/a&gt; stage, the Java driver provides &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators.html
+&#34;&gt;&lt;code&gt;$group&lt;/code&gt;&lt;/a&gt; stage, the Java driver provides &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators.html
 &#34;&gt;&lt;code&gt;Accumulators&lt;/code&gt;&lt;/a&gt; helper class.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -396,13 +396,13 @@ The Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-dr
 &lt;h3 id=&#34;use-aggregation-expressions&#34;&gt;Use Aggregation Expressions&lt;/h3&gt;
 
 &lt;p&gt;For &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation-group/
-&#34;&gt;$group accumulator expressions&lt;/a&gt;, the Java driver provides &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators.html
+&#34;&gt;$group accumulator expressions&lt;/a&gt;, the Java driver provides &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators.html
 &#34;&gt;&lt;code&gt;Accumulators&lt;/code&gt;&lt;/a&gt; helper class. For other &lt;a href=&#34;http://docs.mongodb.org/manual/meta/aggregation-quick-reference/#aggregation-expressions
 &#34;&gt;aggregation expressions&lt;/a&gt;, manually build the expression &lt;code&gt;Document&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;In the following example, the aggregation pipeline uses a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/project/
-&#34;&gt;&lt;code&gt;$project&lt;/code&gt;&lt;/a&gt; stage to return only the &lt;code&gt;name&lt;/code&gt; field and the calculated field &lt;code&gt;firstCategory&lt;/code&gt; whose value is the first element in the &lt;code&gt;categories&lt;/code&gt; array. The example uses &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/aggregation/#project&#34;&gt;&lt;code&gt;Aggregates.project&lt;/code&gt;&lt;/a&gt; and various
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
+&#34;&gt;&lt;code&gt;$project&lt;/code&gt;&lt;/a&gt; stage to return only the &lt;code&gt;name&lt;/code&gt; field and the calculated field &lt;code&gt;firstCategory&lt;/code&gt; whose value is the first element in the &lt;code&gt;categories&lt;/code&gt; array. The example uses &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/aggregation/#project&#34;&gt;&lt;code&gt;Aggregates.project&lt;/code&gt;&lt;/a&gt; and various
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
 &#34;&gt;&lt;code&gt;Projections&lt;/code&gt;&lt;/a&gt; methods to build the &lt;code&gt;$project&lt;/code&gt; stage.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;collection.aggregate(Arrays.asList(Aggregates.project(Projections.fields(
@@ -419,10 +419,10 @@ The Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-dr
     
     <item>
       <title>Geospatial Search</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/geospatial-search/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/geospatial-search/</link>
       <pubDate>Sun, 12 Jun 2016 17:26:54 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/geospatial-search/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/geospatial-search/</guid>
       <description>
 
 &lt;h2 id=&#34;geospatial-search&#34;&gt;Geospatial Search&lt;/h2&gt;
@@ -471,14 +471,14 @@ MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;);
 MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;create-the-2dsphere-index&#34;&gt;Create the &lt;code&gt;2dsphere&lt;/code&gt; Index&lt;/h2&gt;
 
 &lt;p&gt;To create a &lt;a href=&#34;http://docs.mongodb.org/manual/core/2dsphere
-&#34;&gt;&lt;code&gt;2dsphere&lt;/code&gt; index&lt;/a&gt;, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
+&#34;&gt;&lt;code&gt;2dsphere&lt;/code&gt; index&lt;/a&gt;, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
 &#34;&gt;&lt;code&gt;Indexes.geo2dsphere&lt;/code&gt;&lt;/a&gt;
-helper to create a specification for the &lt;code&gt;2dsphere&lt;/code&gt; index and pass to &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
+helper to create a specification for the &lt;code&gt;2dsphere&lt;/code&gt; index and pass to &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
 &#34;&gt;&lt;code&gt;MongoCollection.createIndex()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;The following example creates a &lt;code&gt;2dsphere&lt;/code&gt; index on the &lt;code&gt;&amp;quot;contact.location&amp;quot;&lt;/code&gt; field for the &lt;code&gt;restaurants&lt;/code&gt; collection.&lt;/p&gt;
@@ -493,8 +493,8 @@ helper to create a specification for the &lt;code&gt;2dsphere&lt;/code&gt; index
 
 &lt;h2 id=&#34;query-for-locations-near-a-geojson-point&#34;&gt;Query for Locations Near a GeoJSON Point&lt;/h2&gt;
 
-&lt;p&gt;MongoDB provides various &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?reference/operator/query-geospatial.html
-&#34;&gt;geospatial query operators&lt;/a&gt;. To facilitate the creation of geospatial queries filters, the Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&lt;p&gt;MongoDB provides various &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?reference/operator/query-geospatial.html
+&#34;&gt;geospatial query operators&lt;/a&gt;. To facilitate the creation of geospatial queries filters, the Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; class and the &lt;code&gt;com.mongodb.client.model.geojson&lt;/code&gt; package.&lt;/p&gt;
 
 &lt;p&gt;The following example returns documents that are at least 1000 meters from and at most 5000 meters from the specified GeoJSON point &lt;code&gt;com.mongodb.client.model.geojson.Point&lt;/code&gt;, sorted from nearest to farthest:&lt;/p&gt;
@@ -508,10 +508,10 @@ collection.find(Filters.near(&amp;quot;contact.location&amp;quot;, refPoint, 500
     
     <item>
       <title>Text Search</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/text-search/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/text-search/</link>
       <pubDate>Tue, 07 Jun 2016 23:28:50 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/text-search/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/text-search/</guid>
       <description>
 
 &lt;h2 id=&#34;text-search&#34;&gt;Text Search&lt;/h2&gt;
@@ -521,7 +521,7 @@ collection.find(Filters.near(&amp;quot;contact.location&amp;quot;, refPoint, 500
 &#34;&gt;text index&lt;/a&gt; and the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/text
 &#34;&gt;&lt;code&gt;$text&lt;/code&gt; query operator&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+&lt;p&gt;The Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 &#34;&gt;&lt;code&gt;Filters.text()&lt;/code&gt;&lt;/a&gt; helper to facilitate the creation of text search query filters.&lt;/p&gt;
 
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
@@ -565,13 +565,13 @@ MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;);
 MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;create-the-text-index&#34;&gt;Create the &lt;code&gt;text&lt;/code&gt; Index&lt;/h2&gt;
 
 &lt;p&gt;To create a &lt;a href=&#34;http://docs.mongodb.org/manual/core/index-text
-&#34;&gt;text index&lt;/a&gt;, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/indexes/#text-index&#34;&gt;&lt;code&gt;Indexes.text&lt;/code&gt;&lt;/a&gt;
-static helper to create a specification for a text index and pass to &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
+&#34;&gt;text index&lt;/a&gt;, use the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/indexes/#text-index&#34;&gt;&lt;code&gt;Indexes.text&lt;/code&gt;&lt;/a&gt;
+static helper to create a specification for a text index and pass to &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
 &#34;&gt;&lt;code&gt;MongoCollection.createIndex()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;The following example creates a text index on the &lt;code&gt;name&lt;/code&gt; field for the &lt;code&gt;restaurants&lt;/code&gt; collection.&lt;/p&gt;
@@ -586,7 +586,7 @@ static helper to create a specification for a text index and pass to &lt;a href=
 
 &lt;h2 id=&#34;perform-text-search&#34;&gt;Perform Text Search&lt;/h2&gt;
 
-&lt;p&gt;To perform text search, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+&lt;p&gt;To perform text search, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 &#34;&gt;&lt;code&gt;Filters.text()&lt;/code&gt;&lt;/a&gt; helper to specify the text search query filter.&lt;/p&gt;
 
 &lt;p&gt;For example, the following code performs a text search on the &lt;code&gt;name&lt;/code&gt; field for the word &lt;code&gt;&amp;quot;bakery&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;coffee&amp;quot;&lt;/code&gt;.&lt;/p&gt;
@@ -625,9 +625,9 @@ static helper to create a specification for a text index and pass to &lt;a href=
 
 &lt;h3 id=&#34;specify-a-text-search-option&#34;&gt;Specify a Text Search Option&lt;/h3&gt;
 
-&lt;p&gt;The  &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+&lt;p&gt;The  &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 &#34;&gt;&lt;code&gt;Filters.text()&lt;/code&gt;&lt;/a&gt; helper can accept various &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/text
-&#34;&gt;text search options&lt;/a&gt;. The Java driver provides &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/TextSearchOptions.html
+&#34;&gt;text search options&lt;/a&gt;. The Java driver provides &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/TextSearchOptions.html
 &#34;&gt;&lt;code&gt;TextSearchOptions&lt;/code&gt;&lt;/a&gt; class to specify these options.&lt;/p&gt;
 
 &lt;p&gt;For example, the following text search specifies the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/text-search-languages
@@ -665,16 +665,16 @@ static helper to create a specification for a text index and pass to &lt;a href=
     
     <item>
       <title>Run Commands</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/commands/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/commands/</link>
       <pubDate>Tue, 31 May 2016 13:07:04 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/commands/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/commands/</guid>
       <description>
 
 &lt;h2 id=&#34;run-commands&#34;&gt;Run Commands&lt;/h2&gt;
 
 &lt;p&gt;Not all commands have a specific helper. However, you can run any &lt;a href=&#34;http://docs.mongodb.org/manual/reference/command
-&#34;&gt;MongoDB command&lt;/a&gt; by using the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html#runCommand-org.bson.conversions.Bson-com.mongodb.ReadPreference-com.mongodb.async.SingleResultCallback-
+&#34;&gt;MongoDB command&lt;/a&gt; by using the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html#runCommand-org.bson.conversions.Bson-com.mongodb.ReadPreference-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;runCommand()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
@@ -702,11 +702,11 @@ static helper to create a specification for a text index and pass to &lt;a href=
 MongoDatabase database = mongoClient.getDatabase(&amp;quot;mydb&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;run-buildinfo-and-collstats-commands&#34;&gt;Run &lt;code&gt;buildInfo&lt;/code&gt; and &lt;code&gt;collStats&lt;/code&gt; Commands&lt;/h2&gt;
 
-&lt;p&gt;To run a command, construct a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?org/bson/Document.html
+&lt;p&gt;To run a command, construct a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/Document.html
 &#34;&gt;&lt;code&gt;Document&lt;/code&gt;&lt;/a&gt;
 object that specifies the command and pass it to the &lt;code&gt;runCommand()&lt;/code&gt; method.&lt;/p&gt;
 
@@ -736,10 +736,10 @@ database.runCommand(new Document(&amp;quot;collStats&amp;quot;, 1), new SingleRe
     
     <item>
       <title>Tutorials</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/</link>
       <pubDate>Sun, 29 May 2016 12:49:33 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/</guid>
       <description>
 
 &lt;h2 id=&#34;java-async-driver-tutorials&#34;&gt;Java Async Driver Tutorials&lt;/h2&gt;
@@ -747,35 +747,35 @@ database.runCommand(new Document(&amp;quot;collStats&amp;quot;, 1), new SingleRe
 &lt;p&gt;The tutorials in this section provide examples of some frequently used operations. This section is not meant to be an exhaustive list of all operations available in the Java Async driver.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/databases-collections/&#34;&gt;Databases and Collections&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/databases-collections/&#34;&gt;Databases and Collections&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/indexes/&#34;&gt;Create Indexes&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/indexes/&#34;&gt;Create Indexes&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/&#34;&gt;Read Operations&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/&#34;&gt;Read Operations&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/perform-write-operations/&#34;&gt;Write Operations&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/perform-write-operations/&#34;&gt;Write Operations&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/aggregation/&#34;&gt;Aggregation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/aggregation/&#34;&gt;Aggregation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/text-search/&#34;&gt;Text Search&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/text-search/&#34;&gt;Text Search&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/geospatial-search/&#34;&gt;Geospatial Search&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/geospatial-search/&#34;&gt;Geospatial Search&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/gridfs/&#34;&gt;GridFS&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/gridfs/&#34;&gt;GridFS&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/commands/&#34;&gt;Run Commands&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/commands/&#34;&gt;Run Commands&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title>Bulk Writes</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/bulk-writes/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/bulk-writes/</link>
       <pubDate>Sun, 29 May 2016 12:47:54 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/bulk-writes/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/bulk-writes/</guid>
       <description>
 
 &lt;h2 id=&#34;bulk-operations&#34;&gt;Bulk operations&lt;/h2&gt;
@@ -841,10 +841,10 @@ collection.bulkWrite(
     
     <item>
       <title>GridFS</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/gridfs/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/gridfs/</link>
       <pubDate>Fri, 27 Nov 2015 12:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/gridfs/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/gridfs/</guid>
       <description>
 
 &lt;h2 id=&#34;gridfs&#34;&gt;GridFS&lt;/h2&gt;
@@ -860,16 +860,16 @@ which can be found with the driver source on github.&lt;/p&gt;
 
 &lt;h2 id=&#34;async-streams&#34;&gt;Async Streams&lt;/h2&gt;
 
-&lt;p&gt;The driver&amp;rsquo;s GridFS library uses flexible interfaces for asynchronous input and output. The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
+&lt;p&gt;The driver&amp;rsquo;s GridFS library uses flexible interfaces for asynchronous input and output. The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
 &#34;&gt;&lt;code&gt;AsyncInputStream&lt;/code&gt;&lt;/a&gt; interface represents an &lt;code&gt;InputStream&lt;/code&gt;
-and the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
+and the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
 &#34;&gt;&lt;code&gt;AsyncOutputStream&lt;/code&gt;&lt;/a&gt; interface represents an &lt;code&gt;OutputStream&lt;/code&gt;.
 These interfaces should be easy to wrap for any alternative asynchronous I/O implementations such as Netty or Vertx.&lt;/p&gt;
 
 &lt;p&gt;In addition to these interfaces, the driver provides the following helpers:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/helpers/AsyncStreamHelper.html
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/helpers/AsyncStreamHelper.html
 &#34;&gt;&lt;code&gt;AsyncStreamHelper&lt;/code&gt;&lt;/a&gt;, which provides support for:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -879,7 +879,7 @@ These interfaces should be easy to wrap for any alternative asynchronous I/O imp
 &lt;li&gt;&lt;code&gt;OutputStream&lt;/code&gt; - note: output streams are blocking&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/helpers/AsynchronousChannelHelper.html
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/helpers/AsynchronousChannelHelper.html
 &#34;&gt;&lt;code&gt;AsynchronousChannelHelper&lt;/code&gt;&lt;/a&gt;, which provides support for:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -927,7 +927,7 @@ import java.io.IOException;
 
 &lt;p&gt;&lt;div class=&#34;admonition important&#34;&gt;
 &lt;h5 class=&#34;admonition-title&#34;&gt;important&lt;/h5&gt;
-&lt;p&gt;Always check for errors in any &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/SingleResultCallback.html&#34;&gt;&lt;code&gt;SingleResultCallback&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/a&gt; implementation
+&lt;p&gt;Always check for errors in any &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/SingleResultCallback.html&#34;&gt;&lt;code&gt;SingleResultCallback&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/a&gt; implementation
 and handle them appropriately.&lt;/p&gt;
 
 &lt;p&gt;For sake of brevity, this tutorial omits the error check logic in the code examples.&lt;/p&gt;
@@ -944,16 +944,16 @@ and handle them appropriately.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;create-a-gridfs-bucket&#34;&gt;Create a GridFS Bucket&lt;/h2&gt;
 
 &lt;p&gt;GridFS stores files in &lt;a href=&#34;http://docs.mongodb.org/manual/core/gridfs/#gridfs-collections
 &#34;&gt;two collections&lt;/a&gt;: a &lt;code&gt;chunks&lt;/code&gt; collection stores the file chunks, and a  &lt;code&gt;files&lt;/code&gt; collection stores file metadata. The two collections are in a common bucket and the collection names are prefixed with the bucket name.&lt;/p&gt;
 
-&lt;p&gt;The Java Async driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
+&lt;p&gt;The Java Async driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
 &#34;&gt;&lt;code&gt;GridFSBuckets.create()&lt;/code&gt;&lt;/a&gt;  method
-to create the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html
+to create the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html
 &#34;&gt;&lt;code&gt;GridFSBucket&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoDatabase myDatabase = mongoClient.getDatabase(&amp;quot;mydb&amp;quot;);
@@ -962,7 +962,7 @@ to create the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javado
 GridFSBucket gridFSBucket = GridFSBuckets.create(myDatabase);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You can specify a bucket name to &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
+&lt;p&gt;You can specify a bucket name to &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
 &#34;&gt;&lt;code&gt;GridFSBuckets.create()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;// Create a gridFSBucket with a custom bucket name &amp;quot;files&amp;quot;
@@ -982,12 +982,12 @@ GridFSBucket gridFSBucketCustom = GridFSBuckets.create(myDatabase, &amp;quot;fil
 
 &lt;h3 id=&#34;uploadfromstream&#34;&gt;UploadFromStream&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
 &#34;&gt;&lt;code&gt;uploadFromStream&lt;/code&gt;&lt;/a&gt; method
-reads the contents of an &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
+reads the contents of an &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
 &#34;&gt;&lt;code&gt;AsyncInputStream&lt;/code&gt;&lt;/a&gt; and saves it to the &lt;code&gt;GridFSBucket&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/model/GridFSUploadOptions.html
+&lt;p&gt;You can use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/model/GridFSUploadOptions.html
 &#34;&gt;&lt;code&gt;GridFSUploadOptions&lt;/code&gt;&lt;/a&gt; to configure the chunk size or include additional metadata.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;// Get the input stream
@@ -1017,18 +1017,18 @@ gridFSBucket.uploadFromStream(&amp;quot;mongodb-tutorial&amp;quot;, streamToUplo
 
 &lt;h3 id=&#34;openuploadstream&#34;&gt;OpenUploadStream&lt;/h3&gt;
 
-&lt;p&gt;For a finer-grained control of the upload, the driver also provides a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
-&#34;&gt;&lt;code&gt;GridFSBucket.openUploadStream&lt;/code&gt;&lt;/a&gt; method, which returns a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
-&#34;&gt;&lt;code&gt;GridFSUploadStream&lt;/code&gt;&lt;/a&gt;. You can write data to a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
-&#34;&gt;&lt;code&gt;GridFSUploadStream&lt;/code&gt;&lt;/a&gt; which extends &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
+&lt;p&gt;For a finer-grained control of the upload, the driver also provides a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
+&#34;&gt;&lt;code&gt;GridFSBucket.openUploadStream&lt;/code&gt;&lt;/a&gt; method, which returns a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
+&#34;&gt;&lt;code&gt;GridFSUploadStream&lt;/code&gt;&lt;/a&gt;. You can write data to a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
+&#34;&gt;&lt;code&gt;GridFSUploadStream&lt;/code&gt;&lt;/a&gt; which extends &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
 &#34;&gt;&lt;code&gt;AsyncOutputStream&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
 &#34;&gt;&lt;code&gt;GridFSUploadStream&lt;/code&gt;&lt;/a&gt; buffers data until it reaches the &lt;code&gt;chunkSizeBytes&lt;/code&gt; and then inserts the chunk into the &lt;code&gt;chunks&lt;/code&gt; collection.  When the &lt;code&gt;GridFSUploadStream&lt;/code&gt; is closed, the final chunk is written and the file metadata is inserted into the &lt;code&gt;files&lt;/code&gt; collection.&lt;/p&gt;
 
 &lt;h2 id=&#34;find-files-stored-in-gridfs&#34;&gt;Find Files Stored in GridFS&lt;/h2&gt;
 
-&lt;p&gt;To find the files stored in the &lt;code&gt;GridFSBucket&lt;/code&gt; use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#find--
+&lt;p&gt;To find the files stored in the &lt;code&gt;GridFSBucket&lt;/code&gt; use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#find--
 &#34;&gt;&lt;code&gt;find&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;The following example prints out the filename of each file stored:&lt;/p&gt;
@@ -1073,8 +1073,8 @@ gridFSBucket.uploadFromStream(&amp;quot;mongodb-tutorial&amp;quot;, streamToUplo
 
 &lt;h3 id=&#34;downloadtostream&#34;&gt;DownloadToStream&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-org.bson.types.ObjectId-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.async.SingleResultCallback-
-&#34;&gt;&lt;code&gt;downloadToStream&lt;/code&gt;&lt;/a&gt; method reads the contents from MongoDB and writes the data directly to the provided &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-org.bson.types.ObjectId-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.async.SingleResultCallback-
+&#34;&gt;&lt;code&gt;downloadToStream&lt;/code&gt;&lt;/a&gt; method reads the contents from MongoDB and writes the data directly to the provided &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
 &#34;&gt;&lt;code&gt;AsyncOutputStream&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For the &lt;code&gt;fileId&lt;/code&gt; variable, specify an &lt;code&gt;ObjectId&lt;/code&gt; value returned from the find operation section in this tutorial.&lt;/p&gt;
@@ -1096,8 +1096,8 @@ gridFSBucket.downloadToStream(fileId, channelToOutputStream(streamToDownloadTo),
 streamToDownloadTo.close();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If the &lt;code&gt;_id&lt;/code&gt; of the file is unknown but you know the filename, then you can pass the filename to the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-java.lang.String-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.client.gridfs.model.GridFSDownloadOptions-com.mongodb.async.SingleResultCallback-
-&#34;&gt;&lt;code&gt;downloadToStream&lt;/code&gt;&lt;/a&gt; method. By default, it will download the latest version of the file. Use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/model/GridFSDownloadOptions.html
+&lt;p&gt;If the &lt;code&gt;_id&lt;/code&gt; of the file is unknown but you know the filename, then you can pass the filename to the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-java.lang.String-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.client.gridfs.model.GridFSDownloadOptions-com.mongodb.async.SingleResultCallback-
+&#34;&gt;&lt;code&gt;downloadToStream&lt;/code&gt;&lt;/a&gt; method. By default, it will download the latest version of the file. Use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/model/GridFSDownloadOptions.html
 &#34;&gt;&lt;code&gt;GridFSDownloadOptions&lt;/code&gt;&lt;/a&gt; to configure which version to download.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Path outputPath = Paths.get(&amp;quot;/tmp/mongodb-tutorial-out.pdf&amp;quot;);
@@ -1121,13 +1121,13 @@ streamToDownloadTo.close();
 
 &lt;h3 id=&#34;opendownloadstream&#34;&gt;OpenDownloadStream&lt;/h3&gt;
 
-&lt;p&gt;For a finer-grained control of the upload, the driver also provides a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openDownloadStream-org.bson.types.ObjectId-
-&#34;&gt;&lt;code&gt;openDownloadStream&lt;/code&gt;&lt;/a&gt; method, which returns a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/GridFSDownloadStream.html
+&lt;p&gt;For a finer-grained control of the upload, the driver also provides a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openDownloadStream-org.bson.types.ObjectId-
+&#34;&gt;&lt;code&gt;openDownloadStream&lt;/code&gt;&lt;/a&gt; method, which returns a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/GridFSDownloadStream.html
 &#34;&gt;&lt;code&gt;GridFSDownloadStream&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;rename-files&#34;&gt;Rename Files&lt;/h2&gt;
 
-&lt;p&gt;If you should need to rename a file, then use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#rename-org.bson.types.ObjectId-java.lang.String-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;If you should need to rename a file, then use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#rename-org.bson.types.ObjectId-java.lang.String-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;rename&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;The following example renames a file to &amp;ldquo;mongodbTutorial&amp;rdquo;:&lt;/p&gt;
@@ -1151,7 +1151,7 @@ streamToDownloadTo.close();
 
 &lt;h2 id=&#34;delete-files&#34;&gt;Delete Files&lt;/h2&gt;
 
-&lt;p&gt;To delete a file from the &lt;code&gt;GridFSBucket&lt;/code&gt; use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#delete-org.bson.types.ObjectId-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;To delete a file from the &lt;code&gt;GridFSBucket&lt;/code&gt; use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#delete-org.bson.types.ObjectId-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;delete&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;The following example deletes a file from the &lt;code&gt;GridFSBucket&lt;/code&gt;:&lt;/p&gt;
@@ -1168,15 +1168,15 @@ streamToDownloadTo.close();
     
     <item>
       <title>Observables</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/reference/observables/</link>
+      <link>/mongo-java-driver/3.4/driver-async/reference/observables/</link>
       <pubDate>Thu, 14 May 2015 08:01:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/reference/observables/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/reference/observables/</guid>
       <description>
 
 &lt;h2 id=&#34;observables&#34;&gt;Observables&lt;/h2&gt;
 
-&lt;p&gt;The MongoDB Async Driver is fully callback based and makes extensive use of &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/SingleResultCallback.html
+&lt;p&gt;The MongoDB Async Driver is fully callback based and makes extensive use of &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/SingleResultCallback.html
 &#34;&gt;&lt;code&gt;SingleResultCallback&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/a&gt; to achieve this. The &lt;code&gt;SingleResultCallback&amp;lt;T&amp;gt;&lt;/code&gt; interface requires the implementation of a single method &lt;code&gt;onResult(T result, Throwable t)&lt;/code&gt; which is called once the operation has completed or errored. The &lt;code&gt;result&lt;/code&gt; parameter contains the result of the operation if successful. If the operation failed for any reason then the &lt;code&gt;t&lt;/code&gt; contains the &lt;code&gt;Throwable&lt;/code&gt; reason for the failure. This pattern allows the users application logic to be deferred until the underlying network IO to MongoDB has been completed.&lt;/p&gt;
 
 &lt;p&gt;The callback pattern is extremely flexible but can quickly become unwieldy if the application logic requires a chain of operations. Nesting of callbacks can make code harder to read and give the appearance of making the codebase more complex that it actually is. To help with this we also have released two observable based asynchronous drivers:&lt;/p&gt;
@@ -1188,10 +1188,10 @@ streamToDownloadTo.close();
 
 &lt;p&gt;These observable drivers follow similar patterns that split the logic into &lt;code&gt;onNext&lt;/code&gt;, &lt;code&gt;onError&lt;/code&gt; and &lt;code&gt;onComplete(d)&lt;/code&gt; methods. These methods split out the logic used by &lt;code&gt;SingleResultCallback&amp;lt;T&amp;gt;.onResult(T result, Throwable t)&lt;/code&gt; into individual components that can make the code  easier to reason with.&lt;/p&gt;
 
-&lt;p&gt;The MongoDB Async Driver provides a factory and interfaces that do the heavy lifting of converting callback based operations into an observable operations.  There are three interfaces &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observable.html
-&#34;&gt;&lt;code&gt;Observable&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Subscription.html
-&#34;&gt;&lt;code&gt;Subscription&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observer.html
-&#34;&gt;&lt;code&gt;Observer&lt;/code&gt;&lt;/a&gt;. The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observables.html
+&lt;p&gt;The MongoDB Async Driver provides a factory and interfaces that do the heavy lifting of converting callback based operations into an observable operations.  There are three interfaces &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observable.html
+&#34;&gt;&lt;code&gt;Observable&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Subscription.html
+&#34;&gt;&lt;code&gt;Subscription&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observer.html
+&#34;&gt;&lt;code&gt;Observer&lt;/code&gt;&lt;/a&gt;. The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observables.html
 &#34;&gt;&lt;code&gt;Observables&lt;/code&gt;&lt;/a&gt; helpers convert any callback based operations into observable operations.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition note&#34;&gt;
@@ -1203,23 +1203,23 @@ streamToDownloadTo.close();
 
 &lt;h2 id=&#34;observable&#34;&gt;Observable&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observable.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observable.html
 &#34;&gt;&lt;code&gt;Observable&lt;/code&gt;&lt;/a&gt; represents a MongoDB operation which emits its results to the &lt;code&gt;Observer&lt;/code&gt; based on demand requested by the &lt;code&gt;Subscription&lt;/code&gt; to the &lt;code&gt;Observable&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;subscription&#34;&gt;Subscription&lt;/h2&gt;
 
-&lt;p&gt;A &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Subscription.html
+&lt;p&gt;A &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Subscription.html
 &#34;&gt;&lt;code&gt;Subscription&lt;/code&gt;&lt;/a&gt; represents a one-to-one lifecycle of an &lt;code&gt;Observer&lt;/code&gt; subscribing to an &lt;code&gt;Observable&lt;/code&gt;.  A &lt;code&gt;Subscription&lt;/code&gt; to an &lt;code&gt;Observable&lt;/code&gt; can only be used by a single &lt;code&gt;Observer&lt;/code&gt;.  The purpose of a &lt;code&gt;Subscription&lt;/code&gt; is to control demand and to allow unsubscribing from the &lt;code&gt;Observable&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;observer&#34;&gt;Observer&lt;/h2&gt;
 
-&lt;p&gt;An &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observer.html
+&lt;p&gt;An &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observer.html
 &#34;&gt;&lt;code&gt;Observer&lt;/code&gt;&lt;/a&gt; provides the mechanism for receiving push-based notifications from the &lt;code&gt;Observable&lt;/code&gt;.  Demand for these events is signalled by its &lt;code&gt;Subscription&lt;/code&gt;. On subscription to an &lt;code&gt;Observable&lt;/code&gt; the &lt;code&gt;Observer&lt;/code&gt; will be passed the &lt;code&gt;Subscription&lt;/code&gt; via the &lt;code&gt;onSubscribe(Subscription subscription)&lt;/code&gt;.
 Demand for results is signaled via the &lt;code&gt;Subscription&lt;/code&gt; and any results are passed to the &lt;code&gt;onNext(TResult result)&lt;/code&gt; method.  If there is an error for any reason the &lt;code&gt;onError(Throwable e)&lt;/code&gt; will be called and no more events passed to the &lt;code&gt;Observer&lt;/code&gt;. Alternatively, when the &lt;code&gt;Observer&lt;/code&gt; has consumed all the results from the &lt;code&gt;Observable&lt;/code&gt; the &lt;code&gt;onComplete()&lt;/code&gt; method will be called.&lt;/p&gt;
 
 &lt;h2 id=&#34;wrapping-a-mongoiterable&#34;&gt;Wrapping a MongoIterable&lt;/h2&gt;
 
-&lt;p&gt;With the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observables.html
+&lt;p&gt;With the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/Observables.html
 &#34;&gt;&lt;code&gt;Observables&lt;/code&gt;&lt;/a&gt; factory creating an &lt;code&gt;Observable&lt;/code&gt; from a &lt;code&gt;MongoIterable&lt;/code&gt; is simple.&lt;/p&gt;
 
 &lt;p&gt;In the following example we iterate and print out all json forms of documents in a collection:&lt;/p&gt;
@@ -1250,7 +1250,7 @@ Demand for results is signaled via the &lt;code&gt;Subscription&lt;/code&gt; and
 
 &lt;h2 id=&#34;wrapping-a-callback-based-method&#34;&gt;Wrapping a callback based method&lt;/h2&gt;
 
-&lt;p&gt;Creating an &lt;code&gt;Observable&lt;/code&gt; from any callback based methods requires the wrapping of the method inside a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/Block.html
+&lt;p&gt;Creating an &lt;code&gt;Observable&lt;/code&gt; from any callback based methods requires the wrapping of the method inside a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/Block.html
 &#34;&gt;&lt;code&gt;Block&lt;/code&gt;&lt;/a&gt;. This allows the execution of the operation to be delayed, until demand is request by the &lt;code&gt;Subscription&lt;/code&gt;.  The method &lt;em&gt;must&lt;/em&gt; use the supplied callback to convert the results into an &lt;code&gt;Observable&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;In the following example we print out the count of the number of documents in a collection:&lt;/p&gt;
@@ -1330,10 +1330,10 @@ Demand for results is signaled via the &lt;code&gt;Subscription&lt;/code&gt; and
     
     <item>
       <title>Authentication</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/authentication/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/authentication/</link>
       <pubDate>Thu, 19 Mar 2015 14:27:51 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/authentication/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/authentication/</guid>
       <description>
 
 &lt;h2 id=&#34;authentication&#34;&gt;Authentication&lt;/h2&gt;
@@ -1347,25 +1347,25 @@ only available in the MongoDB &lt;a href=&#34;http://docs.mongodb.org/manual/adm
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;An authentication credential is represented as an instance of the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html
-&#34;&gt;&lt;code&gt;MongoCredential&lt;/code&gt;&lt;/a&gt; class. The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html
+&#34;&gt;&lt;code&gt;MongoCredential&lt;/code&gt;&lt;/a&gt; class. The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html
 &#34;&gt;&lt;code&gt;MongoCredential&lt;/code&gt;&lt;/a&gt; class includes static
 factory methods for each of the supported authentication mechanisms.&lt;/p&gt;
 
-&lt;p&gt;To specify a list of these instances, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&lt;p&gt;To specify a list of these instances, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
 &#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; and pass as a parameter to the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
-&lt;p&gt;To specify a single &lt;code&gt;MongoCredential&lt;/code&gt; instance, you can also use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;p&gt;To specify a single &lt;code&gt;MongoCredential&lt;/code&gt; instance, you can also use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; and pass to a
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition note&#34;&gt;
 &lt;h5 class=&#34;admonition-title&#34;&gt;Note&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You can also specify the credential with a string that specifies the connection URI and pass the string to the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; method that takes the connection string as a parameter.  For brevity, the tutorial omits the examples using the string.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You can also specify the credential with a string that specifies the connection URI and pass the string to the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; method that takes the connection string as a parameter.  For brevity, the tutorial omits the examples using the string.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Given the flexibility of role-based access control in MongoDB, it is usually sufficient to authenticate with a single user, but, for completeness, the driver accepts a list of credentials.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1383,7 +1383,7 @@ mechanism from &lt;a href=&#34;http://docs.mongodb.org/manual//core/security-mon
 
 &lt;p&gt;To create a credential that will authenticate using the default
 authentication mechanism regardless of server version, create a
-credential using the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createCredential-java.lang.String-java.lang.String-char:A-
+credential using the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createCredential-java.lang.String-java.lang.String-char:A-
 &#34;&gt;&lt;code&gt;createCredential&lt;/code&gt;&lt;/a&gt;
 static factory method:&lt;/p&gt;
 
@@ -1420,7 +1420,7 @@ upgrading from MongoDB 2.6 to MongoDB 3.0 seamless, even after
 &lt;h2 id=&#34;scram-sha-1&#34;&gt;SCRAM-SHA-1&lt;/h2&gt;
 
 &lt;p&gt;To explicitly create a credential of type &lt;a href=&#34;http://docs.mongodb.org/manual/core/security-scram-sha-1/
-&#34;&gt;&lt;code&gt;SCRAM-SHA-1&lt;/code&gt;&lt;/a&gt;, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createScramSha1Credential-java.lang.String-java.lang.String-char:A-
+&#34;&gt;&lt;code&gt;SCRAM-SHA-1&lt;/code&gt;&lt;/a&gt;, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createScramSha1Credential-java.lang.String-java.lang.String-char:A-
 &#34;&gt;&lt;code&gt;createScramSha1Credential&lt;/code&gt;&lt;/a&gt; method:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoCredential credential = MongoCredential.createScramSha1Credential(user,
@@ -1448,7 +1448,7 @@ MongoClient mongoClient = MongoClients.create(settings);
 &lt;h2 id=&#34;mongodb-cr&#34;&gt;MONGODB-CR&lt;/h2&gt;
 
 &lt;p&gt;To explicitly create a credential of type &lt;a href=&#34;http://docs.mongodb.org/manual/core/security-mongodb-cr
-&#34;&gt;&lt;code&gt;MONGODB-CR&lt;/code&gt;&lt;/a&gt; use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createMongoCRCredential-java.lang.String-java.lang.String-char:A-
+&#34;&gt;&lt;code&gt;MONGODB-CR&lt;/code&gt;&lt;/a&gt; use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createMongoCRCredential-java.lang.String-java.lang.String-char:A-
 &#34;&gt;&lt;code&gt;createMongCRCredential&lt;/code&gt;&lt;/a&gt;
 static factory method:&lt;/p&gt;
 
@@ -1490,7 +1490,7 @@ of the X.509 certificate.&lt;/p&gt;
 &lt;p&gt;X.509 authentication requires the use of SSL connections with
 certificate validation and is available in MongoDB 2.6 and later. To
 create a credential of this type use the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createMongoX509Credential-java.lang.String-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createMongoX509Credential-java.lang.String-
 &#34;&gt;&lt;code&gt;createMongoX509Credential&lt;/code&gt;&lt;/a&gt; static factory method:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;String user;     // The x.509 certificate derived user name, e.g. &amp;quot;CN=user,OU=OrgUnit,O=myOrg,...&amp;quot;
@@ -1519,9 +1519,9 @@ more information about determining the subject name from the certificate.&lt;/p&
 
 &lt;p&gt;&lt;a href=&#34;http://www.mongodb.com/products/mongodb-enterprise&#34;&gt;MongoDB Enterprise&lt;/a&gt; supports proxy
 authentication through Kerberos service. To create a credential of type
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?core/authentication/#kerberos-authentication.html
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?core/authentication/#kerberos-authentication.html
 &#34;&gt;Kerberos (GSSAPI)&lt;/a&gt;, use the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createGSSAPICredential-java.lang.String-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createGSSAPICredential-java.lang.String-
 &#34;&gt;&lt;code&gt;createGSSAPICredential&lt;/code&gt;&lt;/a&gt;
 static factory method:&lt;/p&gt;
 
@@ -1569,20 +1569,20 @@ Java libraries can acquire a Kerberos ticket:&lt;/p&gt;
 java.security.krb5.kdc=mykdc.myrealm.me
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Depending on the Kerberos setup, additional property specifications may be required, either via the application code or, in some cases, the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#withMechanismProperty-java.lang.String-T-
+&lt;p&gt;Depending on the Kerberos setup, additional property specifications may be required, either via the application code or, in some cases, the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#withMechanismProperty-java.lang.String-T-
 &#34;&gt;withMechanismProperty()&lt;/a&gt; method of the &lt;code&gt;MongoCredential&lt;/code&gt; instance:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#SERVICE_NAME_KEY
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#SERVICE_NAME_KEY
 &#34;&gt;&lt;code&gt;SERVICE_NAME&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#CANONICALIZE_HOST_NAME_KEY
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#CANONICALIZE_HOST_NAME_KEY
 &#34;&gt;&lt;code&gt;CANONICALIZE_HOST_NAME&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#JAVA_SUBJECT_KEY
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#JAVA_SUBJECT_KEY
 &#34;&gt;&lt;code&gt;JAVA_SUBJECT&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#JAVA_SASL_CLIENT_PROPERTIES_KEY
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#JAVA_SASL_CLIENT_PROPERTIES_KEY
 &#34;&gt;&lt;code&gt;JAVA_SASL_CLIENT_PROPERTIES&lt;/code&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1598,9 +1598,9 @@ java.security.krb5.kdc=mykdc.myrealm.me
 
 &lt;h2 id=&#34;ldap-plain&#34;&gt;LDAP (PLAIN)&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.mongodb.com/products/mongodb-enterprise&#34;&gt;MongoDB Enterprise&lt;/a&gt; supports proxy authentication through a Lightweight Directory Access Protocol (LDAP) service. To create a credential of type &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?core/authentication/#ldap-proxy-authority-authentication.html
+&lt;p&gt;&lt;a href=&#34;http://www.mongodb.com/products/mongodb-enterprise&#34;&gt;MongoDB Enterprise&lt;/a&gt; supports proxy authentication through a Lightweight Directory Access Protocol (LDAP) service. To create a credential of type &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?core/authentication/#ldap-proxy-authority-authentication.html
 &#34;&gt;LDAP&lt;/a&gt; use the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createPlainCredential-java.lang.String-java.lang.String-char:A-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/MongoCredential.html#createPlainCredential-java.lang.String-java.lang.String-char:A-
 &#34;&gt;&lt;code&gt;createPlainCredential&lt;/code&gt;&lt;/a&gt; static factory method:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;String user;          // The LDAP user name
@@ -1633,19 +1633,19 @@ MongoClient mongoClient = MongoClients.create(settings);
     
     <item>
       <title>Connect to MongoDB</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/</link>
       <pubDate>Thu, 19 Mar 2015 12:53:30 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/</guid>
       <description>
 
 &lt;h2 id=&#34;connect-to-mongodb&#34;&gt;Connect to MongoDB&lt;/h2&gt;
 
-&lt;p&gt;To make a connection to a running MongoDB instance, use &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
-&#34;&gt;&lt;code&gt;MongoClients.create&lt;/code&gt;&lt;/a&gt; to create a new &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
+&lt;p&gt;To make a connection to a running MongoDB instance, use &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
+&#34;&gt;&lt;code&gt;MongoClients.create&lt;/code&gt;&lt;/a&gt; to create a new &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
 &#34;&gt;&lt;code&gt;MongoClient&lt;/code&gt;&lt;/a&gt; instance.&lt;/p&gt;
 
-&lt;p&gt;A &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
+&lt;p&gt;A &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
 &#34;&gt;&lt;code&gt;MongoClient&lt;/code&gt;&lt;/a&gt; instance actually represents a pool of connections
 to the database; you will only need one instance of class
 &lt;code&gt;MongoClient&lt;/code&gt; even with multiple concurrently executing asynchronous operations.&lt;/p&gt;
@@ -1668,7 +1668,7 @@ deployment (e.g. standalone, replica set, or a sharded cluster) and use it acros
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Running MongoDB deployments to which to connect. For example, to connect to a standalone, you must have a running standalone.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The MongoDB Asynchronous Driver.  See &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/getting-started/installation/&#34;&gt;Installation&lt;/a&gt; for instructions on how to install the MongoDB async driver.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The MongoDB Asynchronous Driver.  See &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/getting-started/installation/&#34;&gt;Installation&lt;/a&gt; for instructions on how to install the MongoDB async driver.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;The following import statements:&lt;/p&gt;
 
@@ -1687,13 +1687,13 @@ import static java.util.Arrays.asList;
 &lt;p&gt;To connect to a standalone MongoDB instance:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; without any parameters to connect to a MongoDB instance running on localhost on port &lt;code&gt;27017&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create();
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a string that specifies the connection string:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create(&amp;quot;mongodb://localhost&amp;quot;);
@@ -1702,16 +1702,16 @@ import static java.util.Arrays.asList;
 &lt;p&gt;The connection string mostly follows &lt;a href=&#34;http://tools.ietf.org/html/rfc3986&#34;&gt;RFC 3986&lt;/a&gt;, with the exception of the domain name. For MongoDB, it is possible to list multiple domain names separated by a comma. For more information on the connection string, see &lt;a href=&#34;http://docs.mongodb.org/manual/reference/connection-string
 &#34;&gt;connection string&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create(new ConnectionString(&amp;quot;mongodb://localhost&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
-&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information, use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information, use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 &#34;&gt;&lt;code&gt;ClusterSettings&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -1725,7 +1725,7 @@ MongoClient mongoClient = MongoClients.create(settings);
 
 &lt;p&gt;&lt;div class=&#34;admonition tip&#34;&gt;
 &lt;h5 class=&#34;admonition-title&#34;&gt;tip&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; provide more configuration options than a connection string.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; provide more configuration options than a connection string.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/p&gt;
@@ -1733,7 +1733,7 @@ MongoClient mongoClient = MongoClients.create(settings);
 &lt;h2 id=&#34;connect-to-a-replica-set&#34;&gt;Connect to a Replica Set&lt;/h2&gt;
 
 &lt;p&gt;To connect to a &lt;a href=&#34;http://docs.mongodb.org/manual/replication/
-&#34;&gt;replica set&lt;/a&gt;, specify at least one or more members of the replica set in the connection string or &lt;code&gt;MongoClientSettings&lt;/code&gt; object and pass to &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
+&#34;&gt;replica set&lt;/a&gt;, specify at least one or more members of the replica set in the connection string or &lt;code&gt;MongoClientSettings&lt;/code&gt; object and pass to &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition note&#34;&gt;
@@ -1744,7 +1744,7 @@ MongoClient mongoClient = MongoClients.create(settings);
 &lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a connection string that specifies the members of the replica set:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1763,8 +1763,8 @@ MongoClient mongoClient = MongoClients.create(settings);
               &amp;quot;mongodb://host1:27017,host2:27017,host3:27017/?replicaSet=myReplicaSet&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object that specifies the members of the replica set:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1783,9 +1783,9 @@ MongoClient mongoClient = MongoClients.create(settings);
       new ConnectionString(&amp;quot;mongodb://host1:27017,host2:27017,host3:27017/?replicaSet=myReplicaSet&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
-&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information of the replica set members, use &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information of the replica set members, use &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 &#34;&gt;&lt;code&gt;ClusterSettings&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;  ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -1812,29 +1812,29 @@ MongoClient mongoClient = MongoClients.create(settings);
 &lt;p&gt;To connect to a single &lt;code&gt;mongos&lt;/code&gt; instance:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; without any parameters to connect to a :program:&lt;code&gt;mongos&lt;/code&gt; running on localhost on port &lt;code&gt;27017&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create();
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a string that specifies the host information of the &lt;code&gt;mongos&lt;/code&gt; instance in the connection URI:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create(&amp;quot;mongodb://localhost&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object that specifies the host information of the &lt;code&gt;mongos&lt;/code&gt; instance:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create(
             new ConnectionString(&amp;quot;mongodb://localhost&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
-&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information of the &lt;code&gt;mongos&lt;/code&gt; instance, use &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information of the &lt;code&gt;mongos&lt;/code&gt; instance, use &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 &#34;&gt;&lt;code&gt;ClusterSettings&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -1850,23 +1850,23 @@ MongoClient mongoClient = MongoClients.create(settings);
 &lt;p&gt;To connect to multiple &lt;code&gt;mongos&lt;/code&gt; instances, specify the host and port of the &lt;code&gt;mongos&lt;/code&gt; instances:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 &#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a string that specifies the host and port information of the &lt;code&gt;mongos&lt;/code&gt; instances in the connection URI:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create(&amp;quot;mongodb://host1:27017,host2:27017&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object that specifies the host and port information of the &lt;code&gt;mongos&lt;/code&gt; instances:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient mongoClient = MongoClients.create(
             new ConnectionString(&amp;quot;mongodb://host1:27017,host2:27017&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
-&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information of the &lt;code&gt;mongos&lt;/code&gt; instances, use &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
+&lt;li&gt;&lt;p&gt;You can call &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+&#34;&gt;&lt;code&gt;MongoClients.create()&lt;/code&gt;&lt;/a&gt; with a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; object. To specify the host information of the &lt;code&gt;mongos&lt;/code&gt; instances, use &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 &#34;&gt;&lt;code&gt;ClusterSettings&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -1915,7 +1915,7 @@ in Java 7.  However, an application must use &lt;a href=&#34;http://netty.io/&#3
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient client = MongoClients.create(&amp;quot;mongodb://localhost/?streamType=netty&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Configure &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
+&lt;li&gt;&lt;p&gt;Configure &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
 &#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; with the &lt;code&gt;StreamFactory&lt;/code&gt; set to use Netty:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient client = MongoClients.create(MongoClientSettings.builder()
@@ -1942,10 +1942,10 @@ deprecated as of the 3.1 driver release.&lt;/p&gt;
     
     <item>
       <title>Read Operations</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/</link>
       <pubDate>Thu, 19 Mar 2015 12:53:30 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/</guid>
       <description>
 
 &lt;h2 id=&#34;find-operations&#34;&gt;Find Operations&lt;/h2&gt;
@@ -2021,11 +2021,11 @@ MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;);
 MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;query-a-collection&#34;&gt;Query a Collection&lt;/h2&gt;
 
-&lt;p&gt;To query the collection, you can use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find-org.bson.conversions.Bson-
+&lt;p&gt;To query the collection, you can use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find-org.bson.conversions.Bson-
 &#34;&gt;&lt;code&gt;find()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;You can call the method without any arguments to query all documents in a collection:&lt;/p&gt;
@@ -2041,12 +2041,12 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 
 &lt;h2 id=&#34;query-filters&#34;&gt;Query Filters&lt;/h2&gt;
 
-&lt;p&gt;To query for documents that match certain conditions, pass a filter document to the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find-org.bson.conversions.Bson-
+&lt;p&gt;To query for documents that match certain conditions, pass a filter document to the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find-org.bson.conversions.Bson-
 &#34;&gt;&lt;code&gt;find()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;h3 id=&#34;empty-filter&#34;&gt;Empty Filter&lt;/h3&gt;
 
-&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?org/bson/Document.html
+&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/Document.html
 &#34;&gt;&lt;code&gt;Document&lt;/code&gt;&lt;/a&gt; object.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;collection.find(new Document()).forEach(printBlock, callbackWhenFinished);
@@ -2054,7 +2054,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 
 &lt;p&gt;&lt;div class=&#34;admonition tip&#34;&gt;
 &lt;h5 class=&#34;admonition-title&#34;&gt;tip&lt;/h5&gt;
-&lt;p&gt;For the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find--&#34;&gt;&lt;code&gt;find()&lt;/code&gt;&lt;/a&gt; method, you can also call the method without passing a filter object to match all documents in a collection.&lt;/p&gt;
+&lt;p&gt;For the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find--&#34;&gt;&lt;code&gt;find()&lt;/code&gt;&lt;/a&gt; method, you can also call the method without passing a filter object to match all documents in a collection.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/p&gt;
@@ -2064,7 +2064,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 
 &lt;h3 id=&#34;filters-helper&#34;&gt;&lt;code&gt;Filters&lt;/code&gt; Helper&lt;/h3&gt;
 
-&lt;p&gt;To facilitate the creation of filter documents, the Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&lt;p&gt;To facilitate the creation of filter documents, the Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; class that provides filter condition helper methods.&lt;/p&gt;
 
 &lt;p&gt;Consider the following &lt;code&gt;find&lt;/code&gt; operation which includes a filter &lt;code&gt;Document&lt;/code&gt; which specifies that:&lt;/p&gt;
@@ -2081,7 +2081,7 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
           .append(&amp;quot;categories&amp;quot;, &amp;quot;Bakery&amp;quot;)).forEach(printBlock, callbackWhenFinished);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The following example specifies the same filter condition using the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&lt;p&gt;The following example specifies the same filter condition using the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; helper methods:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;collection.find(and(gte(&amp;quot;stars&amp;quot;, 2), lt(&amp;quot;stars&amp;quot;, 5), eq(&amp;quot;categories&amp;quot;, &amp;quot;Bakery&amp;quot;)))
@@ -2089,18 +2089,18 @@ MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;For a list of MongoDB query filter operators, refer to the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query
-&#34;&gt;MongoDB Manual&lt;/a&gt;. For the associated &lt;code&gt;Filters&lt;/code&gt; helpers, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&#34;&gt;MongoDB Manual&lt;/a&gt;. For the associated &lt;code&gt;Filters&lt;/code&gt; helpers, see &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt;.
 See also the  &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/query-documents
 &#34;&gt;Query Documents Tutorial&lt;/a&gt; for an overview of querying in MongoDB, including specifying filter conditions on arrays and embedded documents.&lt;/p&gt;
 
 &lt;h2 id=&#34;finditerable&#34;&gt;FindIterable&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find--
-&#34;&gt;&lt;code&gt;find()&lt;/code&gt;&lt;/a&gt; method returns an instance of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html
-&#34;&gt;&lt;code&gt;FindIterable&lt;/code&gt;&lt;/a&gt; interface. The interface provides various methods that you can chain to the &lt;code&gt;find()&lt;/code&gt; method to modify the output or behavior of the query, such as &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html#sort-org.bson.conversions.Bson-
-&#34;&gt;&lt;code&gt;sort()&lt;/code&gt;&lt;/a&gt;  or &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html#projection-org.bson.conversions.Bson-
-&#34;&gt;&lt;code&gt;projection()&lt;/code&gt;&lt;/a&gt;, as well as for iterating the results, such as &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#forEach-com.mongodb.Block-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#find--
+&#34;&gt;&lt;code&gt;find()&lt;/code&gt;&lt;/a&gt; method returns an instance of the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html
+&#34;&gt;&lt;code&gt;FindIterable&lt;/code&gt;&lt;/a&gt; interface. The interface provides various methods that you can chain to the &lt;code&gt;find()&lt;/code&gt; method to modify the output or behavior of the query, such as &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html#sort-org.bson.conversions.Bson-
+&#34;&gt;&lt;code&gt;sort()&lt;/code&gt;&lt;/a&gt;  or &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html#projection-org.bson.conversions.Bson-
+&#34;&gt;&lt;code&gt;projection()&lt;/code&gt;&lt;/a&gt;, as well as for iterating the results, such as &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#forEach-com.mongodb.Block-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;forEach()&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;projections&#34;&gt;Projections&lt;/h3&gt;
@@ -2119,7 +2119,7 @@ See also the  &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/query-docu
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;To facilitate the creation of projection documents, the Java driver provides the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
 &#34;&gt;&lt;code&gt;Projections&lt;/code&gt;&lt;/a&gt; class.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;collection.find(and(gte(&amp;quot;stars&amp;quot;, 2), lt(&amp;quot;stars&amp;quot;, 5), eq(&amp;quot;categories&amp;quot;, &amp;quot;Bakery&amp;quot;)))
@@ -2127,18 +2127,18 @@ See also the  &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/query-docu
                 .forEach(printBlock, callbackWhenFinished);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In the projection document, you can also specify a projection expression using a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?reference/operator/projection/.html
+&lt;p&gt;In the projection document, you can also specify a projection expression using a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?reference/operator/projection/.html
 &#34;&gt;projection operator&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;For an example on using the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html#metaTextScore-java.lang.String-
+&lt;p&gt;For an example on using the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html#metaTextScore-java.lang.String-
 &#34;&gt;&lt;code&gt;Projections.metaTextScore&lt;/code&gt;&lt;/a&gt;,
-see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver/tutorials/text-search/&#34;&gt;Text Search tutorial&lt;/a&gt;.&lt;/p&gt;
+see the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver/tutorials/text-search/&#34;&gt;Text Search tutorial&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;sorts&#34;&gt;Sorts&lt;/h3&gt;
 
 &lt;p&gt;To sort documents, pass a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/cursor.sort/#cursor.sort
-&#34;&gt;sort specification document&lt;/a&gt; to the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html#sort-org.bson.conversions.Bson-
-&#34;&gt;&lt;code&gt;FindIterable.sort()&lt;/code&gt;&lt;/a&gt; method.  The Java driver provides &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/sorts/&#34;&gt;&lt;code&gt;Sorts&lt;/code&gt;&lt;/a&gt; helpers to facilitate the sort specification document.&lt;/p&gt;
+&#34;&gt;sort specification document&lt;/a&gt; to the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html#sort-org.bson.conversions.Bson-
+&#34;&gt;&lt;code&gt;FindIterable.sort()&lt;/code&gt;&lt;/a&gt; method.  The Java driver provides &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/sorts/&#34;&gt;&lt;code&gt;Sorts&lt;/code&gt;&lt;/a&gt; helpers to facilitate the sort specification document.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;collection.find(and(gte(&amp;quot;stars&amp;quot;, 2), lt(&amp;quot;stars&amp;quot;, 5), eq(&amp;quot;categories&amp;quot;, &amp;quot;Bakery&amp;quot;)))
                 .sort(Sorts.ascending(&amp;quot;name&amp;quot;))
@@ -2148,7 +2148,7 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
 
 &lt;h3 id=&#34;sort-with-projections&#34;&gt;Sort with Projections&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html
 &#34;&gt;&lt;code&gt;FindIterable&lt;/code&gt;&lt;/a&gt; methods themselves return &lt;code&gt;FindIterable&lt;/code&gt; objects, and as such, you can append multiple &lt;code&gt;FindIterable&lt;/code&gt; methods to the &lt;code&gt;find()&lt;/code&gt; method.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;collection.find(and(gte(&amp;quot;stars&amp;quot;, 2), lt(&amp;quot;stars&amp;quot;, 5), eq(&amp;quot;categories&amp;quot;, &amp;quot;Bakery&amp;quot;)))
@@ -2159,20 +2159,20 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
 
 &lt;h2 id=&#34;mongoiterable&#34;&gt;MongoIterable&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/FindIterable.html
 &#34;&gt;&lt;code&gt;MongoIterable&lt;/code&gt;&lt;/a&gt; interface provides helper methods to access the results of an operation:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#first-com.mongodb.async.SingleResultCallback-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#first-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;first()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#forEach-com.mongodb.Block-com.mongodb.async.SingleResultCallback-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#forEach-com.mongodb.Block-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;forEach()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#map-com.mongodb.Function-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#map-com.mongodb.Function-
 &#34;&gt;&lt;code&gt;map()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#into-A-com.mongodb.async.SingleResultCallback-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoIterable.html#into-A-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;into()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2184,11 +2184,11 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
 &#34;&gt;read preference&lt;/a&gt; at three levels:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
 &#34;&gt;&lt;code&gt;MongoClient()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Via &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&lt;li&gt;Via &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
 &#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt;, as in the following example:&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2204,7 +2204,7 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Via a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;li&gt;Via a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2220,16 +2220,16 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
         &amp;quot;mongodb://host1:27017,host2:27017/?readPreference=secondary&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html
-&#34;&gt;&lt;code&gt;MongoDatabase&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html#withReadPreference-com.mongodb.ReadPreference-
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html
+&#34;&gt;&lt;code&gt;MongoDatabase&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html#withReadPreference-com.mongodb.ReadPreference-
 &#34;&gt;&lt;code&gt;withReadPreference&lt;/code&gt;&lt;/a&gt; method, as in the following example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;)     
         .withReadPreference(ReadPreference.secondary());
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html
-&#34;&gt;&lt;code&gt;MongoCollection&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#withReadPreference-com.mongodb.ReadPreference-
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html
+&#34;&gt;&lt;code&gt;MongoCollection&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#withReadPreference-com.mongodb.ReadPreference-
 &#34;&gt;&lt;code&gt;withReadPreference&lt;/code&gt;&lt;/a&gt; method, as in the following example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;)
@@ -2253,11 +2253,11 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
 &#34;&gt;read concern&lt;/a&gt; at three levels:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
 &#34;&gt;&lt;code&gt;MongoClient()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Via &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&lt;li&gt;Via &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
 &#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt;, as in the following example:&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2273,7 +2273,7 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Via a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;li&gt;Via a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2289,16 +2289,16 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
           &amp;quot;mongodb://host1:27017,host2:27017/?readConcernLevel=majority&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html
-&#34;&gt;&lt;code&gt;MongoDatabase&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoDatabase.html#withReadConcern-com.mongodb.ReadConcern-
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html
+&#34;&gt;&lt;code&gt;MongoDatabase&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoDatabase.html#withReadConcern-com.mongodb.ReadConcern-
 &#34;&gt;&lt;code&gt;withReadConcern&lt;/code&gt;&lt;/a&gt; method, as in the following example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;)
                             .withReadConcern(ReadConcern.DEFAULT);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html
-&#34;&gt;&lt;code&gt;MongoCollection&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#withReadConcern-com.mongodb.ReadConcern-
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html
+&#34;&gt;&lt;code&gt;MongoCollection&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#withReadConcern-com.mongodb.ReadConcern-
 &#34;&gt;&lt;code&gt;withReadConcern&lt;/code&gt;&lt;/a&gt; method, as in the following example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;)
@@ -2329,10 +2329,10 @@ see the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-d
     
     <item>
       <title>Write Operations</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/perform-write-operations/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/perform-write-operations/</link>
       <pubDate>Thu, 19 Mar 2015 12:53:30 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/perform-write-operations/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/perform-write-operations/</guid>
       <description>
 
 &lt;h2 id=&#34;write-operations-insert-update-replace-delete&#34;&gt;Write Operations (Insert, Update, Replace, Delete)&lt;/h2&gt;
@@ -2394,11 +2394,11 @@ MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;);
 MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional information on connecting to MongoDB, see &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/connect-to-mongodb/&#34;&gt;Connect to MongoDB&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;insert-new-document&#34;&gt;Insert New Document&lt;/h2&gt;
 
-&lt;p&gt;To insert the document into the collection, you can use the collection&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#insertOne-TDocument-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;To insert the document into the collection, you can use the collection&amp;rsquo;s &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#insertOne-TDocument-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;insertOne()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;Document document = new Document(&amp;quot;name&amp;quot;, &amp;quot;Café Con Leche&amp;quot;)
@@ -2426,7 +2426,7 @@ collection.insertOne(document, new SingleResultCallback&amp;lt;Void&amp;gt;() {
 
 &lt;h3 id=&#34;insert-multiple-documents&#34;&gt;Insert Multiple Documents&lt;/h3&gt;
 
-&lt;p&gt;To add multiple documents, you can use the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#insertMany-java.util.List-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;To add multiple documents, you can use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#insertMany-java.util.List-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;insertMany()&lt;/code&gt;&lt;/a&gt; method which takes a list of documents to insert.&lt;/p&gt;
 
 &lt;p&gt;The following example inserts two documents to the collection:&lt;/p&gt;
@@ -2468,16 +2468,16 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 &lt;h2 id=&#34;update-existing-documents&#34;&gt;Update Existing Documents&lt;/h2&gt;
 
 &lt;p&gt;To update existing documents in a collection, you can use the collection&amp;rsquo;s
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
-&#34;&gt;&lt;code&gt;updateOne&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&#34;&gt;&lt;code&gt;updateOne&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;updateMany&lt;/code&gt;&lt;/a&gt; methods.&lt;/p&gt;
 
 &lt;h3 id=&#34;filters&#34;&gt;Filters&lt;/h3&gt;
 
-&lt;p&gt;You can pass in a filter document to the methods to specify which documents to update. The filter document specification is the same as for &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/&#34;&gt;read operations&lt;/a&gt;. To facilitate creating filter objects, Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&lt;p&gt;You can pass in a filter document to the methods to specify which documents to update. The filter document specification is the same as for &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/perform-read-operations/&#34;&gt;read operations&lt;/a&gt;. To facilitate creating filter objects, Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; helper.&lt;/p&gt;
 
-&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?org/bson/Document.html
+&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/Document.html
 &#34;&gt;&lt;code&gt;Document&lt;/code&gt;&lt;/a&gt; object.&lt;/p&gt;
 
 &lt;h3 id=&#34;update-operators&#34;&gt;Update Operators&lt;/h3&gt;
@@ -2485,7 +2485,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 &lt;p&gt;To change a field in a document, MongoDB provides &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update
 &#34;&gt;update operators&lt;/a&gt;.  To specify the modification to perform using the update operators, use an updates document.&lt;/p&gt;
 
-&lt;p&gt;To facilitate the creation of updates documents, the Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html
+&lt;p&gt;To facilitate the creation of updates documents, the Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html
 &#34;&gt;&lt;code&gt;Updates&lt;/code&gt;&lt;/a&gt; class.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition important&#34;&gt;
@@ -2497,7 +2497,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 
 &lt;h3 id=&#34;update-a-single-document&#34;&gt;Update a Single Document&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;updateOne&lt;/code&gt;&lt;/a&gt;  method updates at most a single document, even if the filter condition matches multiple documents in the collection.&lt;/p&gt;
 
 &lt;p&gt;The following operation on the &lt;code&gt;restaurants&lt;/code&gt; collection updates a document whose &lt;code&gt;_id&lt;/code&gt; field equals &lt;code&gt;ObjectId(&amp;quot;57506d62f57802807471dd41&amp;quot;)&lt;/code&gt;.&lt;/p&gt;
@@ -2518,10 +2518,10 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 &lt;p&gt;Specifically, the operation uses:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#set-java.lang.String-TItem-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#set-java.lang.String-TItem-
 &#34;&gt;&lt;code&gt;Updates.set&lt;/code&gt;&lt;/a&gt; to set the value of the &lt;code&gt;stars&lt;/code&gt; field to &lt;code&gt;1&lt;/code&gt; and the &lt;code&gt;contact.phone&lt;/code&gt; field to &lt;code&gt;&amp;quot;228-555-9999&amp;quot;&lt;/code&gt;, and&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#currentDate-java.lang.String-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#currentDate-java.lang.String-
 &#34;&gt;&lt;code&gt;Updates.currentDate&lt;/code&gt;&lt;/a&gt; to modify the &lt;code&gt;lastModified&lt;/code&gt; field to the current date. If the &lt;code&gt;lastModified&lt;/code&gt; field does not exist, the operator adds the field to the document.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2534,7 +2534,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 
 &lt;h3 id=&#34;update-multiple-documents&#34;&gt;Update Multiple Documents&lt;/h3&gt;
 
-&lt;p&gt;The   &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;The   &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;updateMany&lt;/code&gt;&lt;/a&gt; method updates all documents that match the filter condition.&lt;/p&gt;
 
 &lt;p&gt;The following operation on the &lt;code&gt;restaurants&lt;/code&gt; collection updates all documents whose &lt;code&gt;stars&lt;/code&gt; field equals &lt;code&gt;2&lt;/code&gt;.&lt;/p&gt;
@@ -2553,18 +2553,18 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 &lt;p&gt;Specifically, the operation uses:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#set-java.lang.String-TItem-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#set-java.lang.String-TItem-
 &#34;&gt;&lt;code&gt;Updates.set&lt;/code&gt;&lt;/a&gt; to set the value of the &lt;code&gt;stars&lt;/code&gt; field to &lt;code&gt;0&lt;/code&gt; , and&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#currentDate-java.lang.String-
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html#currentDate-java.lang.String-
 &#34;&gt;&lt;code&gt;Updates.currentDate&lt;/code&gt;&lt;/a&gt; to modify the &lt;code&gt;lastModified&lt;/code&gt; field to the current date. If the &lt;code&gt;lastModified&lt;/code&gt; field does not exist, the operator adds the field to the document.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;update-operations&#34;&gt;Update operations&lt;/h3&gt;
 
-&lt;p&gt;With the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateOne-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.client.model.UpdateOptions-com.mongodb.async.SingleResultCallback-
-&#34;&gt;&lt;code&gt;updateOne()&lt;/code&gt;&lt;/a&gt;  and  &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.client.model.UpdateOptions-com.mongodb.async.SingleResultCallback-
-&#34;&gt;&lt;code&gt;updateMany&lt;/code&gt;&lt;/a&gt; methods, you can include an &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/UpdateOptions.html
+&lt;p&gt;With the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateOne-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.client.model.UpdateOptions-com.mongodb.async.SingleResultCallback-
+&#34;&gt;&lt;code&gt;updateOne()&lt;/code&gt;&lt;/a&gt;  and  &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#updateMany-org.bson.conversions.Bson-org.bson.conversions.Bson-com.mongodb.client.model.UpdateOptions-com.mongodb.async.SingleResultCallback-
+&#34;&gt;&lt;code&gt;updateMany&lt;/code&gt;&lt;/a&gt; methods, you can include an &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/UpdateOptions.html
 &#34;&gt;&lt;code&gt;UpdateOptions&lt;/code&gt;&lt;/a&gt; document to specify the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/db.collection.update/#upsert-option
 &#34;&gt;&lt;code&gt;upsert&lt;/code&gt;&lt;/a&gt; option or the &lt;a href=&#34;http://docs.mongodb.org/manual/core/document-validation/#bypass-document-validation
 &#34;&gt;&lt;code&gt;bypassDocumentationValidation&lt;/code&gt;&lt;/a&gt; option.&lt;/p&gt;
@@ -2584,7 +2584,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 
 &lt;h2 id=&#34;replace-an-existing-document&#34;&gt;Replace an Existing Document&lt;/h2&gt;
 
-&lt;p&gt;To replace an existing document in a collection, you can use the collection&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;To replace an existing document in a collection, you can use the collection&amp;rsquo;s &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;replaceOne&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition important&#34;&gt;
@@ -2596,18 +2596,18 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 
 &lt;h3 id=&#34;filters-1&#34;&gt;Filters&lt;/h3&gt;
 
-&lt;p&gt;You can pass in a filter document to the method to specify which document to replace. The filter document specification is the same as for &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver/tutorials/perform-read-operations/&#34;&gt;read operations&lt;/a&gt;. To facilitate creating filter objects, Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&lt;p&gt;You can pass in a filter document to the method to specify which document to replace. The filter document specification is the same as for &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver/tutorials/perform-read-operations/&#34;&gt;read operations&lt;/a&gt;. To facilitate creating filter objects, Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; helper.&lt;/p&gt;
 
-&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?org/bson/Document.html
+&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/Document.html
 &#34;&gt;&lt;code&gt;Document&lt;/code&gt;&lt;/a&gt; object.&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;replaceOne&lt;/code&gt;&lt;/a&gt; method replaces at most a single document, even if the filter condition matches multiple documents in the collection.&lt;/p&gt;
 
 &lt;h3 id=&#34;replace-a-document&#34;&gt;Replace a Document&lt;/h3&gt;
 
-&lt;p&gt;To replace a document, pass a new document to the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;To replace a document, pass a new document to the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;replaceOne&lt;/code&gt;&lt;/a&gt;  method.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition important&#34;&gt;
@@ -2636,8 +2636,8 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 
 &lt;h3 id=&#34;update-options&#34;&gt;Update Options&lt;/h3&gt;
 
-&lt;p&gt;With the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.client.model.UpdateOptions-com.mongodb.async.SingleResultCallback-
-&#34;&gt;&lt;code&gt;replaceOne&lt;/code&gt;&lt;/a&gt; method, you can include an &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/UpdateOptions.html
+&lt;p&gt;With the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#replaceOne-org.bson.conversions.Bson-TDocument-com.mongodb.client.model.UpdateOptions-com.mongodb.async.SingleResultCallback-
+&#34;&gt;&lt;code&gt;replaceOne&lt;/code&gt;&lt;/a&gt; method, you can include an &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/UpdateOptions.html
 &#34;&gt;&lt;code&gt;UpdateOptions&lt;/code&gt;&lt;/a&gt; document to specify the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/db.collection.update/#upsert-option
 &#34;&gt;&lt;code&gt;upsert&lt;/code&gt;&lt;/a&gt; option or the &lt;a href=&#34;http://docs.mongodb.org/manual/core/document-validation/#bypass-document-validation
 &#34;&gt;&lt;code&gt;bypassDocumentationValidation&lt;/code&gt;&lt;/a&gt; option.&lt;/p&gt;
@@ -2659,21 +2659,21 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 &lt;h2 id=&#34;delete-documents&#34;&gt;Delete Documents&lt;/h2&gt;
 
 &lt;p&gt;To delete documents in a collection, you can use the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteOne-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
-&#34;&gt;&lt;code&gt;deleteOne&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteMany-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteOne-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&#34;&gt;&lt;code&gt;deleteOne&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteMany-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;deleteMany&lt;/code&gt;&lt;/a&gt; methods.&lt;/p&gt;
 
 &lt;h3 id=&#34;filters-2&#34;&gt;Filters&lt;/h3&gt;
 
-&lt;p&gt;You can pass in a filter document to the methods to specify which documents to delete. The filter document specification is the same as for &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver/tutorials/perform-read-operations/&#34;&gt;read operations&lt;/a&gt;. To facilitate creating filter objects, Java driver provides the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&lt;p&gt;You can pass in a filter document to the methods to specify which documents to delete. The filter document specification is the same as for &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver/tutorials/perform-read-operations/&#34;&gt;read operations&lt;/a&gt;. To facilitate creating filter objects, Java driver provides the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; helper.&lt;/p&gt;
 
-&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?org/bson/Document.html
+&lt;p&gt;To specify an empty filter (i.e. match all documents in a collection), use an empty &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/Document.html
 &#34;&gt;&lt;code&gt;Document&lt;/code&gt;&lt;/a&gt; object.&lt;/p&gt;
 
 &lt;h3 id=&#34;delete-a-single-document&#34;&gt;Delete a Single Document&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteOne-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteOne-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;deleteOne&lt;/code&gt;&lt;/a&gt; method deletes at most a single document, even if the filter condition matches multiple documents in the collection.&lt;/p&gt;
 
 &lt;p&gt;The following operation on the &lt;code&gt;restaurants&lt;/code&gt; collection deletes a document whose &lt;code&gt;_id&lt;/code&gt; field equals &lt;code&gt;ObjectId(&amp;quot;57506d62f57802807471dd41&amp;quot;)&lt;/code&gt;.&lt;/p&gt;
@@ -2689,7 +2689,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 
 &lt;h3 id=&#34;delete-multiple-documents&#34;&gt;Delete Multiple Documents&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteMany-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#deleteMany-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 &#34;&gt;&lt;code&gt;deleteMany&lt;/code&gt;&lt;/a&gt; method deletes all documents that match the filter condition.&lt;/p&gt;
 
 &lt;p&gt;The following operation on the &lt;code&gt;restaurants&lt;/code&gt; collection deletes all documents whose &lt;code&gt;stars&lt;/code&gt; field equals &lt;code&gt;4&lt;/code&gt;.&lt;/p&gt;
@@ -2702,7 +2702,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;See also &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/databases-collections/&#34;&gt;Drop a Collection&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/databases-collections/&#34;&gt;Drop a Collection&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;write-concern&#34;&gt;Write Concern&lt;/h2&gt;
 
@@ -2713,11 +2713,11 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 &#34;&gt;write concern&lt;/a&gt; at three levels:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
 &#34;&gt;&lt;code&gt;MongoClient()&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Via &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+&lt;li&gt;Via &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
 &#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt;, as in the following example:&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2732,7 +2732,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Via a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
+&lt;li&gt;Via a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 &#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2748,17 +2748,17 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
         &amp;quot;mongodb://host1:27017,host2:27017/?w=majority&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html
 &#34;&gt;&lt;code&gt;MongoDatabase&lt;/code&gt;&lt;/a&gt; via its
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html#withWriteConcern-com.mongodb.WriteConcern-
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoDatabase.html#withWriteConcern-com.mongodb.WriteConcern-
 &#34;&gt;&lt;code&gt;withWriteConcern&lt;/code&gt;&lt;/a&gt; method, as in the following example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; MongoDatabase database = mongoClient.getDatabase(&amp;quot;test&amp;quot;)
                                      .withWriteConcern(WriteConcern.MAJORITY);
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html
-&#34;&gt;&lt;code&gt;MongoCollection&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#withWriteConcern-com.mongodb.WriteConcern-
+&lt;li&gt;&lt;p&gt;In a &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html
+&#34;&gt;&lt;code&gt;MongoCollection&lt;/code&gt;&lt;/a&gt; via its &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoCollection.html#withWriteConcern-com.mongodb.WriteConcern-
 &#34;&gt;&lt;code&gt;withWriteConcern&lt;/code&gt;&lt;/a&gt; method, as in the following example:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; MongoCollection&amp;lt;Document&amp;gt; collection = database.getCollection(&amp;quot;restaurants&amp;quot;)
@@ -2790,10 +2790,10 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
     
     <item>
       <title>Monitoring</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/reference/monitoring/</link>
+      <link>/mongo-java-driver/3.4/driver-async/reference/monitoring/</link>
       <pubDate>Thu, 19 Mar 2015 12:53:26 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/reference/monitoring/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/reference/monitoring/</guid>
       <description>
 
 &lt;h1 id=&#34;jmx-monitoring&#34;&gt;JMX Monitoring&lt;/h1&gt;
@@ -2803,7 +2803,7 @@ collection.insertMany(documents, new SingleResultCallback&amp;lt;Void&amp;gt;() 
 application or end user to monitor various aspects of the driver.&lt;/p&gt;
 
 &lt;p&gt;The driver creates MXBean instances of a single type:
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/management/ConnectionPoolStatisticsMBean.html
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/management/ConnectionPoolStatisticsMBean.html
 &#34;&gt;ConnectionPoolStatisticsMBean&lt;/a&gt;.
  The driver registers one &lt;code&gt;ConnectionPoolStatisticsMBean&lt;/code&gt; instance per each server it connects to. For example, in the case of a replica
  set, the driver creates an instance per each non-hidden member of the replica set.&lt;/p&gt;
@@ -2831,7 +2831,7 @@ application has multiple &lt;code&gt;MongoClient&lt;/code&gt; instances connecte
 allowing an application to be notified when a command starts and when it either succeeds or fails.&lt;/p&gt;
 
 &lt;p&gt;An application registers command listeners with a &lt;code&gt;MongoClient&lt;/code&gt; by configuring &lt;code&gt;MongoClientSettings&lt;/code&gt; with instances of classes
-that implement the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/event/CommandListener.html
+that implement the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/event/CommandListener.html
 &#34;&gt;&lt;code&gt;CommandListener&lt;/code&gt;&lt;/a&gt; interface. Consider the following, somewhat
 simplistic, implementation of the &lt;code&gt;CommandListener&lt;/code&gt; interface:&lt;/p&gt;
 
@@ -2894,11 +2894,11 @@ another message upon either successful completion or failure of each command.&lt
 allowing an application to be notified when the driver detects changes to the topology of the MongoDB cluster to which it is connected.&lt;/p&gt;
 
 &lt;p&gt;An application registers listeners with a &lt;code&gt;MongoClient&lt;/code&gt; by configuring  &lt;code&gt;MongoClientSettings&lt;/code&gt; with instances of classes that
-implement any of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/event/ClusterListener.html
+implement any of the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/event/ClusterListener.html
 &#34;&gt;&lt;code&gt;ClusterListener&lt;/code&gt;&lt;/a&gt;,
- &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/event/ServerListener.html
+ &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/event/ServerListener.html
 &#34;&gt;&lt;code&gt;ServerListener&lt;/code&gt;&lt;/a&gt;,
-or &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/event/ServerMonitorListener.html
+or &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/event/ServerMonitorListener.html
 &#34;&gt;&lt;code&gt;ServerMonitorListener&lt;/code&gt;&lt;/a&gt; interfaces.&lt;/p&gt;
 
 &lt;p&gt;Consider the following, somewhat simplistic, example of a cluster listener:&lt;/p&gt;
@@ -2980,10 +2980,10 @@ and when that MongoClient is closed.  In addition, it will print a message when 
     
     <item>
       <title>SSL</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/ssl/</link>
+      <link>/mongo-java-driver/3.4/driver-async/tutorials/ssl/</link>
       <pubDate>Thu, 19 Mar 2015 12:53:26 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/driver-async/tutorials/ssl/</guid>
+      <guid>/mongo-java-driver/3.4/driver-async/tutorials/ssl/</guid>
       <description>
 
 &lt;h2 id=&#34;tls-ssl&#34;&gt;TLS/SSL&lt;/h2&gt;
@@ -3011,15 +3011,15 @@ Netty artifacts.  The driver is currently tested against Netty 4.0.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition note&#34;&gt;
 &lt;h5 class=&#34;admonition-title&#34;&gt;Note&lt;/h5&gt;
-&lt;p&gt;You can also specify the connection string via the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html&#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object.&lt;/p&gt;
+&lt;p&gt;You can also specify the connection string via the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html&#34;&gt;&lt;code&gt;ConnectionString&lt;/code&gt;&lt;/a&gt; object.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;via-mongoclientsettings&#34;&gt;Via &lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/h3&gt;
 
-&lt;p&gt;To specify TLS/SSL with  &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
-&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; , set the &lt;code&gt;sslEnabled&lt;/code&gt; property to &lt;code&gt;true&lt;/code&gt;, and the stream factory to &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
+&lt;p&gt;To specify TLS/SSL with  &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
+&#34;&gt;&lt;code&gt;MongoClientSettings&lt;/code&gt;&lt;/a&gt; , set the &lt;code&gt;sslEnabled&lt;/code&gt; property to &lt;code&gt;true&lt;/code&gt;, and the stream factory to &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
 &#34;&gt;&lt;code&gt;NettyStreamFactoryFactory&lt;/code&gt;&lt;/a&gt;, as in&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;MongoClient client = MongoClients.create(MongoClientSettings.builder()
@@ -3036,7 +3036,7 @@ Netty artifacts.  The driver is currently tested against Netty 4.0.&lt;/p&gt;
 
 &lt;p&gt;By default, the Netty-based streams will use the &lt;a href=&#34;http://netty.io/4.0/api/io/netty/channel/nio/NioEventLoopGroup.html&#34;&gt;NioEventLoopGroup&lt;/a&gt;
 and Netty&amp;rsquo;s &lt;a href=&#34;http://netty.io/4.0/api/io/netty/buffer/ByteBufAllocator.html#DEFAULT&#34;&gt;default &lt;code&gt;ByteBufAllocator&lt;/code&gt;&lt;/a&gt;, but these are
-configurable via the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
+configurable via the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
 &#34;&gt;&lt;code&gt;NettyStreamFactoryFactory&lt;/code&gt;&lt;/a&gt; constructor.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;admonition note&#34;&gt;

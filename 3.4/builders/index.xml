@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Builders on MongoDB Java Driver</title>
-    <link>http://localhost:1313/mongo-java-driver/3.4/builders/</link>
+    <link>/mongo-java-driver/3.4/builders/</link>
     <description>Recent content in Builders on MongoDB Java Driver</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Jul 2015 14:27:51 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/mongo-java-driver/3.4/builders/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/mongo-java-driver/3.4/builders/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Indexes</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/builders/indexes/</link>
+      <link>/mongo-java-driver/3.4/builders/indexes/</link>
       <pubDate>Thu, 16 Jul 2015 14:27:51 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/builders/indexes/</guid>
+      <guid>/mongo-java-driver/3.4/builders/indexes/</guid>
       <description>
 
 &lt;h2 id=&#34;indexes&#34;&gt;Indexes&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
 &#34;&gt;&lt;code&gt;Indexes&lt;/code&gt;&lt;/a&gt; class provides static factory methods for all the MongoDB Index key types.&lt;br /&gt;
-Each method returns an instance of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be used with the &lt;code&gt;createIndex&lt;/code&gt;
+Each method returns an instance of the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be used with the &lt;code&gt;createIndex&lt;/code&gt;
 methods.&lt;/p&gt;
 
 &lt;p&gt;For brevity, you may choose to import the methods of the &lt;code&gt;Indexes&lt;/code&gt; class statically:&lt;/p&gt;
@@ -33,7 +33,7 @@ methods.&lt;/p&gt;
 
 &lt;h3 id=&#34;ascending&#34;&gt;Ascending&lt;/h3&gt;
 
-&lt;p&gt;To specify an ascending index key, use one of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
+&lt;p&gt;To specify an ascending index key, use one of the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Indexes.html
 &#34;&gt;&lt;code&gt;ascending&lt;/code&gt;&lt;/a&gt; methods.&lt;/p&gt;
 
 &lt;p&gt;This example specifies an ascending index key for the &lt;code&gt;quantity&lt;/code&gt; field:&lt;/p&gt;
@@ -148,19 +148,19 @@ return all results at once.&lt;/p&gt;
     
     <item>
       <title>Aggregates</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/builders/aggregation/</link>
+      <link>/mongo-java-driver/3.4/builders/aggregation/</link>
       <pubDate>Thu, 19 Mar 2015 14:27:51 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/builders/aggregation/</guid>
+      <guid>/mongo-java-driver/3.4/builders/aggregation/</guid>
       <description>
 
 &lt;h2 id=&#34;aggregates&#34;&gt;Aggregates&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Aggregates.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Aggregates.html
 &#34;&gt;&lt;code&gt;Aggregates&lt;/code&gt;&lt;/a&gt; class provides static factory methods that build &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/
 &#34;&gt;aggregation
 pipeline operators&lt;/a&gt;.  Each method returns an instance of the
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to the &lt;code&gt;aggregate&lt;/code&gt; method of &lt;code&gt;MongoCollection&lt;/code&gt;.&lt;/p&gt;
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to the &lt;code&gt;aggregate&lt;/code&gt; method of &lt;code&gt;MongoCollection&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;For brevity, you may choose to import the methods of the &lt;code&gt;Aggregates&lt;/code&gt; class statically:&lt;/p&gt;
 
@@ -174,7 +174,7 @@ pipeline operators&lt;/a&gt;.  Each method returns an instance of the
 &lt;p&gt;The &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/match/
 &#34;&gt;&lt;code&gt;$match&lt;/code&gt;&lt;/a&gt; pipeline stage passes all documents matching the
 specified filter to the next stage.  Though the filter can be an instance of any class that implements &lt;code&gt;Bson&lt;/code&gt;, it&amp;rsquo;s convenient to
-combine with use of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+combine with use of the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; class.  In the example below, it&amp;rsquo;s assumed that the
 &lt;code&gt;eq&lt;/code&gt; method of the &lt;code&gt;Filters&lt;/code&gt; class has been statically imported.&lt;/p&gt;
 
@@ -188,7 +188,7 @@ combine with use of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/
 &lt;p&gt;The &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/project/
 &#34;&gt;&lt;code&gt;$project&lt;/code&gt;&lt;/a&gt; pipeline stage passes the projected fields of all
 documents to the next stage.  Though the projection can be an instance of any class that implements &lt;code&gt;Bson&lt;/code&gt;, it&amp;rsquo;s convenient to combine
-with use of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
+with use of the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
 &#34;&gt;&lt;code&gt;Projections&lt;/code&gt;&lt;/a&gt; class.  In the example below, it&amp;rsquo;s assumed that the
 &lt;code&gt;include&lt;/code&gt;, &lt;code&gt;excludeId&lt;/code&gt;, and &lt;code&gt;fields&lt;/code&gt; methods of the &lt;code&gt;Projections&lt;/code&gt; class have been statically imported.&lt;/p&gt;
 
@@ -220,7 +220,7 @@ This example creates a pipeline stage that randomly selects 5 documents from the
 &lt;p&gt;The &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/sort/
 &#34;&gt;&lt;code&gt;$sort&lt;/code&gt;&lt;/a&gt; pipeline stage passes all documents to the next stage,
 sorted by the specified sort criteria. Though the sort criteria can be an instance of any class that implements &lt;code&gt;Bson&lt;/code&gt;, it&amp;rsquo;s convenient to
-combine with use of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Sorts.html
+combine with use of the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Sorts.html
 &#34;&gt;&lt;code&gt;Sorts&lt;/code&gt;&lt;/a&gt; class.  In the example below, it&amp;rsquo;s assumed that the
 &lt;code&gt;descending&lt;/code&gt;, &lt;code&gt;ascending&lt;/code&gt;, and &lt;code&gt;orderBy&lt;/code&gt; methods of the &lt;code&gt;Sorts&lt;/code&gt; class have been statically imported.&lt;/p&gt;
 
@@ -273,7 +273,7 @@ expression on which to group, and zero or more
 &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/aggregation/group/#accumulator-operator
 &#34;&gt;accumulators&lt;/a&gt; which are evaluated for each
 grouping.  To simplify the expression of accumulators, the driver includes an
-&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators.html
+&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Accumulators.html
 &#34;&gt;&lt;code&gt;Accumulators&lt;/code&gt;&lt;/a&gt; class with static factory methods for each of the supported
 accumulators. In the example below, it&amp;rsquo;s assumed that the &lt;code&gt;sum&lt;/code&gt; and &lt;code&gt;avg&lt;/code&gt; methods of the &lt;code&gt;Accumulators&lt;/code&gt; class have been statically
 imported.&lt;/p&gt;
@@ -331,17 +331,17 @@ collection.  It must be the last stage in any aggregate pipeline:&lt;/p&gt;
     
     <item>
       <title>Filters</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/builders/filters/</link>
+      <link>/mongo-java-driver/3.4/builders/filters/</link>
       <pubDate>Thu, 19 Mar 2015 14:27:51 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/builders/filters/</guid>
+      <guid>/mongo-java-driver/3.4/builders/filters/</guid>
       <description>
 
 &lt;h2 id=&#34;filters&#34;&gt;Filters&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html
 &#34;&gt;&lt;code&gt;Filters&lt;/code&gt;&lt;/a&gt; class provides static factory methods for all the MongoDB query
-operators.  Each method returns an instance of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to
+operators.  Each method returns an instance of the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to
 any method that expects a query filter.&lt;/p&gt;
 
 &lt;p&gt;For brevity, you may choose to import the methods of the &lt;code&gt;Filters&lt;/code&gt; class statically:&lt;/p&gt;
@@ -544,19 +544,19 @@ indexes support $nearSphere.&lt;/li&gt;
 &lt;p&gt;To make it easier to construct GeoJSON-based filters, the driver also include a full GeoJSON class hierarchy:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/Point.html
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/Point.html
 &#34;&gt;&lt;code&gt;Point&lt;/code&gt;&lt;/a&gt;: A representation of a GeoJSON Point.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/MultiPoint.html
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/MultiPoint.html
 &#34;&gt;&lt;code&gt;MultiPoint&lt;/code&gt;&lt;/a&gt;: A representation of a GeoJSON MultiPoint.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/LineString.html
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/LineString.html
 &#34;&gt;&lt;code&gt;LineString&lt;/code&gt;&lt;/a&gt;: A representation of a GeoJSON LineString.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/MultiLineString.html
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/MultiLineString.html
 &#34;&gt;&lt;code&gt;MultiLineString&lt;/code&gt;&lt;/a&gt;: A representation of a GeoJSON MultiLineString.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/Polygon.html
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/Polygon.html
 &#34;&gt;&lt;code&gt;Polygon&lt;/code&gt;&lt;/a&gt;: A representation of a GeoJSON Polygon.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/MultiPolygon.html
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/MultiPolygon.html
 &#34;&gt;&lt;code&gt;MultiPolygon&lt;/code&gt;&lt;/a&gt;: A representation of a GeoJSON MultiPolygon.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/GeometryCollection.html
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/geojson/GeometryCollection.html
 &#34;&gt;&lt;code&gt;GeometryCollection&lt;/code&gt;&lt;/a&gt;: A representation of a GeoJSON
 GeometryCollection.&lt;/li&gt;
 &lt;/ul&gt;
@@ -584,17 +584,17 @@ intersects the given Point:&lt;/p&gt;
     
     <item>
       <title>Projections</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/builders/projections/</link>
+      <link>/mongo-java-driver/3.4/builders/projections/</link>
       <pubDate>Thu, 19 Mar 2015 14:27:51 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/builders/projections/</guid>
+      <guid>/mongo-java-driver/3.4/builders/projections/</guid>
       <description>
 
 &lt;h2 id=&#34;projections&#34;&gt;Projections&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Projections.html
 &#34;&gt;&lt;code&gt;Projections&lt;/code&gt;&lt;/a&gt; class provides static factory methods for all the MongoDB
-projection opererators.  Each method returns an instance of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn
+projection opererators.  Each method returns an instance of the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn
 be passed to any method that expects a projection.&lt;/p&gt;
 
 &lt;p&gt;For brevity, you may choose to import the methods of the &lt;code&gt;Projections&lt;/code&gt; class statically:&lt;/p&gt;
@@ -708,17 +708,17 @@ use the &lt;code&gt;metaTextScore&lt;/code&gt; method to specify the name of the
     
     <item>
       <title>Sort Criteria  </title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/builders/sorts/</link>
+      <link>/mongo-java-driver/3.4/builders/sorts/</link>
       <pubDate>Thu, 19 Mar 2015 14:27:51 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/builders/sorts/</guid>
+      <guid>/mongo-java-driver/3.4/builders/sorts/</guid>
       <description>
 
 &lt;h2 id=&#34;sorts&#34;&gt;Sorts&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Sorts.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Sorts.html
 &#34;&gt;&lt;code&gt;Sorts&lt;/code&gt;&lt;/a&gt; class provides static factory methods for all the MongoDB sort criteria
-operators.  Each method returns an instance of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to
+operators.  Each method returns an instance of the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to
 any method that expects sort criteria.&lt;/p&gt;
 
 &lt;p&gt;For brevity, you may choose to import the methods of the &lt;code&gt;Sorts&lt;/code&gt; class statically:&lt;/p&gt;
@@ -782,17 +782,17 @@ descending sort on the &lt;code&gt;orderDate&lt;/code&gt; field:&lt;/p&gt;
     
     <item>
       <title>Updates</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/builders/updates/</link>
+      <link>/mongo-java-driver/3.4/builders/updates/</link>
       <pubDate>Thu, 19 Mar 2015 14:27:51 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/builders/updates/</guid>
+      <guid>/mongo-java-driver/3.4/builders/updates/</guid>
       <description>
 
 &lt;h2 id=&#34;updates&#34;&gt;Updates&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Updates.html
 &#34;&gt;&lt;code&gt;Updates&lt;/code&gt;&lt;/a&gt; class provides static factory methods for all the MongoDB update
-operators.  Each method returns an instance of the &lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to
+operators.  Each method returns an instance of the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/bson/documents/#bson&#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt; type, which can in turn be passed to
 any method that expects an update.&lt;/p&gt;
 
 &lt;p&gt;For brevity, you may choose to import the methods of the &lt;code&gt;Updates&lt;/code&gt; class statically:&lt;/p&gt;
@@ -1047,10 +1047,10 @@ described above.&lt;/p&gt;
     
     <item>
       <title>Builders</title>
-      <link>http://localhost:1313/mongo-java-driver/3.4/builders/</link>
+      <link>/mongo-java-driver/3.4/builders/</link>
       <pubDate>Thu, 19 Mar 2015 12:53:30 -0400</pubDate>
       
-      <guid>http://localhost:1313/mongo-java-driver/3.4/builders/</guid>
+      <guid>/mongo-java-driver/3.4/builders/</guid>
       <description>
 
 &lt;h2 id=&#34;builders&#34;&gt;Builders&lt;/h2&gt;
@@ -1058,12 +1058,12 @@ described above.&lt;/p&gt;
 &lt;p&gt;The driver provides several classes that make it easier to use the CRUD API.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/filters/&#34;&gt;Filters&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building query filters&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/projections/&#34;&gt;Projections&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building projections&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/sorts/&#34;&gt;Sorts&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building sort criteria&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/aggregation/&#34;&gt;Aggregation&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building aggregation pipelines&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/updates/&#34;&gt;Updates&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building updates&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/indexes/&#34;&gt;Indexes&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for creating index keys&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/filters/&#34;&gt;Filters&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building query filters&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/projections/&#34;&gt;Projections&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building projections&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/sorts/&#34;&gt;Sorts&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building sort criteria&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/aggregation/&#34;&gt;Aggregation&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building aggregation pipelines&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/builders/updates/&#34;&gt;Updates&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for building updates&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/driver-async/tutorials/indexes/&#34;&gt;Indexes&lt;/a&gt;: Documentation of the driver&amp;rsquo;s support for creating index keys&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
