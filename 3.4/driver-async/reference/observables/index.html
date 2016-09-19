@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Observables</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -3274,7 +3274,7 @@
 
 <h2 id="observables">Observables</h2>
 
-<p>The MongoDB Async Driver is fully callback based and makes extensive use of <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/SingleResultCallback.html
+<p>The MongoDB Async Driver is fully callback based and makes extensive use of <a href="/javadoc?com/mongodb/async/client/SingleResultCallback.html
 "><code>SingleResultCallback&lt;T&gt;</code></a> to achieve this. The <code>SingleResultCallback&lt;T&gt;</code> interface requires the implementation of a single method <code>onResult(T result, Throwable t)</code> which is called once the operation has completed or errored. The <code>result</code> parameter contains the result of the operation if successful. If the operation failed for any reason then the <code>t</code> contains the <code>Throwable</code> reason for the failure. This pattern allows the users application logic to be deferred until the underlying network IO to MongoDB has been completed.</p>
 
 <p>The callback pattern is extremely flexible but can quickly become unwieldy if the application logic requires a chain of operations. Nesting of callbacks can make code harder to read and give the appearance of making the codebase more complex that it actually is. To help with this we also have released two observable based asynchronous drivers:</p>
@@ -3286,10 +3286,10 @@
 
 <p>These observable drivers follow similar patterns that split the logic into <code>onNext</code>, <code>onError</code> and <code>onComplete(d)</code> methods. These methods split out the logic used by <code>SingleResultCallback&lt;T&gt;.onResult(T result, Throwable t)</code> into individual components that can make the code  easier to reason with.</p>
 
-<p>The MongoDB Async Driver provides a factory and interfaces that do the heavy lifting of converting callback based operations into an observable operations.  There are three interfaces <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Observable.html
-"><code>Observable</code></a>, <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Subscription.html
-"><code>Subscription</code></a> and <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Observer.html
-"><code>Observer</code></a>. The <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Observables.html
+<p>The MongoDB Async Driver provides a factory and interfaces that do the heavy lifting of converting callback based operations into an observable operations.  There are three interfaces <a href="/javadoc?com/mongodb/async/client/Observable.html
+"><code>Observable</code></a>, <a href="/javadoc?com/mongodb/async/client/Subscription.html
+"><code>Subscription</code></a> and <a href="/javadoc?com/mongodb/async/client/Observer.html
+"><code>Observer</code></a>. The <a href="/javadoc?com/mongodb/async/client/Observables.html
 "><code>Observables</code></a> helpers convert any callback based operations into observable operations.</p>
 
 <p><div class="admonition note">
@@ -3301,23 +3301,23 @@
 
 <h2 id="observable">Observable</h2>
 
-<p>The <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Observable.html
+<p>The <a href="/javadoc?com/mongodb/async/client/Observable.html
 "><code>Observable</code></a> represents a MongoDB operation which emits its results to the <code>Observer</code> based on demand requested by the <code>Subscription</code> to the <code>Observable</code>.</p>
 
 <h2 id="subscription">Subscription</h2>
 
-<p>A <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Subscription.html
+<p>A <a href="/javadoc?com/mongodb/async/client/Subscription.html
 "><code>Subscription</code></a> represents a one-to-one lifecycle of an <code>Observer</code> subscribing to an <code>Observable</code>.  A <code>Subscription</code> to an <code>Observable</code> can only be used by a single <code>Observer</code>.  The purpose of a <code>Subscription</code> is to control demand and to allow unsubscribing from the <code>Observable</code>.</p>
 
 <h2 id="observer">Observer</h2>
 
-<p>An <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Observer.html
+<p>An <a href="/javadoc?com/mongodb/async/client/Observer.html
 "><code>Observer</code></a> provides the mechanism for receiving push-based notifications from the <code>Observable</code>.  Demand for these events is signalled by its <code>Subscription</code>. On subscription to an <code>Observable</code> the <code>Observer</code> will be passed the <code>Subscription</code> via the <code>onSubscribe(Subscription subscription)</code>.
 Demand for results is signaled via the <code>Subscription</code> and any results are passed to the <code>onNext(TResult result)</code> method.  If there is an error for any reason the <code>onError(Throwable e)</code> will be called and no more events passed to the <code>Observer</code>. Alternatively, when the <code>Observer</code> has consumed all the results from the <code>Observable</code> the <code>onComplete()</code> method will be called.</p>
 
 <h2 id="wrapping-a-mongoiterable">Wrapping a MongoIterable</h2>
 
-<p>With the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/Observables.html
+<p>With the <a href="/javadoc?com/mongodb/async/client/Observables.html
 "><code>Observables</code></a> factory creating an <code>Observable</code> from a <code>MongoIterable</code> is simple.</p>
 
 <p>In the following example we iterate and print out all json forms of documents in a collection:</p>
@@ -3348,7 +3348,7 @@ Demand for results is signaled via the <code>Subscription</code> and any results
 
 <h2 id="wrapping-a-callback-based-method">Wrapping a callback based method</h2>
 
-<p>Creating an <code>Observable</code> from any callback based methods requires the wrapping of the method inside a <a href="http://api.mongodb.com/java/3.3/?com/mongodb/Block.html
+<p>Creating an <code>Observable</code> from any callback based methods requires the wrapping of the method inside a <a href="/javadoc?com/mongodb/Block.html
 "><code>Block</code></a>. This allows the execution of the operation to be delayed, until demand is request by the <code>Subscription</code>.  The method <em>must</em> use the supplied callback to convert the results into an <code>Observable</code>.</p>
 
 <p>In the following example we print out the count of the number of documents in a collection:</p>
@@ -3478,20 +3478,20 @@ Demand for results is signaled via the <code>Subscription</code> and any results
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -3517,6 +3517,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

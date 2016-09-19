@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>SSL</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2918,15 +2918,15 @@ Netty artifacts.  The driver is currently tested against Netty 4.0.</p>
 
 <p><div class="admonition note">
 <h5 class="admonition-title">Note</h5>
-<p>You can also specify the connection string via the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/ConnectionString.html"><code>ConnectionString</code></a> object.</p>
+<p>You can also specify the connection string via the <a href="/javadoc?com/mongodb/ConnectionString.html"><code>ConnectionString</code></a> object.</p>
 
 </div>
 </p>
 
 <h3 id="via-mongoclientsettings">Via <code>MongoClientSettings</code></h3>
 
-<p>To specify TLS/SSL with  <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
-"><code>MongoClientSettings</code></a> , set the <code>sslEnabled</code> property to <code>true</code>, and the stream factory to <a href="http://api.mongodb.com/java/3.3/?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
+<p>To specify TLS/SSL with  <a href="/javadoc?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
+"><code>MongoClientSettings</code></a> , set the <code>sslEnabled</code> property to <code>true</code>, and the stream factory to <a href="/javadoc?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
 "><code>NettyStreamFactoryFactory</code></a>, as in</p>
 
 <pre><code class="language-java">MongoClient client = MongoClients.create(MongoClientSettings.builder()
@@ -2943,7 +2943,7 @@ Netty artifacts.  The driver is currently tested against Netty 4.0.</p>
 
 <p>By default, the Netty-based streams will use the <a href="http://netty.io/4.0/api/io/netty/channel/nio/NioEventLoopGroup.html">NioEventLoopGroup</a>
 and Netty&rsquo;s <a href="http://netty.io/4.0/api/io/netty/buffer/ByteBufAllocator.html#DEFAULT">default <code>ByteBufAllocator</code></a>, but these are
-configurable via the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
+configurable via the <a href="/javadoc?com/mongodb/connection/netty/NettyStreamFactoryFactory.html
 "><code>NettyStreamFactoryFactory</code></a> constructor.</p>
 
 <p><div class="admonition note">
@@ -3086,20 +3086,20 @@ ERefGuide.html"><code>JSSE Reference Guide</code></a>.</p>
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -3125,6 +3125,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

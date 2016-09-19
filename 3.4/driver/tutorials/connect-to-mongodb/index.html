@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Connect to MongoDB</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2300,7 +2300,7 @@
 
 <h2 id="connect-to-mongodb">Connect to MongoDB</h2>
 
-<p>Use <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoClient.html
+<p>Use <a href="/javadoc?com/mongodb/MongoClient.html
 "><code>MongoClient()</code></a> to make a connection to a running MongoDB instance.</p>
 
 <p><div class="admonition important">
@@ -2308,7 +2308,7 @@
 <p>The following examples are not meant to provide an exhaustive list
 of ways to instantiate <code>MongoClient</code>. For a complete list of the
 MongoClient constructors, see
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoClient.html"><code>MongoClient() API documentation</code></a>.</p>
+<a href="/javadoc?com/mongodb/MongoClient.html"><code>MongoClient() API documentation</code></a>.</p>
 
 </div>
 </p>
@@ -2334,7 +2334,7 @@ import java.util.Arrays;
 
 <h2 id="mongoclient"><code>MongoClient</code></h2>
 
-<p>The <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoClient.html
+<p>The <a href="/javadoc?com/mongodb/MongoClient.html
 "><code>MongoClient()</code></a> instance represents a pool of connections
 to the database; you will only need one instance of class
 <code>MongoClient</code> even with multiple threads.</p>
@@ -2375,7 +2375,7 @@ instance running on the specified host on port <code>27017</code>:</p>
 </code></pre></li>
 
 <li><p>You can specify the
-<a href="http://api.mongodb.com/java/3.3/?/com/mongodb/MongoClientURI.html
+<a href="/javadoc?/com/mongodb/MongoClientURI.html
 "><code>MongoClientURI</code></a> connection string.</p>
 
 <pre><code class="language-java">MongoClient mongoClient = new MongoClient(new MongoClientURI(&quot;mongodb://host1:27017&quot;));
@@ -2396,7 +2396,7 @@ instance running on the specified host on port <code>27017</code>:</p>
 </p>
 
 <ul>
-<li><p>You can specify the members using the <a href="http://api.mongodb.com/java/3.3/?/com/mongodb/MongoClientURI.html
+<li><p>You can specify the members using the <a href="/javadoc?/com/mongodb/MongoClientURI.html
 "><code>MongoClientURI</code></a> connection string:</p>
 
 <ul>
@@ -2414,7 +2414,7 @@ instance running on the specified host on port <code>27017</code>:</p>
 </code></pre></li>
 </ul></li>
 
-<li><p>You can specify a list of the all the replica set members&rsquo; <a href="http://api.mongodb.com/java/3.3/?com/mongodb/ServerAddress.html
+<li><p>You can specify a list of the all the replica set members&rsquo; <a href="/javadoc?com/mongodb/ServerAddress.html
 "><code>ServerAddress</code></a>:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = new MongoClient(
@@ -2440,7 +2440,7 @@ parameters if <code>mongos</code> is running on <code>localhost</code> and port
 <pre><code class="language-java">MongoClient mongoClient = new MongoClient( &quot;localhost&quot; , 27017 );
 </code></pre></li>
 
-<li><p>You can specify the <a href="http://api.mongodb.com/java/3.3/?/com/mongodb/MongoClientURI.html
+<li><p>You can specify the <a href="/javadoc?/com/mongodb/MongoClientURI.html
 "><code>MongoClientURI</code></a> connection string:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = new MongoClient(new MongoClientURI(&quot;mongodb://localhost:27017&quot;));
@@ -2450,7 +2450,7 @@ parameters if <code>mongos</code> is running on <code>localhost</code> and port
 <p>To connect to multiple <code>mongos</code> instances:</p>
 
 <ul>
-<li><p>You can specify the <a href="http://api.mongodb.com/java/3.3/?/com/mongodb/MongoClientURI.html
+<li><p>You can specify the <a href="/javadoc?/com/mongodb/MongoClientURI.html
 "><code>MongoClientURI</code></a> connection string with their hostnames and ports:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = new MongoClient(
@@ -2555,20 +2555,20 @@ MongoClient mongoClient = new MongoClient(uri);
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -2594,6 +2594,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Create Indexes</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2966,7 +2966,7 @@
 
 <p><a href="http://docs.mongodb.org/manual/indexes
 ">Indexes</a> support the efficient execution of queries in MongoDB. To create an <a href="http://docs.mongodb.org/manual/indexes
-">index</a> on a field or fields, pass an index specification document to the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
+">index</a> on a field or fields, pass an index specification document to the <a href="/javadoc?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.async.SingleResultCallback-
 "><code>MongoCollection.createIndex</code></a> method.</p>
 
 <p>The MongoDB Java Async Driver provides the <a href="/mongo-java-driver/3.4/builders/indexes/"><code>Indexes</code></a> helper class that
@@ -2984,7 +2984,7 @@ documents for the various MongoDB Index key types.</p>
 
 <p><div class="admonition important">
 <h5 class="admonition-title">important</h5>
-<p>Always check for errors in any <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/SingleResultCallback.html"><code>SingleResultCallback&lt;T&gt;</code></a> implementation
+<p>Always check for errors in any <a href="/javadoc?com/mongodb/async/SingleResultCallback.html"><code>SingleResultCallback&lt;T&gt;</code></a> implementation
 and handle them appropriately.</p>
 
 <p>For sake of brevity, this tutorial omits the error check logic in the code examples.</p>
@@ -3033,7 +3033,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 
 <h2 id="ascending-index">Ascending Index</h2>
 
-<p>To create a specification for an ascending index, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html
+<p>To create a specification for an ascending index, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html
 "><code>Indexes.ascending</code></a> static helper methods.</p>
 
 <h3 id="single-ascending-index">Single Ascending Index</h3>
@@ -3057,7 +3057,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 
 <h2 id="descending-index">Descending Index</h2>
 
-<p>To create a specification of a descending index, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html
+<p>To create a specification of a descending index, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html
 "><code>Indexes.descending</code></a> static helper methods.</p>
 
 <h3 id="single-descending-key-index">Single Descending Key Index</h3>
@@ -3080,7 +3080,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 <h2 id="compound-indexes">Compound Indexes</h2>
 
 <p>To create a specification for a <a href="http://docs.mongodb.org/manual/core/index-compound
-">compound index</a>, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html
+">compound index</a>, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html
 "><code>Indexes.compoundIndex</code></a> static helper methods.</p>
 
 <p><div class="admonition note">
@@ -3100,7 +3100,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 
 <p>MongoDB provides <a href="http://docs.mongodb.org/manual/core/index-text
 ">text indexes</a> to support text search of string content. Text indexes can include any field whose value is a string or an array of string elements. To create a specification for a text index, use the
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html#text-java.lang.String-
+<a href="/javadoc?com/mongodb/client/model/Indexes.html#text-java.lang.String-
 "><code>Indexes.text</code></a> static helper method.</p>
 
 <p>The following example creates a text index on the <code>name</code> field:</p>
@@ -3111,7 +3111,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 <h2 id="hashed-index">Hashed Index</h2>
 
 <p>To create a specification for a <a href="http://docs.mongodb.org/manual/core/index-hashed
-">hashed index</a> index, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html#hashed-java.lang.String-
+">hashed index</a> index, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html#hashed-java.lang.String-
 "><code>Indexes.hashed</code></a> static helper method.</p>
 
 <p>The following example creates a hashed index on the <code>_id</code> field:</p>
@@ -3128,7 +3128,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 <h3 id="2dsphere"><code>2dsphere</code></h3>
 
 <p>To create a specification for a <a href="http://docs.mongodb.org/manual/core/2dsphere
-"><code>2dsphere</code> index</a>, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
+"><code>2dsphere</code> index</a>, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
 "><code>Indexes.geo2dsphere</code></a> static helper methods.</p>
 
 <p>The following example creates a <code>2dsphere</code> index on the <code>&quot;contact.location&quot;</code> field:</p>
@@ -3139,7 +3139,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 <h3 id="2d"><code>2d</code></h3>
 
 <p>To create a specification for a <a href="http://docs.mongodb.org/manual/core/2d/
-"><code>2d</code> index</a> index, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html#geo2d-java.lang.String-
+"><code>2d</code> index</a> index, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html#geo2d-java.lang.String-
 "><code>Indexes.geo2d</code></a>
 static helper method.</p>
 
@@ -3160,7 +3160,7 @@ earlier.</p>
 <h3 id="geohaystack">geoHaystack</h3>
 
 <p>To create a specification for a <a href="http://docs.mongodb.org/manual/core/geohaystack/
-"><code>geoHaystack</code> index</a>, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html#geoHaystack-java.lang.String-org.bson.conversions.Bson-
+"><code>geoHaystack</code> index</a>, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html#geoHaystack-java.lang.String-org.bson.conversions.Bson-
 "><code>Indexes.geoHaystack</code></a> method. <code>geoHaystack</code> indexes can improve performance on queries that use flat geometries.</p>
 
 <p>The following example creates a <code>geoHaystack</code> index on the <code>contact.location</code> field and an ascending index on the <code>stars</code> field:</p>
@@ -3180,15 +3180,15 @@ collection.createIndex(
 </code></pre>
 
 <p>In addition to the index specification document, the
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.client.model.IndexOptions-com.mongodb.async.SingleResultCallback-
+<a href="/javadoc?com/mongodb/async/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-com.mongodb.client.model.IndexOptions-com.mongodb.async.SingleResultCallback-
 "><code>createIndex()</code></a> method can take an index options document, such as to create unique indexes or partial indexes.</p>
 
-<p>The Java Driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/IndexOptions.html
+<p>The Java Driver provides the <a href="/javadoc?com/mongodb/client/model/IndexOptions.html
 ">IndexOptions</a> class to specify various index options.</p>
 
 <h3 id="unique-index">Unique Index</h3>
 
-<p>The following specifies a <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/IndexOptions.html#unique-boolean-
+<p>The following specifies a <a href="/javadoc?com/mongodb/client/model/IndexOptions.html#unique-boolean-
 "><code>unique(true)</code></a> option to create a <a href="http://docs.mongodb.org/manual/core/index-unique
 ">unique index</a> on the <code>name</code> and <code>stars</code> fields:</p>
 
@@ -3204,7 +3204,7 @@ collection.createIndex(Indexes.ascending(&quot;name&quot;, &quot;stars&quot;),
 <h3 id="partial-index">Partial Index</h3>
 
 <p>To create a <a href="http://docs.mongodb.org/manual/core/index-partial/
-">partial index</a>, include a <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/IndexOptions.html#partialFilterExpression-org.bson.conversions.Bson-
+">partial index</a>, include a <a href="/javadoc?com/mongodb/client/model/IndexOptions.html#partialFilterExpression-org.bson.conversions.Bson-
 ">partialFilterExpression</a> as an index option.</p>
 
 <p>The following example creates a partial index on documents that have <code>status</code> field equal to <code>&quot;A&quot;</code>.</p>
@@ -3319,20 +3319,20 @@ collection.listIndexes().forEach(printBlock, new SingleResultCallback&lt;Void&gt
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -3358,6 +3358,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

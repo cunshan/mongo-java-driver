@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Databases and Collections</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2946,7 +2946,7 @@
 
 <p><div class="admonition important">
 <h5 class="admonition-title">important</h5>
-<p>Always check for errors in any <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/SingleResultCallback.html"><code>SingleResultCallback&lt;T&gt;</code></a> implementation
+<p>Always check for errors in any <a href="/javadoc?com/mongodb/async/SingleResultCallback.html"><code>SingleResultCallback&lt;T&gt;</code></a> implementation
 and handle them appropriately.</p>
 
 <p>For sake of brevity, this tutorial omits the error check logic in the code examples.</p>
@@ -2995,7 +2995,7 @@ import org.bson.Document;
 
 <h2 id="access-a-database">Access a Database</h2>
 
-<p>Once you have a <code>MongoClient</code> instance connected to a MongoDB deployment, use its <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoClient.html#getDatabase-java.lang.String-
+<p>Once you have a <code>MongoClient</code> instance connected to a MongoDB deployment, use its <a href="/javadoc?com/mongodb/async/client/MongoClient.html#getDatabase-java.lang.String-
 "><code>getDatabase()</code></a> method to access a database.</p>
 
 <p>Specify the name of the database to the <code>getDatabase()</code> method. If a database does not exist, MongoDB creates the database when you first store data for that database.</p>
@@ -3026,7 +3026,7 @@ import org.bson.Document;
 
 <h2 id="drop-a-database">Drop A Database</h2>
 
-<p>You can drop the current database using its <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoDatabase.html#drop-com.mongodb.async.SingleResultCallback-
+<p>You can drop the current database using its <a href="/javadoc?com/mongodb/async/client/MongoDatabase.html#drop-com.mongodb.async.SingleResultCallback-
 "><code>drop</code></a>:</p>
 
 <pre><code class="language-java">mongoClient.getDatabase(&quot;databaseToBeDropped&quot;).drop(callbackWhenFinished);
@@ -3034,7 +3034,7 @@ import org.bson.Document;
 
 <h2 id="access-a-collection">Access a Collection</h2>
 
-<p>Once you have a <code>MongoDatabase</code> instance, use its <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoDatabase.html#getCollection-java.lang.String-
+<p>Once you have a <code>MongoDatabase</code> instance, use its <a href="/javadoc?com/mongodb/async/client/MongoDatabase.html#getCollection-java.lang.String-
 "><code>getCollection()</code></a> method to access a collection.</p>
 
 <p>Specify the name of the collection to the <code>getCollection()</code> method.</p>
@@ -3057,8 +3057,8 @@ import org.bson.Document;
 
 <h2 id="explicitly-create-a-collection">Explicitly Create a Collection</h2>
 
-<p>The async driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoDatabase.html#createCollection-java.lang.String-com.mongodb.async.SingleResultCallback-
-"><code>createCollection</code></a> method to explicitly create a collection. When you explicitly create a collection, you can specify various collection options, such as a maximum size or the documentation validation rules, with the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/CreateCollectionOptions.html
+<p>The async driver provides the <a href="/javadoc?com/mongodb/async/client/MongoDatabase.html#createCollection-java.lang.String-com.mongodb.async.SingleResultCallback-
+"><code>createCollection</code></a> method to explicitly create a collection. When you explicitly create a collection, you can specify various collection options, such as a maximum size or the documentation validation rules, with the <a href="/javadoc?com/mongodb/client/model/CreateCollectionOptions.html
 "><code>CreateCollectionOptions</code></a> class. If you are not specifying these options, you do not need to explicitly create the collection since MongoDB creates new collections when you first store data for the collections.</p>
 
 <h3 id="capped-collection">Capped Collection</h3>
@@ -3074,7 +3074,7 @@ import org.bson.Document;
 <h3 id="document-validation">Document Validation</h3>
 
 <p>MongoDB provides the capability to <a href="http://docs.mongodb.org/manual/core/document-validation
-">validate documents</a> during updates and insertions. Validation rules are specified on a per-collection basis using the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/ValidationOptions.html
+">validate documents</a> during updates and insertions. Validation rules are specified on a per-collection basis using the <a href="/javadoc?com/mongodb/client/model/ValidationOptions.html
 "><code>ValidationOptions</code></a>, which takes a filter document that specifies the validation rules or expressions.</p>
 
 <pre><code class="language-java">ValidationOptions collOptions = new ValidationOptions().validator(
@@ -3086,7 +3086,7 @@ database.createCollection(&quot;contacts&quot;,
 
 <h2 id="get-a-list-of-collections">Get A List of Collections</h2>
 
-<p>You can get a list of the collections in a database using the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoDatabase.html#listCollectionNames--
+<p>You can get a list of the collections in a database using the <a href="/javadoc?com/mongodb/async/client/MongoDatabase.html#listCollectionNames--
 "><code>MongoDatabase.listCollectionNames()</code></a> method:</p>
 
 <pre><code class="language-java">database.listCollectionNames().forEach(new Block&lt;String&gt;() {
@@ -3099,7 +3099,7 @@ database.createCollection(&quot;contacts&quot;,
 
 <h2 id="drop-a-collection">Drop a Collection</h2>
 
-<p>You can drop a collection by using the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/async/client/MongoCollection.html#drop-com.mongodb.async.SingleResultCallback-
+<p>You can drop a collection by using the <a href="/javadoc?com/mongodb/async/client/MongoCollection.html#drop-com.mongodb.async.SingleResultCallback-
 "><code>MongoCollection.drop()</code></a> method:</p>
 
 <pre><code class="language-java">collection.drop(callbackWhenFinished);
@@ -3172,20 +3172,20 @@ database.createCollection(&quot;contacts&quot;,
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -3211,6 +3211,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

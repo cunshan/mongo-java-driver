@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Geospatial Search</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2629,14 +2629,14 @@
 MongoDatabase database = mongoClient.getDatabase(&quot;test&quot;);
 </code></pre>
 
-<p>For additional information on connecting to MongoDB, see <a href="/mongo-java-driver/3.4/driver/tutorials/connect-to-mongodb/">Connect to MongoDB</a>.</p>
+<p>For additional information on connecting to MongoDB, see <a href="http://localhost:1313/mongo-java-driver/3.4/driver/tutorials/connect-to-mongodb/">Connect to MongoDB</a>.</p>
 
 <h2 id="create-the-2dsphere-index">Create the <code>2dsphere</code> Index</h2>
 
 <p>To create a <a href="http://docs.mongodb.org/manual/core/2dsphere
-"><code>2dsphere</code> index</a>, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
+"><code>2dsphere</code> index</a>, use the <a href="/javadoc?com/mongodb/client/model/Indexes.html#geo2dsphere-java.lang.String...-
 "><code>Indexes.geo2dsphere</code></a>
-helper to create a specification for the <code>2dsphere</code> index and pass to <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
+helper to create a specification for the <code>2dsphere</code> index and pass to <a href="/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
 "><code>MongoCollection.createIndex()</code></a> method.</p>
 
 <p>The following example creates a <code>2dsphere</code> index on the <code>&quot;contact.location&quot;</code> field for the <code>restaurants</code> collection.</p>
@@ -2647,8 +2647,8 @@ collection.createIndex(Indexes.geo2dsphere(&quot;contact.location&quot;));
 
 <h2 id="query-for-locations-near-a-geojson-point">Query for Locations Near a GeoJSON Point</h2>
 
-<p>MongoDB provides various <a href="http://api.mongodb.com/java/3.3/?reference/operator/query-geospatial.html
-">geospatial query operators</a>. To facilitate the creation of geospatial queries filters, the Java driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Filters.html
+<p>MongoDB provides various <a href="/javadoc?reference/operator/query-geospatial.html
+">geospatial query operators</a>. To facilitate the creation of geospatial queries filters, the Java driver provides the <a href="/javadoc?com/mongodb/client/model/Filters.html
 "><code>Filters</code></a> class and the <code>com.mongodb.client.model.geojson</code> package.</p>
 
 <p>The following example returns documents that are at least 1000 meters from and at most 5000 meters from the specified GeoJSON point <code>com.mongodb.client.model.geojson.Point</code>, sorted from nearest to farthest:</p>
@@ -2714,20 +2714,20 @@ collection.find(Filters.near(&quot;contact.location&quot;, refPoint, 5000.0, 100
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -2753,6 +2753,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

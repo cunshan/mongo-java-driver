@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Text Search</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -3098,7 +3098,7 @@
 ">text index</a> and the <a href="http://docs.mongodb.org/manual/reference/operator/query/text
 "><code>$text</code> query operator</a>.</p>
 
-<p>The Java driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+<p>The Java driver provides the <a href="/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 "><code>Filters.text()</code></a> helper to facilitate the creation of text search query filters.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
@@ -3148,7 +3148,7 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 
 <p>To create a <a href="http://docs.mongodb.org/manual/core/index-text
 ">text index</a>, use the <a href="/mongo-java-driver/3.4/builders/indexes/#text-index"><code>Indexes.text</code></a>
-static helper to create a specification for a text index and pass to <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
+static helper to create a specification for a text index and pass to <a href="/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
 "><code>MongoCollection.createIndex()</code></a> method.</p>
 
 <p>The following example creates a text index on the <code>name</code> field for the <code>restaurants</code> collection.</p>
@@ -3163,7 +3163,7 @@ static helper to create a specification for a text index and pass to <a href="ht
 
 <h2 id="perform-text-search">Perform Text Search</h2>
 
-<p>To perform text search, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+<p>To perform text search, use the <a href="/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 "><code>Filters.text()</code></a> helper to specify the text search query filter.</p>
 
 <p>For example, the following code performs a text search on the <code>name</code> field for the word <code>&quot;bakery&quot;</code> or <code>&quot;coffee&quot;</code>.</p>
@@ -3202,9 +3202,9 @@ static helper to create a specification for a text index and pass to <a href="ht
 
 <h3 id="specify-a-text-search-option">Specify a Text Search Option</h3>
 
-<p>The  <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+<p>The  <a href="/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 "><code>Filters.text()</code></a> helper can accept various <a href="http://docs.mongodb.org/manual/reference/operator/query/text
-">text search options</a>. The Java driver provides <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/TextSearchOptions.html
+">text search options</a>. The Java driver provides <a href="/javadoc?com/mongodb/client/model/TextSearchOptions.html
 "><code>TextSearchOptions</code></a> class to specify these options.</p>
 
 <p>For example, the following text search specifies the <a href="http://docs.mongodb.org/manual/reference/text-search-languages
@@ -3299,20 +3299,20 @@ static helper to create a specification for a text index and pass to <a href="ht
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -3338,6 +3338,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

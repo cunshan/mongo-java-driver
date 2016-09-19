@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Aggregation</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -3131,9 +3131,9 @@ MongoCollection&lt;Document&gt; collection = database.getCollection(&quot;restau
 <h2 id="perform-aggregation">Perform Aggregation</h2>
 
 <p>To perform aggregation, pass a list of <a href="http://docs.mongodb.org/manual/meta/aggregation-quick-reference
-">aggregation stages</a> to the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/MongoCollection.html#aggregate-java.util.List-
+">aggregation stages</a> to the <a href="/javadoc?com/mongodb/client/MongoCollection.html#aggregate-java.util.List-
 "><code>MongoCollection.aggregate()</code></a> method.
-The Java driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Aggregates.html
+The Java driver provides the <a href="/javadoc?com/mongodb/client/model/Aggregates.html
 "><code>Aggregates</code></a> helper class that contains builders for aggregation stages.</p>
 
 <p>In the following example, the aggregation pipeline</p>
@@ -3143,11 +3143,11 @@ The Java driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongo
 "><code>$match</code></a> stage to filter for documents whose <code>categories</code> array field contains the element <code>Bakery</code>. The example uses <a href="/mongo-java-driver/3.4/builders/aggregation/#match"><code>Aggregates.match</code></a> to build the <code>$match</code> stage.</p></li>
 
 <li><p>Then, uses  a <a href="http://docs.mongodb.org/manual/reference/operator/aggregation/group/
-"><code>$group</code></a> stage to group the matching documents by the <code>stars</code> field, accumulating a count of documents for each distinct value of <code>stars</code>. The example uses <a href="/mongo-java-driver/3.4/builders/aggregation/#group"><code>Aggregates.group</code></a> to build the <code>$group</code> stage and <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Accumulators#sum-java.lang.String-TExpression-.html
+"><code>$group</code></a> stage to group the matching documents by the <code>stars</code> field, accumulating a count of documents for each distinct value of <code>stars</code>. The example uses <a href="/mongo-java-driver/3.4/builders/aggregation/#group"><code>Aggregates.group</code></a> to build the <code>$group</code> stage and <a href="/javadoc?com/mongodb/client/model/Accumulators#sum-java.lang.String-TExpression-.html
 "><code>Accumulators.sum</code></a> to build the <a href="http://docs.mongodb.org/manual/reference/operator/aggregation/group/#accumulator-operator
 ">accumulator expression</a>.  For the <a href="http://docs.mongodb.org/manual/reference/operator/aggregation-group/
 ">accumulator expressions</a> for use within the <a href="http://docs.mongodb.org/manual/reference/operator/aggregation/group/
-"><code>$group</code></a> stage, the Java driver provides <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Accumulators.html
+"><code>$group</code></a> stage, the Java driver provides <a href="/javadoc?com/mongodb/client/model/Accumulators.html
 "><code>Accumulators</code></a> helper class.</p></li>
 </ul>
 
@@ -3160,13 +3160,13 @@ The Java driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongo
 <h3 id="use-aggregation-expressions">Use Aggregation Expressions</h3>
 
 <p>For <a href="http://docs.mongodb.org/manual/reference/operator/aggregation-group/
-">$group accumulator expressions</a>, the Java driver provides <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Accumulators.html
+">$group accumulator expressions</a>, the Java driver provides <a href="/javadoc?com/mongodb/client/model/Accumulators.html
 "><code>Accumulators</code></a> helper class. For other <a href="http://docs.mongodb.org/manual/meta/aggregation-quick-reference/#aggregation-expressions
 ">aggregation expressions</a>, manually build the expression <code>Document</code>.</p>
 
 <p>In the following example, the aggregation pipeline uses a <a href="http://docs.mongodb.org/manual/reference/operator/aggregation/project/
 "><code>$project</code></a> stage to return only the <code>name</code> field and the calculated field <code>firstCategory</code> whose value is the first element in the <code>categories</code> array. The example uses <a href="/mongo-java-driver/3.4/builders/aggregation/#project"><code>Aggregates.project</code></a> and various
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Projections.html
+<a href="/javadoc?com/mongodb/client/model/Projections.html
 "><code>Projections</code></a> methods to build the <code>$project</code> stage.</p>
 
 <pre><code class="language-java">collection.aggregate(Arrays.asList(Aggregates.project(Projections.fields(
@@ -3238,20 +3238,20 @@ The Java driver provides the <a href="http://api.mongodb.com/java/3.3/?com/mongo
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -3277,6 +3277,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

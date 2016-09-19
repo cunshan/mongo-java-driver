@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>TLS/SSL</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2344,9 +2344,9 @@
 
 <p>The Java driver supports TLS/SSL connections to MongoDB servers using
 the underlying support for TLS/SSL provided by the JDK. You can
-configure the driver to use TLS/SSL either with <a href="http://api.mongodb.com/java/3.3/?com.mongodb.MongoClientURI.html
+configure the driver to use TLS/SSL either with <a href="/javadoc?com.mongodb.MongoClientURI.html
 "><code>MongoClientURI</code></a> or with
-<a href="http://api.mongodb.com/java/3.3/?com.mongodb.MongoClientOptions.html
+<a href="/javadoc?com.mongodb.MongoClientOptions.html
 "><code>MongoClientOptions</code></a>.</p>
 
 <h2 id="specify-tls-ssl-via-mongoclienturi">Specify TLS/SSL via <code>MongoClientURI</code></h2>
@@ -2354,7 +2354,7 @@ configure the driver to use TLS/SSL either with <a href="http://api.mongodb.com/
 <pre><code class="language-java">import com.mongodb.MongoClientURI;
 </code></pre>
 
-<p>To specify TLS/SSL with <a href="http://api.mongodb.com/java/3.3/?com.mongodb.MongoClientURI.html
+<p>To specify TLS/SSL with <a href="/javadoc?com.mongodb.MongoClientURI.html
 "><code>MongoClientURI</code></a>, specify <code>ssl=true</code> as part of the connection
 string, as in:</p>
 
@@ -2367,7 +2367,7 @@ MongoClient mongoClient = new MongoClient(uri);
 <pre><code class="language-java">import com.mongodb.MongoClientOptions;
 </code></pre>
 
-<p>To specify TLS/SSL with with <a href="http://api.mongodb.com/java/3.3/?com.mongodb.MongoClientOptions.html
+<p>To specify TLS/SSL with with <a href="/javadoc?com.mongodb.MongoClientOptions.html
 "><code>MongoClientOptions</code></a>, set the <code>sslEnabled</code> property to <code>true</code>, as in:</p>
 
 <pre><code class="language-java"> MongoClientOptions options = MongoClientOptions.builder().sslEnabled(true).build();
@@ -2378,14 +2378,14 @@ MongoClient mongoClient = new MongoClient(uri);
 
 <p>By default, the driver ensures that the hostname included in the
 server&rsquo;s SSL certificate(s) matches the hostname(s) provided when
-constructing a <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoClient.html
+constructing a <a href="/javadoc?com/mongodb/MongoClient.html
 "><code>MongoClient()</code></a>. However, the hostname verification
 requires a Java 7 JVM, as it relies on additions introduced in Java 7
 to the <code>javax.net.SSLParameters</code> class.</p>
 
 <p>If your application must run on Java 6, or for some other reason you
 need to disable hostname verification, you must explicitly indicate
-this in <a href="http://api.mongodb.com/java/3.3/?com.mongodb.MongoClientOptions.html
+this in <a href="/javadoc?com.mongodb.MongoClientOptions.html
 "><code>MongoClientOptions</code></a> using the <code>sslInvalidHostNameAllowed</code>
 property:</p>
 
@@ -2493,20 +2493,20 @@ ERefGuide.html"><code>JSSE Reference Guide</code></a>.</p>
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -2532,6 +2532,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

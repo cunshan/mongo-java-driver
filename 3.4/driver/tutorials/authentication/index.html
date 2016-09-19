@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Authentication</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2377,18 +2377,18 @@
 </code></pre>
 
 <p>An authentication credential is represented as an instance of the
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html
-"><code>MongoCredential</code></a> class. The <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html
+<a href="/javadoc?com/mongodb/MongoCredential.html
+"><code>MongoCredential</code></a> class. The <a href="/javadoc?com/mongodb/MongoCredential.html
 "><code>MongoCredential</code></a> class includes static
 factory methods for each of the supported authentication mechanisms.</p>
 
 <p>To specify a list of these instances, use one of
-several <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoClient.html
+several <a href="/javadoc?com/mongodb/MongoClient.html
 "><code>MongoClient()</code></a> constructors that take a parameter of type
 <code>List &lt;MongoCredential&gt;</code>.</p>
 
-<p>To specify a single <code>MongoCredential</code>, you can also use a <a href="http://api.mongodb.com/java/3.3/?/com/mongodb/MongoClientURI.html
-"><code>MongoClientURI</code></a> and pass it to a <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoClient.html
+<p>To specify a single <code>MongoCredential</code>, you can also use a <a href="/javadoc?/com/mongodb/MongoClientURI.html
+"><code>MongoClientURI</code></a> and pass it to a <a href="/javadoc?com/mongodb/MongoClient.html
 "><code>MongoClient()</code></a> constructor that takes a <code>MongoClientURI</code> parameter.</p>
 
 <p><div class="admonition note">
@@ -2410,7 +2410,7 @@ mechanism from <a href="http://docs.mongodb.org/manual//core/security-mongodb-cr
 
 <p>To create a credential that will authenticate using the default
 authentication mechanism regardless of server version, create a
-credential using the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html#createCredential-java.lang.String-java.lang.String-char:A-
+credential using the <a href="/javadoc?com/mongodb/MongoCredential.html#createCredential-java.lang.String-java.lang.String-char:A-
 "><code>createCredential</code></a>
 static factory method:</p>
 
@@ -2439,7 +2439,7 @@ upgrading from MongoDB 2.6 to MongoDB 3.0 seamless, even after
 <h2 id="scram-sha-1">SCRAM-SHA-1</h2>
 
 <p>To explicitly create a credential of type <a href="http://docs.mongodb.org/manual/core/security-scram-sha-1/
-"><code>SCRAM-SHA-1</code></a>, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html#createScramSha1Credential-java.lang.String-java.lang.String-char:A-
+"><code>SCRAM-SHA-1</code></a>, use the <a href="/javadoc?com/mongodb/MongoCredential.html#createScramSha1Credential-java.lang.String-java.lang.String-char:A-
 "><code>createScramSha1Credential</code></a> method:</p>
 
 <pre><code class="language-java">
@@ -2464,7 +2464,7 @@ MongoClient mongoClient = new MongoClient(uri);
 <h2 id="mongodb-cr">MONGODB-CR</h2>
 
 <p>To explicitly create a credential of type <a href="http://docs.mongodb.org/manual/core/security-mongodb-cr
-"><code>MONGODB-CR</code></a> use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html#createMongoCRCredential-java.lang.String-java.lang.String-char:A-
+"><code>MONGODB-CR</code></a> use the <a href="/javadoc?com/mongodb/MongoCredential.html#createMongoCRCredential-java.lang.String-java.lang.String-char:A-
 "><code>createMongCRCredential</code></a>
 static factory method:</p>
 
@@ -2505,7 +2505,7 @@ of the X.509 certificate.</p>
 <p>X.509 authentication requires the use of SSL connections with
 certificate validation and is available in MongoDB 2.6 and later. To
 create a credential of this type use the
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html#createMongoX509Credential-java.lang.String-
+<a href="/javadoc?com/mongodb/MongoCredential.html#createMongoX509Credential-java.lang.String-
 "><code>createMongoX509Credential</code></a> static factory method:</p>
 
 <pre><code class="language-java">String user;     // The X.509 certificate derived user name, e.g. &quot;CN=user,OU=OrgUnit,O=myOrg,...&quot;
@@ -2523,7 +2523,7 @@ MongoClient mongoClient = new MongoClient(new ServerAddress(&quot;host1&quot;, 2
 MongoClient mongoClient = new MongoClient(uri);
 </code></pre>
 
-<p>See the MongoDB server <a href="http://api.mongodb.com/java/3.3/?tutorial/configure-x509-client-authentication/#add-x-509-certificate-subject-as-a-user.html
+<p>See the MongoDB server <a href="/javadoc?tutorial/configure-x509-client-authentication/#add-x-509-certificate-subject-as-a-user.html
 ">x.509 tutorial</a>
 for more information about determining the subject
 name from the certificate.</p>
@@ -2532,9 +2532,9 @@ name from the certificate.</p>
 
 <p><a href="http://www.mongodb.com/products/mongodb-enterprise">MongoDB Enterprise</a> supports proxy
 authentication through Kerberos service. To create a credential of type
-<a href="http://api.mongodb.com/java/3.3/?core/authentication/#kerberos-authentication.html
+<a href="/javadoc?core/authentication/#kerberos-authentication.html
 ">Kerberos (GSSAPI)</a>, use the
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html#createGSSAPICredential-java.lang.String-
+<a href="/javadoc?com/mongodb/MongoCredential.html#createGSSAPICredential-java.lang.String-
 "><code>createGSSAPICredential</code></a>
 static factory method:</p>
 
@@ -2568,9 +2568,9 @@ java.security.krb5.kdc=mykdc.myrealm.me
 
 <h2 id="ldap-plain">LDAP (PLAIN)</h2>
 
-<p><a href="http://www.mongodb.com/products/mongodb-enterprise">MongoDB Enterprise</a> supports proxy authentication through a Lightweight Directory Access Protocol (LDAP) service. To create a credential of type <a href="http://api.mongodb.com/java/3.3/?core/authentication/#ldap-proxy-authority-authentication.html
+<p><a href="http://www.mongodb.com/products/mongodb-enterprise">MongoDB Enterprise</a> supports proxy authentication through a Lightweight Directory Access Protocol (LDAP) service. To create a credential of type <a href="/javadoc?core/authentication/#ldap-proxy-authority-authentication.html
 ">LDAP</a> use the
-<a href="http://api.mongodb.com/java/3.3/?com/mongodb/MongoCredential.html#createPlainCredential-java.lang.String-java.lang.String-char:A-
+<a href="/javadoc?com/mongodb/MongoCredential.html#createPlainCredential-java.lang.String-java.lang.String-char:A-
 "><code>createPlainCredential</code></a> static factory method:</p>
 
 <pre><code class="language-java">String user;          // The LDAP user name
@@ -2654,20 +2654,20 @@ of <code>LDAP</code> because technically the driver authenticates via the
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -2693,6 +2693,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>What&#39;s New</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -2172,19 +2172,19 @@
 <p>To create a <code>Decimal128</code> number, you can use</p>
 
 <ul>
-<li><p><a href="http://api.mongodb.com/java/3.3/?org/bson/types/Decimal128.html
+<li><p><a href="/javadoc?org/bson/types/Decimal128.html
 "><code>Decimal128.parse()</code></a> with a string:</p>
 
 <pre><code class="language-java">  Decimal128.parse(&quot;9.9900&quot;);
 </code></pre></li>
 
-<li><p><a href="http://api.mongodb.com/java/3.3/?org/bson/types/Decimal128.html
+<li><p><a href="/javadoc?org/bson/types/Decimal128.html
 "><code>new Decimal128()</code></a> with a long:</p>
 
 <pre><code class="language-java">  new Decimal128(10L);
 </code></pre></li>
 
-<li><p><a href="http://api.mongodb.com/java/3.3/?org/bson/types/Decimal128.html
+<li><p><a href="/javadoc?org/bson/types/Decimal128.html
 "><code>new Decimal128()</code></a> with a <code>java.math.BigDecimal</code>:</p>
 
 <pre><code class="language-java">  new Decimal128(new BigDecimal(&quot;4.350000&quot;));
@@ -2199,7 +2199,7 @@
 <p><a href="http://docs.mongodb.org/manual/release-notes/3.3-dev-series-collation/
 ">Collation</a> allows users to specify language-specific rules for string
 comparison.
-Use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/Collation.html
+Use the <a href="/javadoc?com/mongodb/client/model/Collation.html
 "><code>Collation.builder()</code></a>
 to create the <code>Collation</code> object. For example, the following example creates a <code>Collation</code> object with Primary level of comparison and <a href="http://docs.mongodb.org/manual/release-notes/3.3-dev-series-collation/#supported-languages-and-locales
 ">locale</a> <code>fr</code>.</p>
@@ -2211,7 +2211,7 @@ to create the <code>Collation</code> object. For example, the following example 
 
 <h4 id="collection-level">Collection Level</h4>
 
-<p>To specify collation at the collection level, pass a <code>Collation</code> object as an option to the <code>createCollection()</code> method. To specify options to the <code>createCollection</code> method, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/CreateCollectionOptions.html
+<p>To specify collation at the collection level, pass a <code>Collation</code> object as an option to the <code>createCollection()</code> method. To specify options to the <code>createCollection</code> method, use the <a href="/javadoc?com/mongodb/client/model/CreateCollectionOptions.html
 "><code>CreateCollectionOptions</code></a> class.</p>
 
 <pre><code class="language-java">database.createCollection(&quot;myColl&quot;, new CreateCollectionOptions().collation(
@@ -2222,7 +2222,7 @@ to create the <code>Collation</code> object. For example, the following example 
 
 <h4 id="index-level">Index Level</h4>
 
-<p>To specify collation for an index, pass a <code>Collation</code> object as an option to the <code>createIndex()</code> method. To specify index options, use the <a href="http://api.mongodb.com/java/3.3/?com/mongodb/client/model/IndexOptions.html
+<p>To specify collation for an index, pass a <code>Collation</code> object as an option to the <code>createIndex()</code> method. To specify index options, use the <a href="/javadoc?com/mongodb/client/model/IndexOptions.html
 ">IndexOptions</a> class.</p>
 
 <pre><code class="language-java">IndexOptions collationIndexOptions = new IndexOptions().name(&quot;collation-fr&quot;)
@@ -2323,11 +2323,11 @@ collection.bulkWrite(Arrays.asList(
 
 <h3 id="support-for-jndi">Support for JNDI</h3>
 
-<p>The synchronous driver now includes a <a href="/mongo-java-driver/3.4/driver/tutorials/jndi/">JNDI</a> ObjectFactory implementation.</p>
+<p>The synchronous driver now includes a <a href="http://localhost:1313/mongo-java-driver/3.4/driver/tutorials/jndi/">JNDI</a> ObjectFactory implementation.</p>
 
 <h2 id="upgrading">Upgrading</h2>
 
-<p>See the <a href="/mongo-java-driver/3.4/upgrading/">upgrading guide</a> on how to upgrade to 3.4.</p>
+<p>See the <a href="http://localhost:1313/mongo-java-driver/3.4/upgrading/">upgrading guide</a> on how to upgrade to 3.4.</p>
 
 
 
@@ -2383,20 +2383,20 @@ collection.bulkWrite(Arrays.asList(
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -2422,6 +2422,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

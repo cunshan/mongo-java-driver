@@ -7,17 +7,17 @@
 <meta name="author" content="">
 <meta name="keyword" content="">
 
-    <link rel="shortcut icon" href="/mongo-java-driver/3.4/img/favicon.png">
+    <link rel="shortcut icon" href="http://localhost:1313/mongo-java-driver/3.4/img/favicon.png">
 
     <title>Codec and CodecRegistry</title>
 
-    <link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
-<link rel="stylesheet" href="/mongo-java-driver/3.4/css/java.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/mongodb-docs.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/overrides.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/styles/idea.css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.css" type="text/css" />
+<link rel="stylesheet" href="http://localhost:1313/mongo-java-driver/3.4/css/java.css" type="text/css" />
 
 
   </head>
@@ -34,8 +34,8 @@
     </div>
     
     <div class="logo pull-left">
-      <a href="/mongo-java-driver/3.4/../">
-        <img src="/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
+      <a href="http://localhost:1313/mongo-java-driver/3.4/../">
+        <img src="http://localhost:1313/mongo-java-driver/3.4/img/logo-mongodb-header.png", alt="MongoDB.org" />
       </a>
     </div>
     
@@ -49,7 +49,7 @@
   <div id="search">
 <form method="get" action="//www.google.com/search" target="_blank">
     <input type="text" name="searchQuery" size="20" value="" autocomplete="off" placeholder="Search docs">
-    <input type="hidden" name="site" value="/mongo-java-driver/3.4">
+    <input type="hidden" name="site" value="http://localhost:1313/mongo-java-driver/3.4">
     <input type="hidden" name="q" value="">
     <label for="searchQuery"><i class="fa fa-search fa-1"></i></label>
 </form>
@@ -68,8 +68,8 @@
     <div class="ssidebar nav-collapse">
       <div class="ssidebarwrapper">
         <h3>
-          <a class="index-link" href="/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
-          <a class="version pull-right" href="/mongo-java-driver/3.4">3.3</a>
+          <a class="index-link" href="http://localhost:1313/mongo-java-driver/3.4/../">MongoDB Java Driver</a>
+          <a class="version pull-right" href="http://localhost:1313/mongo-java-driver/3.4">3.4</a>
         </h3>
 
         
@@ -3347,12 +3347,12 @@
 
 <h2 id="codec-and-codecregistry">Codec and CodecRegistry</h2>
 
-<p>In the last section we saw how to use the <a href="http://api.mongodb.com/java/3.3/?org/bson/BsonReader.html
+<p>In the last section we saw how to use the <a href="/javadoc?org/bson/BsonReader.html
 "><code>BsonReader</code></a> and
-<a href="http://api.mongodb.com/java/3.3/?org/bson/BsonWriter.html
+<a href="/javadoc?org/bson/BsonWriter.html
 "><code>BsonWriter</code></a> API to read and write BSON documents.  But writing code at that
 low a level is tedious and error-prone, so in practice these algorithms are packaged in implementations of the
-<a href="http://api.mongodb.com/java/3.3/?org/bson/codecs/Codec.html
+<a href="/javadoc?org/bson/codecs/Codec.html
 "><code>Codec</code></a> interface.</p>
 
 <h3 id="codec">Codec</h3>
@@ -3389,10 +3389,10 @@ rely on a set of simpler <code>Codec</code> implementations for the basic BSON v
 
 <h3 id="codecregistry">CodecRegistry</h3>
 
-<p>A <a href="http://api.mongodb.com/java/3.3/?org/bson/codecs/configuration/CodecRegistry.html
+<p>A <a href="/javadoc?org/bson/codecs/configuration/CodecRegistry.html
 "><code>CodecRegistry</code></a> contains a set of <code>Codec</code> instances that are accessed
 according to the Java classes that they encode from and decode to. Instances of <code>CodecRegistry</code> are generally created via static factory
-methods on the <a href="http://api.mongodb.com/java/3.3/?org/bson/codecs/configuration/CodecRegistries.html
+methods on the <a href="/javadoc?org/bson/codecs/configuration/CodecRegistries.html
 "><code>CodecRegistries</code></a> class.  Consider the simplest of these
 methods, one that takes a list of <code>Codec</code>s:</p>
 
@@ -3414,7 +3414,7 @@ construction  of the <code>Document</code> <code>Codec</code> until after the <c
 
 <h3 id="codecprovider">CodecProvider</h3>
 
-<p>A <a href="http://api.mongodb.com/java/3.3/?org/bson/codecs/configuration/CodecProvider.html
+<p>A <a href="/javadoc?org/bson/codecs/configuration/CodecProvider.html
 "><code>CodecProvider</code></a> is a factory for <code>Codec</code> instances.  Unlike
 <code>CodecRegistry</code>, its <code>get</code> method takes not only a Class, but also a <code>CodecRegistry</code>, allowing a <code>CodecProvider</code> implementation to
 construct <code>Codec</code> instances that require a <code>CodecRegistry</code> to look up <code>Codec</code> instances for the values contained within it.  Consider a
@@ -3445,7 +3445,7 @@ abstracted via the <code>BsonTypeClassMap</code> class.</p>
 
 <h3 id="bsontypeclassmap">BsonTypeClassMap</h3>
 
-<p>The <a href="http://api.mongodb.com/java/3.3/?org/bson/codecs/BsonTypeClassMap.html
+<p>The <a href="/javadoc?org/bson/codecs/BsonTypeClassMap.html
 "><code>BsonTypeClassMap</code></a> class simply maps each value in the <code>BsonType</code>
 enumeration to a Java class.  It contains a sensible set of default mappings that can easily be changed by passing an a <code>Map&lt;BsonType, 
 Class&lt;?&gt;&gt;</code> instance to the constructor with any replacement mappings to apply.  Consider the case where an application wants to decode
@@ -3554,20 +3554,20 @@ takes a list of <code>CodecRegistry</code>s.</p>
 
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
-   URL_ROOT:    "/mongo-java-driver/3.4",
-   VERSION:     "3.3",
+   URL_ROOT:    "http://localhost:1313/mongo-java-driver/3.4",
+   VERSION:     "3.4",
    COLLAPSE_INDEX: false,
    FILE_SUFFIX: '.html',
    HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/jquery.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/navbar.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/scripts.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script type="text/javascript" src="/mongo-java-driver/3.4/js/java.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/navbar.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/scripts.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="http://localhost:1313/mongo-java-driver/3.4/js/java.js"></script>
 
 
 
@@ -3593,6 +3593,9 @@ else if (window.attachEvent) window.attachEvent('onload', async_load);
 })();
 </script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 
