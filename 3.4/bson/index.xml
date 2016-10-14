@@ -19,12 +19,12 @@
 
 &lt;h2 id=&#34;codec-and-codecregistry&#34;&gt;Codec and CodecRegistry&lt;/h2&gt;
 
-&lt;p&gt;In the last section we saw how to use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonReader.html
+&lt;p&gt;In the last section we saw how to use the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonReader.html
 &#34;&gt;&lt;code&gt;BsonReader&lt;/code&gt;&lt;/a&gt; and
-&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonWriter.html
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonWriter.html
 &#34;&gt;&lt;code&gt;BsonWriter&lt;/code&gt;&lt;/a&gt; API to read and write BSON documents.  But writing code at that
 low a level is tedious and error-prone, so in practice these algorithms are packaged in implementations of the
-&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/codecs/Codec.html
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/codecs/Codec.html
 &#34;&gt;&lt;code&gt;Codec&lt;/code&gt;&lt;/a&gt; interface.&lt;/p&gt;
 
 &lt;h3 id=&#34;codec&#34;&gt;Codec&lt;/h3&gt;
@@ -61,10 +61,10 @@ rely on a set of simpler &lt;code&gt;Codec&lt;/code&gt; implementations for the 
 
 &lt;h3 id=&#34;codecregistry&#34;&gt;CodecRegistry&lt;/h3&gt;
 
-&lt;p&gt;A &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecRegistry.html
+&lt;p&gt;A &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecRegistry.html
 &#34;&gt;&lt;code&gt;CodecRegistry&lt;/code&gt;&lt;/a&gt; contains a set of &lt;code&gt;Codec&lt;/code&gt; instances that are accessed
 according to the Java classes that they encode from and decode to. Instances of &lt;code&gt;CodecRegistry&lt;/code&gt; are generally created via static factory
-methods on the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecRegistries.html
+methods on the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecRegistries.html
 &#34;&gt;&lt;code&gt;CodecRegistries&lt;/code&gt;&lt;/a&gt; class.  Consider the simplest of these
 methods, one that takes a list of &lt;code&gt;Codec&lt;/code&gt;s:&lt;/p&gt;
 
@@ -86,7 +86,7 @@ construction  of the &lt;code&gt;Document&lt;/code&gt; &lt;code&gt;Codec&lt;/cod
 
 &lt;h3 id=&#34;codecprovider&#34;&gt;CodecProvider&lt;/h3&gt;
 
-&lt;p&gt;A &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecProvider.html
+&lt;p&gt;A &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecProvider.html
 &#34;&gt;&lt;code&gt;CodecProvider&lt;/code&gt;&lt;/a&gt; is a factory for &lt;code&gt;Codec&lt;/code&gt; instances.  Unlike
 &lt;code&gt;CodecRegistry&lt;/code&gt;, its &lt;code&gt;get&lt;/code&gt; method takes not only a Class, but also a &lt;code&gt;CodecRegistry&lt;/code&gt;, allowing a &lt;code&gt;CodecProvider&lt;/code&gt; implementation to
 construct &lt;code&gt;Codec&lt;/code&gt; instances that require a &lt;code&gt;CodecRegistry&lt;/code&gt; to look up &lt;code&gt;Codec&lt;/code&gt; instances for the values contained within it.  Consider a
@@ -117,7 +117,7 @@ abstracted via the &lt;code&gt;BsonTypeClassMap&lt;/code&gt; class.&lt;/p&gt;
 
 &lt;h3 id=&#34;bsontypeclassmap&#34;&gt;BsonTypeClassMap&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/codecs/BsonTypeClassMap.html
+&lt;p&gt;The &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/codecs/BsonTypeClassMap.html
 &#34;&gt;&lt;code&gt;BsonTypeClassMap&lt;/code&gt;&lt;/a&gt; class simply maps each value in the &lt;code&gt;BsonType&lt;/code&gt;
 enumeration to a Java class.  It contains a sensible set of default mappings that can easily be changed by passing an a &lt;code&gt;Map&amp;lt;BsonType, 
 Class&amp;lt;?&amp;gt;&amp;gt;&lt;/code&gt; instance to the constructor with any replacement mappings to apply.  Consider the case where an application wants to decode
@@ -183,7 +183,7 @@ takes a list of &lt;code&gt;CodecRegistry&lt;/code&gt;s.&lt;/p&gt;
 
 &lt;h3 id=&#34;bsondocument&#34;&gt;BsonDocument&lt;/h3&gt;
 
-&lt;p&gt;Although generally not needed by users of the high-level driver API, the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonDocument.html
+&lt;p&gt;Although generally not needed by users of the high-level driver API, the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonDocument.html
 &#34;&gt;&lt;code&gt;BsonDocument&lt;/code&gt;&lt;/a&gt; class is
 central to the way that documents are managed internally by the driver.  The &lt;code&gt;BsonDocument&lt;/code&gt; class can represent dynamically structured
 documents of any complexity with a type-safe API.  For instance, the document&lt;/p&gt;
@@ -202,12 +202,12 @@ documents of any complexity with a type-safe API.  For instance, the document&lt
 
 &lt;p&gt;The type safety comes from &lt;code&gt;BsonDocument&lt;/code&gt; implementing &lt;code&gt;Map&amp;lt;String, BsonValue&amp;gt;&lt;/code&gt;, so even built-in types like &lt;code&gt;int&lt;/code&gt;, &lt;code&gt;String&lt;/code&gt; and &lt;code&gt;List&lt;/code&gt; must
 be wrapped in a sub-class of &lt;code&gt;BsonValue&lt;/code&gt;.  For a complete list of &lt;code&gt;BsonValue&lt;/code&gt; sub-types, please consult the
-&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonValue.html
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonValue.html
 &#34;&gt;&lt;code&gt;BsonValue&lt;/code&gt;&lt;/a&gt; API documentation.&lt;/p&gt;
 
 &lt;h3 id=&#34;document&#34;&gt;Document&lt;/h3&gt;
 
-&lt;p&gt;Most applications will use the &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/Document.html
+&lt;p&gt;Most applications will use the &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/Document.html
 &#34;&gt;&lt;code&gt;Document&lt;/code&gt;&lt;/a&gt; class instead.  Like &lt;code&gt;BsonDocument&lt;/code&gt;, the
 &lt;code&gt;Document&lt;/code&gt; class can represent dynamically structured documents of any complexity; however, the typing is much looser, as &lt;code&gt;Document&lt;/code&gt;
 implements &lt;code&gt;Map&amp;lt;String, Object&amp;gt;&lt;/code&gt;. As a result, the same document as above can be constructed using the Document class as follows:&lt;/p&gt;
@@ -292,21 +292,21 @@ reference .&lt;/p&gt;
 &lt;h3 id=&#34;dbobject&#34;&gt;DBObject&lt;/h3&gt;
 
 &lt;p&gt;Although not recommended for new applications, those upgrading from the 2.x driver series may continue to use the
-&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/DBObject.html
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?com/mongodb/DBObject.html
 &#34;&gt;&lt;code&gt;DBObject&lt;/code&gt;&lt;/a&gt; interface to represent BSON documents.  &lt;code&gt;DBObject&lt;/code&gt; is similar to Document in that it
 represents BSON values as &lt;code&gt;Object&lt;/code&gt;, but it has a few shortcomings that were impossible to overcome:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;it is an interface rather than a class, so it&amp;rsquo;s API can not be extended without breaking binary compatibility&lt;/li&gt;
 &lt;li&gt;it doesn&amp;rsquo;t actually implement &lt;code&gt;Map&amp;lt;String, Object&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;because it is an interface, a separate concrete class called &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?com/mongodb/BasicDBObject.html
+&lt;li&gt;because it is an interface, a separate concrete class called &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?com/mongodb/BasicDBObject.html
 &#34;&gt;&lt;code&gt;BasicDBObject&lt;/code&gt;&lt;/a&gt; which
 implements that interface, is required&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;bson&#34;&gt;Bson&lt;/h3&gt;
 
-&lt;p&gt;To tie these all together, the driver contains a small but powerful interface called &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/conversions/Bson.html
+&lt;p&gt;To tie these all together, the driver contains a small but powerful interface called &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/conversions/Bson.html
 &#34;&gt;&lt;code&gt;Bson&lt;/code&gt;&lt;/a&gt;.
 Any class that represents a BSON document, whether included in the driver itself or from a third party, can implement this interface and
 can then be used any place in the high-level API where a BSON document is required. The three classes discussed above all implement this
@@ -422,9 +422,9 @@ equivalent Document instance. &lt;code&gt;JsonReader&lt;/code&gt; automatically 
 
 &lt;p&gt;The various implementations of the &lt;code&gt;Bson&lt;/code&gt; interface discussed in the previous section all represent BSON documents using an underlying
 Java &lt;code&gt;Map&lt;/code&gt; instance. However, they are not directly responsible for reading and writing their representations from and to BSON.  Instead,
-this process is delegated to &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonWriter.html
+this process is delegated to &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonWriter.html
 &#34;&gt;&lt;code&gt;BsonWriter&lt;/code&gt;&lt;/a&gt; and
-&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonReader.html
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonReader.html
 &#34;&gt;&lt;code&gt;BsonReader&lt;/code&gt;&lt;/a&gt;, abstract classes that expose methods for iterative, stream-based processing of
 BSON documents.&lt;/p&gt;
 
@@ -461,9 +461,9 @@ writer.writeEndDocument();
 iteratively, have an implicit hierarchical structure.  The BsonWriter validates that the events create only properly structured BSON
 documents.  Otherwise, it throws a &lt;code&gt;BsonSerializationException&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The two most important classes to extend &lt;code&gt;BsonWriter&lt;/code&gt; are &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonBinaryWriter.html
+&lt;p&gt;The two most important classes to extend &lt;code&gt;BsonWriter&lt;/code&gt; are &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonBinaryWriter.html
 &#34;&gt;&lt;code&gt;BsonBinaryWriter&lt;/code&gt;&lt;/a&gt; and
-&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/json/JsonWriter.html
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/json/JsonWriter.html
 &#34;&gt;&lt;code&gt;JsonWriter&lt;/code&gt;&lt;/a&gt;.  &lt;code&gt;BsonBinaryWriter&lt;/code&gt; writes the BSON
 document as a stream of bytes in accordance with the &lt;a href=&#34;http://www.bsonspec.org&#34;&gt;BSON&lt;/a&gt; specification, while &lt;code&gt;JsonWriter&lt;/code&gt; writes the BSON
 document as a stream of characters in accordance with
@@ -540,9 +540,9 @@ reader.readEndArray();
 &lt;p&gt;The only significant difference between reading an array and reading a document is that, since the elements of an array do not have names,
 there is no field name to read, only a series of values.&lt;/p&gt;
 
-&lt;p&gt;The two most important classes to extend &lt;code&gt;BsonReader&lt;/code&gt; are &lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/BsonBinaryReader.html
+&lt;p&gt;The two most important classes to extend &lt;code&gt;BsonReader&lt;/code&gt; are &lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/BsonBinaryReader.html
 &#34;&gt;&lt;code&gt;BsonBinaryReader&lt;/code&gt;&lt;/a&gt; and
-&lt;a href=&#34;/mongo-java-driver/3.4/javadoc?org/bson/json/JsonReader.html
+&lt;a href=&#34;/mongo-java-driver/3.4/mongo-java-driver/3.4/javadoc?org/bson/json/JsonReader.html
 &#34;&gt;&lt;code&gt;JsonReader&lt;/code&gt;&lt;/a&gt;. &lt;code&gt;BsonBinaryReader&lt;/code&gt; reads the BSON
 document as a stream of bytes in accordance with the &lt;a href=&#34;http://www.bsonspec.org&#34;&gt;BSON&lt;/a&gt; specification, while &lt;code&gt;JsonReader&lt;/code&gt; reads the BSON
 document as a stream of characters in accordance with
@@ -608,7 +608,7 @@ BSON is short for Binary &lt;a href=&#34;http://json.org/&#34;&gt;JSON&lt;/a&gt;
     &amp;lt;dependency&amp;gt;
         &amp;lt;groupId&amp;gt;org.mongodb&amp;lt;/groupId&amp;gt;
         &amp;lt;artifactId&amp;gt;bson&amp;lt;/artifactId&amp;gt;
-        &amp;lt;version&amp;gt;3.4.0-beta1&amp;lt;/version&amp;gt;
+        &amp;lt;version&amp;gt;3.4.0-rc1&amp;lt;/version&amp;gt;
     &amp;lt;/dependency&amp;gt;
 &amp;lt;/dependencies&amp;gt;
 
@@ -617,14 +617,14 @@ BSON is short for Binary &lt;a href=&#34;http://json.org/&#34;&gt;JSON&lt;/a&gt;
 &lt;section class=&#34;gradle hidden&#34;&gt;
 &lt;pre&gt;&lt;code&gt;
   dependencies {
-      compile &#39;org.mongodb:bson:3.4.0-beta1&#39;
+      compile &#39;org.mongodb:bson:3.4.0-rc1&#39;
   }
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
 &lt;section class=&#34;downloadInfo small&#34;&gt;
     &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You can also download the &lt;code&gt;bson&lt;/code&gt; jar
-        &lt;a href=&#34;https://oss.sonatype.org/content/repositories/releases/org/mongodb/bson/3.4.0-beta1&#34; target=&#34;_blank&#34;&gt;directly&lt;/a&gt;
+        &lt;a href=&#34;https://oss.sonatype.org/content/repositories/releases/org/mongodb/bson/3.4.0-rc1&#34; target=&#34;_blank&#34;&gt;directly&lt;/a&gt;
         from sonatype.&lt;/a&gt;&lt;/p&gt;
     
 &lt;/section&gt;

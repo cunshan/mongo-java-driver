@@ -2344,9 +2344,9 @@
 
 <p>The Java driver supports TLS/SSL connections to MongoDB servers using
 the underlying support for TLS/SSL provided by the JDK. You can
-configure the driver to use TLS/SSL either with <a href="/javadoc?com.mongodb.MongoClientURI.html
+configure the driver to use TLS/SSL either with <a href="/mongo-java-driver/3.4/javadoc?com.mongodb.MongoClientURI.html
 "><code>MongoClientURI</code></a> or with
-<a href="/javadoc?com.mongodb.MongoClientOptions.html
+<a href="/mongo-java-driver/3.4/javadoc?com.mongodb.MongoClientOptions.html
 "><code>MongoClientOptions</code></a>.</p>
 
 <h2 id="specify-tls-ssl-via-mongoclienturi">Specify TLS/SSL via <code>MongoClientURI</code></h2>
@@ -2354,7 +2354,7 @@ configure the driver to use TLS/SSL either with <a href="/javadoc?com.mongodb.Mo
 <pre><code class="language-java">import com.mongodb.MongoClientURI;
 </code></pre>
 
-<p>To specify TLS/SSL with <a href="/javadoc?com.mongodb.MongoClientURI.html
+<p>To specify TLS/SSL with <a href="/mongo-java-driver/3.4/javadoc?com.mongodb.MongoClientURI.html
 "><code>MongoClientURI</code></a>, specify <code>ssl=true</code> as part of the connection
 string, as in:</p>
 
@@ -2367,7 +2367,7 @@ MongoClient mongoClient = new MongoClient(uri);
 <pre><code class="language-java">import com.mongodb.MongoClientOptions;
 </code></pre>
 
-<p>To specify TLS/SSL with with <a href="/javadoc?com.mongodb.MongoClientOptions.html
+<p>To specify TLS/SSL with with <a href="/mongo-java-driver/3.4/javadoc?com.mongodb.MongoClientOptions.html
 "><code>MongoClientOptions</code></a>, set the <code>sslEnabled</code> property to <code>true</code>, as in:</p>
 
 <pre><code class="language-java"> MongoClientOptions options = MongoClientOptions.builder().sslEnabled(true).build();
@@ -2378,14 +2378,14 @@ MongoClient mongoClient = new MongoClient(uri);
 
 <p>By default, the driver ensures that the hostname included in the
 server&rsquo;s SSL certificate(s) matches the hostname(s) provided when
-constructing a <a href="/javadoc?com/mongodb/MongoClient.html
+constructing a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/MongoClient.html
 "><code>MongoClient()</code></a>. However, the hostname verification
 requires a Java 7 JVM, as it relies on additions introduced in Java 7
 to the <code>javax.net.SSLParameters</code> class.</p>
 
 <p>If your application must run on Java 6, or for some other reason you
 need to disable hostname verification, you must explicitly indicate
-this in <a href="/javadoc?com.mongodb.MongoClientOptions.html
+this in <a href="/mongo-java-driver/3.4/javadoc?com.mongodb.MongoClientOptions.html
 "><code>MongoClientOptions</code></a> using the <code>sslInvalidHostNameAllowed</code>
 property:</p>
 

@@ -3347,12 +3347,12 @@
 
 <h2 id="codec-and-codecregistry">Codec and CodecRegistry</h2>
 
-<p>In the last section we saw how to use the <a href="/javadoc?org/bson/BsonReader.html
+<p>In the last section we saw how to use the <a href="/mongo-java-driver/3.4/javadoc?org/bson/BsonReader.html
 "><code>BsonReader</code></a> and
-<a href="/javadoc?org/bson/BsonWriter.html
+<a href="/mongo-java-driver/3.4/javadoc?org/bson/BsonWriter.html
 "><code>BsonWriter</code></a> API to read and write BSON documents.  But writing code at that
 low a level is tedious and error-prone, so in practice these algorithms are packaged in implementations of the
-<a href="/javadoc?org/bson/codecs/Codec.html
+<a href="/mongo-java-driver/3.4/javadoc?org/bson/codecs/Codec.html
 "><code>Codec</code></a> interface.</p>
 
 <h3 id="codec">Codec</h3>
@@ -3389,10 +3389,10 @@ rely on a set of simpler <code>Codec</code> implementations for the basic BSON v
 
 <h3 id="codecregistry">CodecRegistry</h3>
 
-<p>A <a href="/javadoc?org/bson/codecs/configuration/CodecRegistry.html
+<p>A <a href="/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecRegistry.html
 "><code>CodecRegistry</code></a> contains a set of <code>Codec</code> instances that are accessed
 according to the Java classes that they encode from and decode to. Instances of <code>CodecRegistry</code> are generally created via static factory
-methods on the <a href="/javadoc?org/bson/codecs/configuration/CodecRegistries.html
+methods on the <a href="/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecRegistries.html
 "><code>CodecRegistries</code></a> class.  Consider the simplest of these
 methods, one that takes a list of <code>Codec</code>s:</p>
 
@@ -3414,7 +3414,7 @@ construction  of the <code>Document</code> <code>Codec</code> until after the <c
 
 <h3 id="codecprovider">CodecProvider</h3>
 
-<p>A <a href="/javadoc?org/bson/codecs/configuration/CodecProvider.html
+<p>A <a href="/mongo-java-driver/3.4/javadoc?org/bson/codecs/configuration/CodecProvider.html
 "><code>CodecProvider</code></a> is a factory for <code>Codec</code> instances.  Unlike
 <code>CodecRegistry</code>, its <code>get</code> method takes not only a Class, but also a <code>CodecRegistry</code>, allowing a <code>CodecProvider</code> implementation to
 construct <code>Codec</code> instances that require a <code>CodecRegistry</code> to look up <code>Codec</code> instances for the values contained within it.  Consider a
@@ -3445,7 +3445,7 @@ abstracted via the <code>BsonTypeClassMap</code> class.</p>
 
 <h3 id="bsontypeclassmap">BsonTypeClassMap</h3>
 
-<p>The <a href="/javadoc?org/bson/codecs/BsonTypeClassMap.html
+<p>The <a href="/mongo-java-driver/3.4/javadoc?org/bson/codecs/BsonTypeClassMap.html
 "><code>BsonTypeClassMap</code></a> class simply maps each value in the <code>BsonType</code>
 enumeration to a Java class.  It contains a sensible set of default mappings that can easily be changed by passing an a <code>Map&lt;BsonType, 
 Class&lt;?&gt;&gt;</code> instance to the constructor with any replacement mappings to apply.  Consider the case where an application wants to decode

@@ -3152,16 +3152,16 @@ which can be found with the driver source on github.</p>
 
 <h2 id="async-streams">Async Streams</h2>
 
-<p>The driver&rsquo;s GridFS library uses flexible interfaces for asynchronous input and output. The <a href="/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
+<p>The driver&rsquo;s GridFS library uses flexible interfaces for asynchronous input and output. The <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
 "><code>AsyncInputStream</code></a> interface represents an <code>InputStream</code>
-and the <a href="/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
+and the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
 "><code>AsyncOutputStream</code></a> interface represents an <code>OutputStream</code>.
 These interfaces should be easy to wrap for any alternative asynchronous I/O implementations such as Netty or Vertx.</p>
 
 <p>In addition to these interfaces, the driver provides the following helpers:</p>
 
 <ul>
-<li><p><a href="/javadoc?com/mongodb/async/client/gridfs/helpers/AsyncStreamHelper.html
+<li><p><a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/helpers/AsyncStreamHelper.html
 "><code>AsyncStreamHelper</code></a>, which provides support for:</p>
 
 <ul>
@@ -3171,7 +3171,7 @@ These interfaces should be easy to wrap for any alternative asynchronous I/O imp
 <li><code>OutputStream</code> - note: output streams are blocking</li>
 </ul></li>
 
-<li><p><a href="/javadoc?com/mongodb/async/client/gridfs/helpers/AsynchronousChannelHelper.html
+<li><p><a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/helpers/AsynchronousChannelHelper.html
 "><code>AsynchronousChannelHelper</code></a>, which provides support for:</p>
 
 <ul>
@@ -3219,7 +3219,7 @@ import java.io.IOException;
 
 <p><div class="admonition important">
 <h5 class="admonition-title">important</h5>
-<p>Always check for errors in any <a href="/javadoc?com/mongodb/async/SingleResultCallback.html"><code>SingleResultCallback&lt;T&gt;</code></a> implementation
+<p>Always check for errors in any <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/SingleResultCallback.html"><code>SingleResultCallback&lt;T&gt;</code></a> implementation
 and handle them appropriately.</p>
 
 <p>For sake of brevity, this tutorial omits the error check logic in the code examples.</p>
@@ -3243,9 +3243,9 @@ and handle them appropriately.</p>
 <p>GridFS stores files in <a href="http://docs.mongodb.org/manual/core/gridfs/#gridfs-collections
 ">two collections</a>: a <code>chunks</code> collection stores the file chunks, and a  <code>files</code> collection stores file metadata. The two collections are in a common bucket and the collection names are prefixed with the bucket name.</p>
 
-<p>The Java Async driver provides the <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
+<p>The Java Async driver provides the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
 "><code>GridFSBuckets.create()</code></a>  method
-to create the <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html
+to create the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html
 "><code>GridFSBucket</code></a>:</p>
 
 <pre><code class="language-java">MongoDatabase myDatabase = mongoClient.getDatabase(&quot;mydb&quot;);
@@ -3254,7 +3254,7 @@ to create the <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.htm
 GridFSBucket gridFSBucket = GridFSBuckets.create(myDatabase);
 </code></pre>
 
-<p>You can specify a bucket name to <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
+<p>You can specify a bucket name to <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBuckets.html#create-com.mongodb.async.client.MongoDatabase-
 "><code>GridFSBuckets.create()</code></a> method.</p>
 
 <pre><code class="language-java">// Create a gridFSBucket with a custom bucket name &quot;files&quot;
@@ -3274,12 +3274,12 @@ GridFSBucket gridFSBucketCustom = GridFSBuckets.create(myDatabase, &quot;files&q
 
 <h3 id="uploadfromstream">UploadFromStream</h3>
 
-<p>The <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
+<p>The <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
 "><code>uploadFromStream</code></a> method
-reads the contents of an <a href="/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
+reads the contents of an <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncInputStream.html
 "><code>AsyncInputStream</code></a> and saves it to the <code>GridFSBucket</code>.</p>
 
-<p>You can use the <a href="/javadoc?com/mongodb/client/gridfs/model/GridFSUploadOptions.html
+<p>You can use the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/model/GridFSUploadOptions.html
 "><code>GridFSUploadOptions</code></a> to configure the chunk size or include additional metadata.</p>
 
 <pre><code class="language-java">// Get the input stream
@@ -3309,18 +3309,18 @@ gridFSBucket.uploadFromStream(&quot;mongodb-tutorial&quot;, streamToUploadFrom, 
 
 <h3 id="openuploadstream">OpenUploadStream</h3>
 
-<p>For a finer-grained control of the upload, the driver also provides a <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
-"><code>GridFSBucket.openUploadStream</code></a> method, which returns a <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
-"><code>GridFSUploadStream</code></a>. You can write data to a <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
-"><code>GridFSUploadStream</code></a> which extends <a href="/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
+<p>For a finer-grained control of the upload, the driver also provides a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openUploadStream-java.lang.String-com.mongodb.client.gridfs.model.GridFSUploadOptions-
+"><code>GridFSBucket.openUploadStream</code></a> method, which returns a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
+"><code>GridFSUploadStream</code></a>. You can write data to a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
+"><code>GridFSUploadStream</code></a> which extends <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
 "><code>AsyncOutputStream</code></a>.</p>
 
-<p>The <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
+<p>The <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSUploadStream.html
 "><code>GridFSUploadStream</code></a> buffers data until it reaches the <code>chunkSizeBytes</code> and then inserts the chunk into the <code>chunks</code> collection.  When the <code>GridFSUploadStream</code> is closed, the final chunk is written and the file metadata is inserted into the <code>files</code> collection.</p>
 
 <h2 id="find-files-stored-in-gridfs">Find Files Stored in GridFS</h2>
 
-<p>To find the files stored in the <code>GridFSBucket</code> use the <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#find--
+<p>To find the files stored in the <code>GridFSBucket</code> use the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#find--
 "><code>find</code></a> method.</p>
 
 <p>The following example prints out the filename of each file stored:</p>
@@ -3365,8 +3365,8 @@ gridFSBucket.uploadFromStream(&quot;mongodb-tutorial&quot;, streamToUploadFrom, 
 
 <h3 id="downloadtostream">DownloadToStream</h3>
 
-<p>The <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-org.bson.types.ObjectId-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.async.SingleResultCallback-
-"><code>downloadToStream</code></a> method reads the contents from MongoDB and writes the data directly to the provided <a href="/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
+<p>The <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-org.bson.types.ObjectId-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.async.SingleResultCallback-
+"><code>downloadToStream</code></a> method reads the contents from MongoDB and writes the data directly to the provided <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/AsyncOutputStream.html
 "><code>AsyncOutputStream</code></a>.</p>
 
 <p>For the <code>fileId</code> variable, specify an <code>ObjectId</code> value returned from the find operation section in this tutorial.</p>
@@ -3388,8 +3388,8 @@ gridFSBucket.downloadToStream(fileId, channelToOutputStream(streamToDownloadTo),
 streamToDownloadTo.close();
 </code></pre>
 
-<p>If the <code>_id</code> of the file is unknown but you know the filename, then you can pass the filename to the <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-java.lang.String-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.client.gridfs.model.GridFSDownloadOptions-com.mongodb.async.SingleResultCallback-
-"><code>downloadToStream</code></a> method. By default, it will download the latest version of the file. Use the <a href="/javadoc?com/mongodb/client/gridfs/model/GridFSDownloadOptions.html
+<p>If the <code>_id</code> of the file is unknown but you know the filename, then you can pass the filename to the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#downloadToStream-java.lang.String-com.mongodb.async.client.gridfs.AsyncOutputStream-com.mongodb.client.gridfs.model.GridFSDownloadOptions-com.mongodb.async.SingleResultCallback-
+"><code>downloadToStream</code></a> method. By default, it will download the latest version of the file. Use the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/model/GridFSDownloadOptions.html
 "><code>GridFSDownloadOptions</code></a> to configure which version to download.</p>
 
 <pre><code class="language-java">Path outputPath = Paths.get(&quot;/tmp/mongodb-tutorial-out.pdf&quot;);
@@ -3413,13 +3413,13 @@ streamToDownloadTo.close();
 
 <h3 id="opendownloadstream">OpenDownloadStream</h3>
 
-<p>For a finer-grained control of the upload, the driver also provides a <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openDownloadStream-org.bson.types.ObjectId-
-"><code>openDownloadStream</code></a> method, which returns a <a href="/javadoc?com/mongodb/client/gridfs/GridFSDownloadStream.html
+<p>For a finer-grained control of the upload, the driver also provides a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#openDownloadStream-org.bson.types.ObjectId-
+"><code>openDownloadStream</code></a> method, which returns a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/gridfs/GridFSDownloadStream.html
 "><code>GridFSDownloadStream</code></a>.</p>
 
 <h2 id="rename-files">Rename Files</h2>
 
-<p>If you should need to rename a file, then use the <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#rename-org.bson.types.ObjectId-java.lang.String-com.mongodb.async.SingleResultCallback-
+<p>If you should need to rename a file, then use the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#rename-org.bson.types.ObjectId-java.lang.String-com.mongodb.async.SingleResultCallback-
 "><code>rename</code></a> method.</p>
 
 <p>The following example renames a file to &ldquo;mongodbTutorial&rdquo;:</p>
@@ -3443,7 +3443,7 @@ streamToDownloadTo.close();
 
 <h2 id="delete-files">Delete Files</h2>
 
-<p>To delete a file from the <code>GridFSBucket</code> use the <a href="/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#delete-org.bson.types.ObjectId-com.mongodb.async.SingleResultCallback-
+<p>To delete a file from the <code>GridFSBucket</code> use the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/gridfs/GridFSBucket.html#delete-org.bson.types.ObjectId-com.mongodb.async.SingleResultCallback-
 "><code>delete</code></a> method.</p>
 
 <p>The following example deletes a file from the <code>GridFSBucket</code>:</p>

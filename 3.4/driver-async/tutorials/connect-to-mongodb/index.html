@@ -2856,11 +2856,11 @@
 
 <h2 id="connect-to-mongodb">Connect to MongoDB</h2>
 
-<p>To make a connection to a running MongoDB instance, use <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create--
-"><code>MongoClients.create</code></a> to create a new <a href="/javadoc?com/mongodb/async/client/MongoClient.html
+<p>To make a connection to a running MongoDB instance, use <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
+"><code>MongoClients.create</code></a> to create a new <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
 "><code>MongoClient</code></a> instance.</p>
 
-<p>A <a href="/javadoc?com/mongodb/async/client/MongoClient.html
+<p>A <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClient.html
 "><code>MongoClient</code></a> instance actually represents a pool of connections
 to the database; you will only need one instance of class
 <code>MongoClient</code> even with multiple concurrently executing asynchronous operations.</p>
@@ -2902,13 +2902,13 @@ import static java.util.Arrays.asList;
 <p>To connect to a standalone MongoDB instance:</p>
 
 <ul>
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create--
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
 "><code>MongoClients.create()</code></a> without any parameters to connect to a MongoDB instance running on localhost on port <code>27017</code>:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create();
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 "><code>MongoClients.create()</code></a> with a string that specifies the connection string:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create(&quot;mongodb://localhost&quot;);
@@ -2917,16 +2917,16 @@ import static java.util.Arrays.asList;
 <p>The connection string mostly follows <a href="http://tools.ietf.org/html/rfc3986">RFC 3986</a>, with the exception of the domain name. For MongoDB, it is possible to list multiple domain names separated by a comma. For more information on the connection string, see <a href="http://docs.mongodb.org/manual/reference/connection-string
 ">connection string</a>.</p></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/ConnectionString.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 "><code>ConnectionString</code></a> object:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create(new ConnectionString(&quot;mongodb://localhost&quot;));
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/async/client/MongoClientSettings.html
-"><code>MongoClientSettings</code></a> object. To specify the host information, use the <a href="/javadoc?com/mongodb/connection/ClusterSettings.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+"><code>MongoClientSettings</code></a> object. To specify the host information, use the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 "><code>ClusterSettings</code></a>.</p>
 
 <pre><code class="language-java">ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -2940,7 +2940,7 @@ MongoClient mongoClient = MongoClients.create(settings);
 
 <p><div class="admonition tip">
 <h5 class="admonition-title">tip</h5>
-<p><a href="/javadoc?com/mongodb/async/client/MongoClientSettings.html"><code>MongoClientSettings</code></a> provide more configuration options than a connection string.</p>
+<p><a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html"><code>MongoClientSettings</code></a> provide more configuration options than a connection string.</p>
 
 </div>
 </p>
@@ -2948,7 +2948,7 @@ MongoClient mongoClient = MongoClients.create(settings);
 <h2 id="connect-to-a-replica-set">Connect to a Replica Set</h2>
 
 <p>To connect to a <a href="http://docs.mongodb.org/manual/replication/
-">replica set</a>, specify at least one or more members of the replica set in the connection string or <code>MongoClientSettings</code> object and pass to <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create--
+">replica set</a>, specify at least one or more members of the replica set in the connection string or <code>MongoClientSettings</code> object and pass to <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
 "><code>MongoClients.create()</code></a>.</p>
 
 <p><div class="admonition note">
@@ -2959,7 +2959,7 @@ MongoClient mongoClient = MongoClients.create(settings);
 </p>
 
 <ul>
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 "><code>MongoClients.create()</code></a> with a connection string that specifies the members of the replica set:</p>
 
 <ul>
@@ -2978,8 +2978,8 @@ MongoClient mongoClient = MongoClients.create(settings);
               &quot;mongodb://host1:27017,host2:27017,host3:27017/?replicaSet=myReplicaSet&quot;);
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/ConnectionString.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 "><code>ConnectionString</code></a> object that specifies the members of the replica set:</p>
 
 <ul>
@@ -2998,9 +2998,9 @@ MongoClient mongoClient = MongoClients.create(settings);
       new ConnectionString(&quot;mongodb://host1:27017,host2:27017,host3:27017/?replicaSet=myReplicaSet&quot;));
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/async/client/MongoClientSettings.html
-"><code>MongoClientSettings</code></a> object. To specify the host information of the replica set members, use <a href="/javadoc?com/mongodb/connection/ClusterSettings.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+"><code>MongoClientSettings</code></a> object. To specify the host information of the replica set members, use <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 "><code>ClusterSettings</code></a>.</p>
 
 <pre><code class="language-java">  ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -3027,29 +3027,29 @@ MongoClient mongoClient = MongoClients.create(settings);
 <p>To connect to a single <code>mongos</code> instance:</p>
 
 <ul>
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create--
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create--
 "><code>MongoClients.create()</code></a> without any parameters to connect to a :program:<code>mongos</code> running on localhost on port <code>27017</code>:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create();
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 "><code>MongoClients.create()</code></a> with a string that specifies the host information of the <code>mongos</code> instance in the connection URI:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create(&quot;mongodb://localhost&quot;);
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/ConnectionString.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 "><code>ConnectionString</code></a> object that specifies the host information of the <code>mongos</code> instance:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create(
             new ConnectionString(&quot;mongodb://localhost&quot;));
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/async/client/MongoClientSettings.html
-"><code>MongoClientSettings</code></a> object. To specify the host information of the <code>mongos</code> instance, use <a href="/javadoc?com/mongodb/connection/ClusterSettings.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+"><code>MongoClientSettings</code></a> object. To specify the host information of the <code>mongos</code> instance, use <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 "><code>ClusterSettings</code></a>:</p>
 
 <pre><code class="language-java">ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -3065,23 +3065,23 @@ MongoClient mongoClient = MongoClients.create(settings);
 <p>To connect to multiple <code>mongos</code> instances, specify the host and port of the <code>mongos</code> instances:</p>
 
 <ul>
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-java.lang.String-
 "><code>MongoClients.create()</code></a> with a string that specifies the host and port information of the <code>mongos</code> instances in the connection URI:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create(&quot;mongodb://host1:27017,host2:27017&quot;);
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/ConnectionString.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.ConnectionString-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/ConnectionString.html
 "><code>ConnectionString</code></a> object that specifies the host and port information of the <code>mongos</code> instances:</p>
 
 <pre><code class="language-java">MongoClient mongoClient = MongoClients.create(
             new ConnectionString(&quot;mongodb://host1:27017,host2:27017&quot;));
 </code></pre></li>
 
-<li><p>You can call <a href="/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
-"><code>MongoClients.create()</code></a> with a <a href="/javadoc?com/mongodb/async/client/MongoClientSettings.html
-"><code>MongoClientSettings</code></a> object. To specify the host information of the <code>mongos</code> instances, use <a href="/javadoc?com/mongodb/connection/ClusterSettings.html
+<li><p>You can call <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClients.html#create-com.mongodb.async.client.MongoClientSettings-
+"><code>MongoClients.create()</code></a> with a <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.html
+"><code>MongoClientSettings</code></a> object. To specify the host information of the <code>mongos</code> instances, use <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/connection/ClusterSettings.html
 "><code>ClusterSettings</code></a>:</p>
 
 <pre><code class="language-java">ClusterSettings clusterSettings = ClusterSettings.builder()
@@ -3130,7 +3130,7 @@ in Java 7.  However, an application must use <a href="http://netty.io/">Netty</a
 <pre><code class="language-java">MongoClient client = MongoClients.create(&quot;mongodb://localhost/?streamType=netty&quot;);
 </code></pre></li>
 
-<li><p>Configure <a href="/javadoc?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
+<li><p>Configure <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/async/client/MongoClientSettings.Builder.html#streamFactoryFactory-com.mongodb.connection.StreamFactoryFactory-
 "><code>MongoClientSettings</code></a> with the <code>StreamFactory</code> set to use Netty:</p>
 
 <pre><code class="language-java">MongoClient client = MongoClients.create(MongoClientSettings.builder()

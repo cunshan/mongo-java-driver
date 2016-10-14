@@ -2569,7 +2569,7 @@
 ">text index</a> and the <a href="http://docs.mongodb.org/manual/reference/operator/query/text
 "><code>$text</code> query operator</a>.</p>
 
-<p>The Java driver provides the <a href="/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+<p>The Java driver provides the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 "><code>Filters.text()</code></a> helper to facilitate the creation of text search query filters.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
@@ -2618,7 +2618,7 @@ MongoDatabase database = mongoClient.getDatabase(&quot;test&quot;);
 
 <p>To create a <a href="http://docs.mongodb.org/manual/core/index-text
 ">text index</a>, use the <a href="/mongo-java-driver/3.4/builders/indexes/#text-index"><code>Indexes.text</code></a>
-static helper to create a specification for a text index and pass to <a href="/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
+static helper to create a specification for a text index and pass to <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/MongoCollection.html#createIndex-org.bson.conversions.Bson-
 "><code>MongoCollection.createIndex()</code></a> method.</p>
 
 <p>The following example creates a text index on the <code>name</code> field for the <code>restaurants</code> collection.</p>
@@ -2629,7 +2629,7 @@ collection.createIndex(Indexes.text(&quot;name&quot;));
 
 <h2 id="perform-text-search">Perform Text Search</h2>
 
-<p>To perform text search, use the <a href="/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+<p>To perform text search, use the <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 "><code>Filters.text()</code></a> helper to specify the text search query filter.</p>
 
 <p>For example, the following code performs a text search on the <code>name</code> field for the word <code>&quot;bakery&quot;</code> or <code>&quot;coffee&quot;</code>.</p>
@@ -2660,9 +2660,9 @@ System.out.println(&quot;Text search matches: &quot; + matchCount);
 
 <h3 id="specify-a-text-search-option">Specify a Text Search Option</h3>
 
-<p>The  <a href="/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
+<p>The  <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/Filters.html#text-java.lang.String-com.mongodb.client.model.TextSearchOptions-
 "><code>Filters.text()</code></a> helper can accept various <a href="http://docs.mongodb.org/manual/reference/operator/query/text
-">text search options</a>. The Java driver provides <a href="/javadoc?com/mongodb/client/model/TextSearchOptions.html
+">text search options</a>. The Java driver provides <a href="/mongo-java-driver/3.4/javadoc?com/mongodb/client/model/TextSearchOptions.html
 "><code>TextSearchOptions</code></a> class to specify these options.</p>
 
 <p>For example, the following text search specifies the <a href="http://docs.mongodb.org/manual/reference/text-search-languages
